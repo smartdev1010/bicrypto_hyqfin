@@ -1,0 +1,1 @@
+import{d as o}from"./pinia-72e453fe.js";let s,e=(async()=>{s=o("log",{state:()=>({logs:{withdraw:[],deposit:[],transaction:[]}}),actions:{async fetch(t){await axios.post("/user/fetch/"+t+"/history").then(a=>{this.logs[t]=a.logs})}},persist:!0})})();export{e as __tla,s as u};

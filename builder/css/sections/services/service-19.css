@@ -1,0 +1,43 @@
+.service-27 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300; }
+
+.service-27 h1, .service-27 h2, .service-27 h3, .service-27 h4, .service-27 h5, .service-27 h6 {
+  color: #3e4555; }
+
+.service-27 .font-weight-medium {
+  font-weight: 500; }
+
+.service-27 .bg-light {
+  background-color: #f4f8fa !important; }
+
+.service-27 .badge {
+  line-height: 14px; }
+
+.service-27 .badge-info {
+  background: #188ef4; }
+
+.service-27 a {
+  text-decoration: none; }
+
+.service-27 .linking {
+  color: #3e4555; }
+
+.service-27 .linking:hover {
+  color: #316ce8; }
+
+.service-27 .text-info-gradiant {
+  background: #188ef4;
+  background: -webkit-linear-gradient(legacy-direction(to right), #188ef4 0%, #316ce8 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#188ef4), to(#316ce8));
+  background: -webkit-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+  background: -o-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+  background: linear-gradient(to right, #188ef4 0%, #316ce8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent; }
+
+.service-27 .display-5 {
+  font-size: 2.5rem; }

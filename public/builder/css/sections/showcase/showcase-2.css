@@ -1,0 +1,29 @@
+.showcase-2 {
+  padding: 2rem 0; }
+  .showcase-2 .font-container {
+    margin-bottom: 0; }
+    .showcase-2 .font-container .font-icon {
+      color: var(--bs-primary);
+      font-size: 4rem; }
+  .showcase-2:nth-child(even) {
+    background: rgba(0, 0, 0, 0.025); }
+  .showcase-2 .col-img {
+    text-align: center; }
+  .showcase-2 img {
+    max-height: 300px; }
+  .showcase-2 h3 {
+    margin-bottom: 0rem;
+    color: var(--blue);
+    text-align: center;
+    line-height: 2.1rem; }
+    .showcase-2 h3 a {
+      font-size: 1.4rem;
+      color: var(--bs-dark);
+      text-decoration: none; }
+  .showcase-2 a {
+    text-decoration: none; }
+  .showcase-2 p {
+    font-size: 1rem;
+    color: #999;
+    line-height: 2.1rem;
+    padding: 1rem 2rem 0; }

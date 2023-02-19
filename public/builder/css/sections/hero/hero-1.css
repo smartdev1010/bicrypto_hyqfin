@@ -1,0 +1,156 @@
+.hero-1 {
+  padding: 0px 2rem 0;
+  text-align: center;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-image: url(../img/background.svg);
+  background-size: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60rem;
+  position: relative;
+  padding: 0rem 2rem 14rem;
+  background-image: linear-gradient(179deg, #fff 49%, #fff 77%, #f6f8fa 100%); }
+  .hero-1::after {
+    background: url(../img/background.svg);
+    width: 100%;
+    height: 100%;
+    content: " ";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.1;
+    background-size: 100%;
+    background-position: bottom center;
+    background-size: cover;
+    background-position: bottom 100px center;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity; }
+  .hero-1 h1 {
+    line-height: 5rem;
+    font-size: 4.2rem;
+    color: #272c51;
+    font-weight: 600;
+    z-index: 2;
+    text-shadow: 1px 1px 2px #ffff; }
+  @media (max-width: 1601px) {
+    .hero-1 h1 {
+      font-size: 5rem; } }
+  @media (max-width: 1281px) {
+    .hero-1 h1 {
+      font-size: 5rem; } }
+  @media (max-width: 961px) {
+    .hero-1 h1 {
+      font-size: 4.5rem;
+      line-height: 4.5rem; } }
+  @media (max-width: 661px) {
+    .hero-1 h1 {
+      font-size: 3.2rem;
+      line-height: 3.2rem; } }
+  @media (max-width: 481px) {
+    .hero-1 h1 {
+      font-size: 3rem;
+      line-height: 3rem; } }
+  .hero-1 h2 {
+    line-height: 35px;
+    font-size: 1.2rem;
+    margin: 1.4rem auto 0rem;
+    z-index: 2;
+    position: relative;
+    text-shadow: 1px 1px 2px #ffff;
+    letter-spacing: 0.03em;
+    max-width: 800px;
+    color: #555; }
+  .hero-1 .heading {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: var(--width-xl);
+    width: 100%;
+    z-index: 2;
+    padding: 4rem 0 4rem; }
+  .hero-1 .btns {
+    margin-top: 4rem; }
+  .hero-1 .btn {
+    display: inline-block;
+    width: 200px;
+    height: 49px;
+    border-radius: 2px;
+    padding: 16px 30px;
+    line-height: 14px;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 7px;
+    margin-left: 7px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    font-weight: 600;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07); }
+    .hero-1 .btn b {
+      margin-left: 5px;
+      display: inline-block; }
+    .hero-1 .btn:hover {
+      background: var(--blue-hover);
+      background: #2781df; }
+    .hero-1 .btn span {
+      font-size: 24px;
+      line-height: 24px;
+      vertical-align: text-top;
+      margin-left: 0.2rem;
+      display: none; }
+  .hero-1 .btn.btn-outline-primary {
+    background-color: transparent;
+    background-color: rgba(65, 155, 249, 0.07);
+    background-color: #f1f8ff;
+    box-shadow: -1px 1px 2px 0px rgba(255, 255, 255, 0.2) inset;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07);
+    border: 1px solid #d5dce5;
+    background: #fff;
+    color: var(--blue);
+    color: #1a2532; }
+    .hero-1 .btn.btn-outline-primary b {
+      transform: rotate(90deg); }
+    .hero-1 .btn.btn-outline-primary:hover {
+      background-color: rgba(65, 155, 249, 0.14); }
+  .hero-1 .btn.btn-primary {
+    box-shadow: -1px 1px 2px 1px rgba(0, 0, 0, 0.07), -1px 1px 2px 0px rgba(255, 255, 255, 0.2) inset;
+    border: none; }
+    .hero-1 .btn.btn-primary span {
+      font-size: 28px;
+      margin-right: 0.2rem; }
+    .hero-1 .btn.btn-primary:hover {
+      color: #fff; }
+  .hero-1 .dropdown {
+    display: inline-block; }
+    .hero-1 .dropdown .dropdown-menu {
+      min-width: 240px; }
+  .hero-1 img {
+    margin-top: 2rem;
+    max-width: 100%;
+    opacity: 0;
+    transition: opacity 3s;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid #ddd;
+    background: #f0f4f9;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(87, 87, 87, 0.1), 0 10px 15px 0 rgba(5, 4, 10, 0.06);
+    border-radius: 4px;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 2rem;
+    position: relative; }
+  .hero-1 .show img {
+    opacity: 1; }
+  @media screen and (max-width: 767px) {
+    .hero-1 .btn {
+      min-width: 300px;
+      width: 100%; } }

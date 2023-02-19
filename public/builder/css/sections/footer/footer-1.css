@@ -1,0 +1,29 @@
+footer.footer-1 {
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+  color: #555;
+  z-index: 3;
+  margin-top: 5rem; }
+  footer.footer-1:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.025) 20%, rgba(255, 255, 255, 0) 80%);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    width: 100%;
+    height: 10px;
+    left: 0;
+    top: 0; }
+  footer.footer-1 h6 {
+    margin: 1rem 0rem;
+    font-weight: 500; }
+  footer.footer-1 nav a {
+    display: block;
+    font-size: 90%;
+    color: #777;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 0.35rem; }
+  footer.footer-1 img {
+    margin: 2rem auto;
+    display: block; }

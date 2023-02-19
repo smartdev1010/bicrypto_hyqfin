@@ -1,0 +1,47 @@
+.service-33 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300; }
+
+.service-33 h1, .service-33 h2, .service-33 h3, .service-33 h4, .service-33 h5, .service-33 h6 {
+  color: #3e4555; }
+
+.service-33 .badge {
+  line-height: 14px; }
+
+.service-33 .badge-danger {
+  background: #ff4d7e; }
+
+.service-33 .btn-danger {
+  background-color: #ff4d7e !important;
+  border-color: #ff4d7e !important; }
+
+.service-33 .wrap-service-33 .play-btn {
+  position: relative; }
+
+.service-33 .wrap-service-33 .play-btn span.display-1 {
+  font-weight: 500;
+  opacity: 0.15; }
+
+.service-33 .wrap-service-33 .play-btn a {
+  position: absolute;
+  left: 40px;
+  top: 20px;
+  color: #263238;
+  font-weight: 500; }
+
+.service-33 .wrap-service-33 .play-btn a span {
+  -webkit-box-shadow: 2px 8px 20px rgba(255, 77, 126, 0.5);
+  box-shadow: 2px 8px 20px rgba(255, 77, 126, 0.5); }
+
+.service-33 .wrap-service-33 .play-btn a:hover {
+  color: #ff4d7e; }
+
+.service-33 a {
+  text-decoration: none; }
+
+.service-33 .btn-md {
+  padding: 18px 0px;
+  width: 60px;
+  height: 60px;
+  font-size: 20px; }

@@ -1,0 +1,45 @@
+.service-23 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300; }
+
+.service-23 h1, .service-23 h2, .service-23 h3, .service-23 h4, .service-23 h5, .service-23 h6 {
+  color: #3e4555; }
+
+.service-23 .font-weight-medium {
+  font-weight: 500; }
+
+.service-23 .badge {
+  line-height: 14px; }
+
+.service-23 .badge-info {
+  background: #188ef4 !important; }
+
+.service-23 .subtitle {
+  color: #8d97ad;
+  line-height: 24px; }
+
+.service-23.wrap-service23-box {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: left center; }
+
+.service-23 .btn-md {
+  padding: 15px 45px;
+  font-size: 16px; }
+
+.service-23 .btn-info-gradiant {
+  background: #188ef4;
+  background: -webkit-linear-gradient(legacy-direction(to right), #188ef4 0%, #316ce8 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#188ef4), to(#316ce8));
+  background: -webkit-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+  background: -o-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+  background: linear-gradient(to right, #188ef4 0%, #316ce8 100%); }
+
+.service-23 .btn-info-gradiant:hover {
+  background: #316ce8;
+  background: -webkit-linear-gradient(legacy-direction(to right), #316ce8 0%, #188ef4 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#316ce8), to(#188ef4));
+  background: -webkit-linear-gradient(left, #316ce8 0%, #188ef4 100%);
+  background: -o-linear-gradient(left, #316ce8 0%, #188ef4 100%);
+  background: linear-gradient(to right, #316ce8 0%, #188ef4 100%); }

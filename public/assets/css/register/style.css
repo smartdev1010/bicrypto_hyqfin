@@ -1,0 +1,406 @@
+.menu_register {
+    display: flex;
+    gap: 72px;
+    align-items: center;
+}
+
+.menu_register img {
+    width: 94.06px;
+}
+
+#section_register1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    max-width: 1192px;
+    margin: 0 auto;
+    padding: 132px 0 30px 0;
+}
+
+#section_register1 .box_img {
+    position: relative;
+    width: 408px;
+}
+
+#section_register1 #box_img_login {
+    width: 489.23px;
+}
+
+#section_register1 .box_img .phone {
+    width: 80%;
+    z-index: 1;
+    position: relative;
+}
+
+#section_register1 .box_img .riseup_coin_imgs {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+#section_register1 .box_img .riseup_coin_imgs .small {
+    width: 189.62px;
+    height: 189.73px;
+}
+
+#section_register1 .box_img .riseup_coin_imgs .big {
+    width: 296.36px;
+    height: 296.54px;
+    margin: 0 -94px;
+    z-index: 1;
+    filter: drop-shadow(0px 0px 86px #4198FE) drop-shadow(-2px 4px 73px rgba(0, 0, 0, 0.84));;
+}
+
+#section_register1 .box_img .text_img {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 32px;
+    background: linear-gradient(to right, rgba(32, 54, 64, 0.1) 0%, #203640 50.31%, rgba(32, 54, 64, 0.1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#section_register1 .box_img .blur_register {
+    inset: 0;
+    margin: auto;
+}
+
+#section_register1 .box_img .blur_login {
+    width: 415.72px;
+    height:332.7px;
+}
+
+
+#section_register1 .container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 580px;
+    gap:32px;
+}
+
+#section_register1 .container1 .tittle {
+    font-size: 24px;
+    font-weight: 600;
+    color: #E6EEF2;
+}
+
+#section_register1 .container1 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:32px;
+    width: 100%;
+}
+
+.box_or {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hr3 {
+    width: 100%;
+}
+
+.or {
+    position: absolute;
+    margin: 0;
+    inset: auto;
+    padding: 0 20px;
+    background-color: #031219;
+    font-size: 14px;
+    color: #66808C;
+    font-weight: 400;
+}
+
+.sign_wallet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 52px;
+    background-color: #0B1E26;
+    border-radius: 11px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 500ms;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+#section_register1 .container1 form .box {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+#section_register1 .container1 form .frame, #section_register1 .container1 form .frame2 {
+    display: flex;
+    gap: 24px;
+}
+
+
+#section_register1 .container1 form .frame5 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+
+#section_register1 .container1 form label {
+    font-size: 16px;
+    font-weight: 300;
+    color: #E6EEF2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#section_register1 .container1 form input {
+    background-color: transparent;
+    border: 1px solid #203640;
+    height: 49.16px;
+    border-radius: 11px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #B1C4CC;
+    padding-left: 12px;
+}
+
+
+#section_register1 .container1 form .frame1 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#section_register1 .container1 form .frame4 {
+    display: flex;
+    flex-direction: column;
+    gap:24px ;
+}
+
+#section_register1 .container1 form .frame1 .label_terms, #section_register1 .container1 form .forgot_pass {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 300;
+    color: #66808C;
+    width: fit-content;
+    gap: 8px;
+    cursor: pointer;
+}
+
+#section_register1 .container1 form .frame3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section_register1 .container1 form .frame1 .label_terms span {
+    font-weight: 400;
+}
+
+#section_register1 .container1 form .frame1 .label_terms input[type=checkbox] {
+    display: none;
+}
+
+#section_register1 .container1 form .frame1 .label_terms .checkbox {
+    width: 11.66px;
+    height: 11.66px;
+    border: 0.64px solid #203640;
+    border-radius: 2.54px;
+}
+
+#section_register1 .container1 form #button_register {
+    width: 582px;
+    height: 53px;
+    border-radius: 11px;
+    cursor: pointer;
+}
+
+#section_register1 .container1 form #button_register::after {
+    border-radius: 10px;
+}
+
+#section_register1 .container1 form .text_button {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-gray-1);
+    cursor: pointer;
+}
+
+
+#section_register1 .container1 form .choose_sign {
+    font-size: 14px;
+    font-weight: 300;
+    color: #66808C;
+    transition: all 500ms ease;
+    
+}
+
+#section_register1 .container1 form .choose_sign a {
+    font-weight: 500;
+    color: #66808C;
+}
+
+
+/* Notebook version */
+
+@media (min-width: 480px) and (max-width: 1224px){
+
+    #section_register1 {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 auto;
+        height: auto;
+        padding: 132px 0 0 0;
+    }
+
+    #section_register1 .box_img {
+        display: none;
+    }
+
+}
+
+
+
+
+/* Mobile version */
+
+@media (max-width: 480px) {
+    
+    #section_register1 {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 30vw 0 0 0;
+        margin: 0 auto;
+        height: auto;
+    }
+    
+    #section_register1 .box_img {
+        display: none;
+    }
+    
+    
+    #section_register1 .container1 {
+        width: 100%;
+        gap:12vw;
+    }
+    
+    #section_register1 .container1 .tittle {
+        font-size: 6.667vw;
+    }
+
+
+    .box_or {
+        width: 90vw;
+        margin: 0 auto;
+    }
+    
+    .or {
+        padding: 0 4vw;
+        font-size: 3.889vw;
+    }
+    
+    .sign_wallet {
+        width: 90vw;
+        margin: 0 auto;
+        height: 14.444vw;
+        border-radius: 3.056vw;
+        font-size: 4.444vw;
+    }
+
+    #section_register1 .container1 form .frame5 {
+        gap: 11.111vw;
+    }
+
+    #section_register1 .container1 form {
+        gap:8.889vw;
+    }
+    
+    #section_register1 .container1 form .box {
+        gap: 6.667vw;
+        width: 100%;
+    }
+    
+    #section_register1 .container1 form .frame, #section_register1 .container1 form .frame2 {
+        display: flex;
+        flex-direction: column;
+        gap: 6.667vw;
+    }
+    
+    #section_register1 .container1 form label {
+        font-size: 4.444vw;
+        gap: 2.222vw;
+    }
+    
+    #section_register1 .container1 form input {
+        border: 0.278vw solid #203640;
+        box-sizing: border-box;
+        height: 14.544vw;
+        border-radius: 3.056vw;
+        font-size: 4.444vw;
+        padding-left: 3.333vw;
+    }
+
+    #section_register1 .container1 form .frame1 {
+        gap: 3.333vw;
+    }
+    
+    #section_register1 .container1 form .frame4 {
+        gap:6.667vw;
+    }
+    
+    #section_register1 .container1 form .frame1 .label_terms, #section_register1 .container1 form .forgot_pass {
+        font-size: 3.889vw;
+        gap: 2.222vw;
+    }
+    
+    #section_register1 .container1 form .frame1 .label_terms .checkbox {
+        min-width: 4.314vw;
+        width: 4.314vw;
+        min-height: 4.314vw;
+        height: 4.314vw;
+        border: 0.278vw solid #203640;
+        border-radius: 0.706vw;
+    }
+    
+    #section_register1 .container1 form #button_register {
+        width: 90vw;
+        height: 14.722vw;
+        border-radius: 3.056vw;
+    }
+    
+    #section_register1 .container1 form #button_register::after {
+        border-radius: 2.8vw;
+    }
+    
+    #section_register1 .container1 form .text_button {
+        font-size: 5vw;
+    }
+    
+    
+    #section_register1 .container1 form .choose_sign {
+        font-size: 3.889vw;
+    }
+    
+
+}

@@ -1,0 +1,311 @@
+:root {
+  --bs-font-headings: $font-family-sans-serif; }
+
+.menutree {
+  padding: 5px;
+  margin: 0;
+  padding: 0;
+  padding-right: 1rem;
+  width: 100%; }
+  .menutree ul {
+    margin: 0;
+    padding-left: 1rem;
+    list-style: none; }
+  .menutree li:last-child {
+    border: 0; }
+  .menutree li.expand ul {
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.5s; }
+  .menutree li.expand input {
+    /* Show when checked */ }
+    .menutree li.expand input:checked ~ ul {
+      visibility: visible;
+      opacity: 1;
+      max-height: 999px; }
+    .menutree li.expand input:checked ~ label::after {
+      transform: none;
+      line-height: 1; }
+  .menutree a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #555;
+    padding: 0.4rem 0; }
+  .menutree label {
+    position: relative;
+    display: block;
+    width: 100%;
+    cursor: pointer; }
+  .menutree input[type=checkbox] {
+    display: none; }
+  .menutree label::after {
+    content: "\2304";
+    font-size: 150%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 1.6;
+    transition: all 0.5s;
+    transform: rotate(270deg); }
+
+.sticky {
+  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: flex-start; }
+
+/*
+.container-fluid {
+	max-width:1600px;
+}
+*/
+body {
+  position: relative; }
+
+.post {
+  margin-bottom: 2rem; }
+  .post-list .post, .post h1 {
+    max-width: 800px;
+    margin: 0 auto 2rem; }
+  .post h1, .post h2 {
+    line-height: 1.2; }
+  .post .post-title {
+    text-decoration: none; }
+    .post .post-title:hover {
+      text-decoration: underline; }
+  .post .post-content {
+    font-family: var(--bs-font-sans-serif); }
+    .post .post-content > p, .post .post-content h1, .post .post-content h2, .post .post-content h3, .post .post-content h4, .post .post-content h5, .post .post-content h6, .post .post-content > blockquote, .post .post-content > span, .post .post-content > ul, .post .post-content pre, .post .post-content > ol {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto; }
+    .post .post-content h1, .post .post-content h2, .post .post-content h3, .post .post-content h4, .post .post-content h5 {
+      margin-bottom: 1rem; }
+    .post .post-content blockquote {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-style: italic;
+      padding-bottom: 3px;
+      padding-right: 20px;
+      padding-left: 20px;
+      letter-spacing: .01rem;
+      border-left: 4px solid #f1f3f7;
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
+      .post .post-content blockquote:before, .post .post-content blockquote:after {
+        font-family: Line Awesome Free;
+        font-weight: 900;
+        font-style: normal; }
+      .post .post-content blockquote:before {
+        content: "\f10d "; }
+      .post .post-content blockquote:after {
+        content: " \f10e"; }
+      .post .post-content blockquote i {
+        font-size: 2rem;
+        color: var(--bs-gray); }
+    .post .post-content q:before, .post .post-content q:after {
+      font-family: Line Awesome Free;
+      font-weight: 900;
+      font-style: normal; }
+    .post .post-content q:before {
+      content: "\f10d "; }
+    .post .post-content q:after {
+      content: " \f10e"; }
+    .post .post-content img, .post .post-content svg, .post .post-content video {
+      vertical-align: middle;
+      max-width: 100%;
+      margin: 1rem auto;
+      height: auto; }
+    .post .post-content pre {
+      padding: 0 1rem 1rem;
+      background: #f6f8fa; }
+      .post .post-content pre code {
+        background: transparent; }
+  .post .align-left {
+    float: left;
+    margin-bottom: 25px;
+    max-width: 50%; }
+  .post .align-right {
+    float: right;
+    margin-bottom: 25px;
+    max-width: 50%; }
+  .post .align-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .post .card-header {
+    margin-bottom: 2rem; }
+  .post .card-footer {
+    /* padding: 0.5rem 1rem; */
+    padding: 0;
+    margin: 0 auto; }
+  .post .post-meta {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 2rem; }
+    .post .post-meta li {
+      margin-right: 1rem;
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: var(--bs-dark-gray); }
+      .post .post-meta li i {
+        font-size: 1.4rem; }
+      .post .post-meta li a {
+        text-decoration: none;
+        color: var(--bs-secondary); }
+        .post .post-meta li a:hover {
+          text-decoration: underline; }
+
+#vvveb-admin + nav {
+  margin-top: 35px; }
+
+#content {
+  margin-top: 5.5rem; }
+
+.sidebar {
+  padding: 0;
+  padding-top: 2rem;
+  border-right: 1px solid #dee2e6; }
+
+.content-header {
+  margin-left: -1rem;
+  margin-right: -1rem;
+  margin-bottom: 1.5rem;
+  padding: 0.75rem;
+  border-bottom: 1px solid #dee2e6; }
+  @media (min-width: 992px) {
+    .content-header {
+      margin-bottom: 0;
+      padding: 2rem 1rem; } }
+  @media (max-width: 767.98px) {
+    .content-header {
+      border-top: 1px solid #dee2e6;
+      background: #fff; } }
+  .content-header .breadcrumb {
+    margin: 0;
+    padding: 0;
+    border: 0; }
+
+.content-body {
+  margin-top: 0 !important; }
+  .content-body > article {
+    padding: 0.75rem;
+    padding-bottom: 5rem; }
+  .content-body > aside {
+    padding: 0.75rem;
+    border-left: 1px solid #dee2e6; }
+  @media (min-width: 992px) {
+    .content-body > article {
+      padding: 3.125rem;
+      padding-bottom: 5rem; } }
+  .content-body .toc {
+    margin-left: -1.9rem;
+    margin-right: -2rem; }
+
+.toc .nav-link {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  width: 100%;
+  color: #6c757d;
+  font-size: 0.875rem;
+  border-left: 2px solid transparent;
+  padding: 0.5rem 2rem; }
+  @media (prefers-reduced-motion: reduce) {
+    .toc .nav-link {
+      transition: none; } }
+  .toc .nav-link:hover {
+    color: #000;
+    border-color: #86b7fe; }
+  .toc .nav-link.active {
+    color: #0d6efd;
+    border-color: #0d6efd; }
+    .toc .nav-link.active + ul {
+      display: block; }
+
+.toc > ol {
+  padding-left: 0; }
+
+.toc ol {
+  list-style: none; }
+  .toc ol .nav-link {
+    font-size: 0.875rem;
+    border-color: #dee2e6;
+    border-left: 1px solid transparent; }
+    .toc ol .nav-link.active, .toc ol .nav-link:hover {
+      border-left: 2px solid; }
+
+h1, h2 {
+  line-height: 1.2; }
+
+.post-title {
+  text-decoration: none; }
+  .post-title:hover {
+    text-decoration: underline; }
+
+.post-content {
+  font-family: var(--bs-font-sans-serif); }
+  .post-content > p, .post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6, .post-content > blockquote, .post-content > span, .post-content > ul, .post-content pre, .post-content > ol {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto; }
+  .post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5 {
+    margin-bottom: 1rem; }
+  .post-content blockquote {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-style: italic;
+    padding-bottom: 3px;
+    padding-right: 20px;
+    padding-left: 20px;
+    letter-spacing: .01rem;
+    border-left: 4px solid #f1f3f7;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+    .post-content blockquote:before, .post-content blockquote:after {
+      font-family: Line Awesome Free;
+      font-weight: 900;
+      font-style: normal; }
+    .post-content blockquote:before {
+      content: "\f10d "; }
+    .post-content blockquote:after {
+      content: " \f10e"; }
+    .post-content blockquote i {
+      font-size: 2rem;
+      color: var(--bs-gray); }
+  .post-content q:before, .post-content q:after {
+    font-family: Line Awesome Free;
+    font-weight: 900;
+    font-style: normal; }
+  .post-content q:before {
+    content: "\f10d "; }
+  .post-content q:after {
+    content: " \f10e"; }
+  .post-content img, .post-content svg, .post-content video {
+    vertical-align: middle;
+    max-width: 100%;
+    margin: 1rem auto;
+    height: auto; }
+  .post-content pre {
+    padding: 0 1rem 1rem;
+    background: #f6f8fa; }
+    .post-content pre code {
+      background: transparent; }
+
+.align-left {
+  float: left;
+  margin-bottom: 25px;
+  max-width: 50%; }
+
+.align-right {
+  float: right;
+  margin-bottom: 25px;
+  max-width: 50%; }
+
+.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.content {
+  margin-top: 0px; }

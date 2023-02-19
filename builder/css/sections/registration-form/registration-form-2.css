@@ -1,0 +1,42 @@
+.bg {
+  background: url(https://images.pexels.com/photos/238118/pexels-photo-238118.jpeg?auto=compress&cs=tinysrgb&h=650&w=940) right;
+  height: 100vh;
+  background-size: cover; }
+
+.login input {
+  background: #f1f1f1;
+  border: none;
+  margin: 10px 0px;
+  padding: 20px;
+  height: 50px; }
+
+.login input:hover, .login input:focus {
+  background: #d3d3dd; }
+
+.login-social ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.login-social ul li {
+  float: left;
+  text-align: center;
+  margin-top: 20px; }
+
+.login-social ul li a {
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin: 5px;
+  color: #fff;
+  font-size: 21px;
+  line-height: 35px; }
+
+.login-social ul li.facebook {
+  background: #3B5998; }
+
+.login-social ul li.google {
+  background: #dd4b39; }
+
+.login-social ul li.twitter {
+  background: #00aced; }

@@ -1,0 +1,5 @@
+{
+    "cointelegraph":"https://cointelegraph.com/feed",
+    "reddit": "https://www.reddit.com/r/Bitcoin/.rss?format=xml",
+    "bitcoin": "https://news.bitcoin.com/feed/"
+}

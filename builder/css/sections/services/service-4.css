@@ -1,0 +1,29 @@
+.service-35 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300; }
+
+.service-35 h1, .service-35 h2, .service-35 h3, .service-35 h4, .service-35 h5, .service-35 h6 {
+  color: #3e4555; }
+
+.service-35 .font-weight-medium {
+  font-weight: 500; }
+
+.service-35 .badge {
+  line-height: 14px; }
+
+.service-35 .badge-success {
+  background: #2cdd9b; }
+
+.service-35.wrap-service35-box .feature-35-owl .item {
+  position: relative; }
+
+.service-35.wrap-service35-box .feature-35-owl .item h5 {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  color: #ffffff;
+  text-transform: uppercase; }
+
+.service-35 .max-500 {
+  max-width: 500px; }

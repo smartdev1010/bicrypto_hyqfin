@@ -1,0 +1,83 @@
+h1, h2 {
+  line-height: 1.2;
+  font-weight: bold;
+  font-family: 'aileronheavy'; }
+
+.post-title {
+  text-decoration: none;
+  color: var(--bs-dark); }
+  .post-title:hover {
+    text-decoration: underline; }
+
+.post-content {
+  font-size: 1.2rem;
+  line-height: 2.1rem;
+  font-family: var(--bs-font-sans-serif); }
+  .post-content > * {
+    margin-bottom: 1rem; }
+  .post-content > p, .post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6, .post-content > blockquote, .post-content > span, .post-content > ul, .post-content pre, .post-content > ol {
+    font-family: 'Lora', serif;
+    max-width: 35rem;
+    margin-left: auto;
+    margin-right: auto; }
+  .post-content h1, .post-content h2 {
+    font-weight: 600; }
+  .post-content blockquote {
+    font-family: var(--bs-font-sans-serif);
+    font-style: italic;
+    padding-bottom: 3px;
+    padding-right: 20px;
+    padding-left: 20px;
+    letter-spacing: .01rem;
+    border-left: 4px solid #f1f3f7;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+    .post-content blockquote:before, .post-content blockquote:after {
+      font-family: Line Awesome Free;
+      font-weight: 900;
+      font-style: normal; }
+    .post-content blockquote:before {
+      content: "\f10d "; }
+    .post-content blockquote:after {
+      content: " \f10e"; }
+    .post-content blockquote i {
+      font-size: 2rem;
+      color: var(--bs-gray); }
+  .post-content q:before, .post-content q:after {
+    font-family: Line Awesome Free;
+    font-weight: 900;
+    font-style: normal; }
+  .post-content q:before {
+    content: "\f10d "; }
+  .post-content q:after {
+    content: " \f10e"; }
+  .post-content img, .post-content svg, .post-content video {
+    vertical-align: middle;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto; }
+  .post-content pre {
+    padding: 0 1rem 1rem;
+    background: #f6f8fa; }
+    .post-content pre code {
+      background: transparent; }
+
+.align-left {
+  float: left;
+  margin-bottom: 25px;
+  max-width: 50%; }
+
+.align-right {
+  float: right;
+  margin-bottom: 25px;
+  max-width: 50%; }
+
+.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.tags, .comments-form, .post-comments {
+  max-width: 35rem;
+  margin-left: auto;
+  margin-right: auto; }

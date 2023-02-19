@@ -1,0 +1,33 @@
+.service-4 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300; }
+
+.service-4 h1, .service-4 h2, .service-4 h3, .service-4 h4, .service-4 h5, .service-4 h6 {
+  color: #3e4555; }
+
+.service-4 .font-weight-medium {
+  font-weight: 500; }
+
+.service-4 .subtitle {
+  color: #8d97ad;
+  line-height: 24px; }
+
+.service-4 .wrap-service4-box .card-body {
+  padding: 40px; }
+
+.service-4 .wrap-service4-box .icon-round {
+  font-size: 45px;
+  width: 80px;
+  color: #316ce8;
+  line-height: 80px;
+  margin: 20px 0 30px; }
+
+.service-4 .bg-light-info {
+  background-color: #cfecfe; }
+
+.service-4 a {
+  text-decoration: none; }
+
+.service-4 .linking {
+  color: #316ce8; }

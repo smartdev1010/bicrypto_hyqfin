@@ -1,0 +1,65 @@
+.static-slider4 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300; }
+
+.static-slider4 h1,
+.static-slider4 h2,
+.static-slider4 h3,
+.static-slider4 h4,
+.static-slider4 h5,
+.static-slider4 h6 {
+  color: #3e4555; }
+
+.static-slider4 h4 {
+  font-size: 21px; }
+
+.static-slider4 a {
+  text-decoration: none; }
+
+.static-slider4 .font-weight-medium {
+  font-weight: 500; }
+
+.static-slider4 .subtitle {
+  color: #8d97ad;
+  line-height: 24px; }
+
+.static-slider4 h1 {
+  font-weight: 100;
+  line-height: 50px;
+  font-size: 33px; }
+
+.static-slider4 h1 span {
+  border-bottom: 3px solid #188ef4; }
+
+.static-slider4 .info-box {
+  padding: 25px 15px; }
+
+.static-slider4 .img-anim {
+  position: relative;
+  top: 110px; }
+
+@media (max-width: 767px) {
+  .static-slider4 h1 {
+    line-height: 36px;
+    font-size: 24px; }
+  .static-slider4 .img-anim {
+    position: relative;
+    top: 0px; }
+  .static-slider4 .bg-info-gradiant {
+    margin-top: 40px; } }
+
+.static-slider4 .btn-md {
+  padding: 15px 45px;
+  font-size: 16px; }
+
+.static-slider4 .bg-info-gradiant {
+  background: #188ef4;
+  background: -webkit-linear-gradient(legacy-direction(to right), #188ef4 0%, #316ce8 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#188ef4), to(#316ce8));
+  background: -webkit-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+  background: -o-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+  background: linear-gradient(to right, #188ef4 0%, #316ce8 100%); }
+
+.static-slider4 .display-5 {
+  font-size: 2.5rem; }

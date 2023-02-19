@@ -1,0 +1,37 @@
+.static-slider6 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+  padding-top: 80px; }
+
+.static-slider6 h1,
+.static-slider6 h2,
+.static-slider6 h3,
+.static-slider6 h4,
+.static-slider6 h5,
+.static-slider6 h6 {
+  color: #3e4555; }
+
+.static-slider6 h1 {
+  font-size: 35px; }
+
+.static-slider6 .font-weight-medium {
+  font-weight: 500; }
+
+.static-slider6 .left-right-bg {
+  background-repeat: no-repeat;
+  background-position: bottom center; }
+
+.static-slider6 .video-img {
+  cursor: pointer; }
+
+.static-slider6.bg-danger-gradiant {
+  background: #ff4d7e;
+  background: -webkit-linear-gradient(legacy-direction(to right), #ff4d7e 0%, #ff6a5b 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#ff4d7e), to(#ff6a5b));
+  background: -webkit-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+  background: -o-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+  background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%); }
+
+.static-slider6 .hide {
+  display: none; }

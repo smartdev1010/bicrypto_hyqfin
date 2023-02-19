@@ -1,0 +1,24 @@
+//  ================================================================================================
+//  ? TIP:  It is recommended to use this file for overriding component variables.
+//  ================================================================================================
+
+// $base-font-size: 15px;
+
+$theme-dark-body-bg: /*linear-gradient(
+    45deg,
+    rgb(59, 12, 130) 0%,
+    rgb(59, 12, 130) 20%,
+    rgb(172, 77, 255) 20%,
+    rgb(172, 77, 255) 30%,
+    rgb(19, 30, 37) 30%,
+    rgb(19, 30, 37) 85%,
+    rgb(172, 77, 255) 85%,
+    rgb(172, 77, 255) 90%,
+    rgb(59, 12, 130) 90%
+) */ #212b32 !default; //theme background color
+//$theme-dark-modal-header-bg: #000000 !default; //#161d31 theme background color
+
+$theme-dark-card-bg: #131722 !default; //#283046 theme colors
+//$theme-dark-input-bg: #031219 !default; //#283046 theme colors
+//$theme-dark-table-bg: #031219 !default; //#283046 theme colors
+//$theme-dark-table-row-bg: #031219 !default; //#283046 theme colors

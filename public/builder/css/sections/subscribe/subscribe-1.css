@@ -1,0 +1,109 @@
+#banner1 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+  background: right -5.5em center no-repeat #e9f3f8; }
+
+#banner1 h1,
+#banner1 h2,
+#banner1 h3,
+#banner1 h4,
+#banner1 h5,
+#banner1 h6 {
+  color: #3e4555; }
+
+#banner1 .bg-light {
+  background-color: #f4f8fa !important; }
+
+#banner1 h2 {
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -1px; }
+
+#banner1 .line-height {
+  height: 72px; }
+
+#banner1 .form-control.text-email {
+  color: #8d97ad;
+  border-radius: 36px 0 0 36px;
+  text-indent: 35px;
+  width: 61%;
+  -webkit-box-shadow: -5px 0 30px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: -5px 0 30px 0 rgba(0, 0, 0, 0.05);
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis; }
+
+#banner1 .form-control.text-email:focus {
+  box-shadow: none; }
+
+#banner1 .btn-sub {
+  border-radius: 0 36px 36px 0;
+  width: auto;
+  padding: 0 16px;
+  cursor: pointer;
+  margin-left: -4px;
+  -webkit-box-shadow: 5px 0 30px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 5px 0 30px 0 rgba(0, 0, 0, 0.05);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+
+#banner1 .btn-sub:hover {
+  opacity: 0.7; }
+
+@media (min-width: 2301px) and (max-width: 2700px) {
+  #banner1 {
+    background-position: 70% center; } }
+
+@media (min-width: 1900px) and (max-width: 2300px) {
+  #banner1 {
+    background-position: 80% center; } }
+
+@media (min-width: 1500px) and (max-width: 1680px) {
+  #banner1 {
+    background-position: right center; } }
+
+@media (max-width: 1100px) {
+  #banner1 {
+    background-position: right -14em center; }
+  #banner1 h2 {
+    font-size: 40px; }
+  #banner1 .form-control.text-email {
+    width: 59%; }
+  #banner1 .btn-sub {
+    padding: 0 20px; } }
+
+@media (max-width: 767px) {
+  .banner {
+    padding: 30px 0; }
+  #banner1 {
+    background-image: none; }
+  #banner1 .line-height {
+    font-size: 14px;
+    line-height: 50px; }
+  #banner1 .form-control.text-email {
+    border-radius: 25px 0 0 25px;
+    text-indent: 20px; }
+  #banner1 .btn-sub {
+    border-radius: 0 25px 25px 0;
+    padding: 0 15px; }
+  #banner1 img {
+    margin-top: 25px; } }
+
+@media (max-width: 320px) {
+  #banner1 .btn-sub {
+    padding: 0 10px; } }
+
+#banner1 .btn-success-gradiant {
+  background: #2cdd9b;
+  background: -webkit-linear-gradient(legacy-direction(to right), #2cdd9b 0%, #1dc8cc 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#2cdd9b), to(#1dc8cc));
+  background: -webkit-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+  background: -o-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+  background: linear-gradient(to right, #2cdd9b 0%, #1dc8cc 100%); }
+
+#banner1 .font-weight-medium {
+  font-weight: 500; }
+
+#banner1 .font-16 {
+  font-size: 16px; }

@@ -1,0 +1,828 @@
+{
+    "admin": [{
+            "name": "Dashboard",
+            "url": "/admin/dashboard",
+            "icon": "house",
+            "status": 1
+        },
+        {
+            "name": "Manage Users",
+            "icon": "people",
+            "status": 1,
+            "permission": "user_access",
+            "submenu": [{
+                    "url": "/admin/users",
+                    "name": "All Users",
+                    "icon": "chevron-right",
+                    "permission": "user_show",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/roles",
+                    "name": "Roles Manager",
+                    "icon": "chevron-right",
+                    "permission": "role_access",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/users/send-email",
+                    "name": "Send Email",
+                    "icon": "chevron-right",
+                    "permission": "user_mailer",
+                    "status": 1
+                }
+            ]
+        },
+        {
+            "name": "KYC Manager",
+            "icon": "person-bounding-box",
+            "status": 0,
+            "permission": "kyc_manager_show",
+            "submenu": [{
+                    "url": "/admin/kyc-list",
+                    "name": "All KYC Application",
+                    "icon": "chevron-right",
+                    "permission": "kyc_manager_show",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/kyc-list/pending",
+                    "name": "Pending KYC",
+                    "icon": "chevron-right",
+                    "permission": "kyc_manager_show",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/kyc-list/missing",
+                    "name": "Missing KYC",
+                    "icon": "chevron-right",
+                    "permission": "kyc_manager_show",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/kyc-list/approved",
+                    "name": "Approved KYC",
+                    "icon": "chevron-right",
+                    "permission": "kyc_manager_show",
+                    "status": 1
+                }
+            ]
+        },
+        {
+            "name": "Bots Manager",
+            "icon": "robot",
+            "status": 1,
+            "addon": 1,
+            "permission": "bot_access",
+            "submenu": [{
+                    "url": "/admin/bot",
+                    "name": "Bots",
+                    "icon": "chevron-right",
+                    "permission": "bot_show",
+                    "status": 1
+                },
+                {
+                    "name": "Logs",
+                    "icon": "chevron-right",
+                    "permission": "bot_log",
+                    "status": 1,
+                    "url": "/admin/bot/log"
+                }
+            ]
+        },
+        {
+            "name": "ICO Manager",
+            "icon": "cash-coin",
+            "permission": "ico_access",
+            "status": 1,
+            "addon": 2,
+            "submenu": [{
+                    "url": "/admin/ico",
+                    "name": "Tokens",
+                    "icon": "chevron-right",
+                    "permission": "ico_show",
+                    "status": 1
+                },
+                {
+                    "name": "Logs",
+                    "icon": "chevron-right",
+                    "permission": "ico_log",
+                    "status": 1,
+                    "url": "/admin/ico/log"
+                }
+            ]
+        },
+        {
+            "name": "Forex Manager",
+            "icon": "bar-chart",
+            "permission": "forex_access",
+            "status": 1,
+            "addon": 4,
+            "submenu": [{
+                    "url": "/admin/forex",
+                    "name": "Accounts",
+                    "icon": "chevron-right",
+                    "permission": "forex_show",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/forex/investment",
+                    "name": "Investments",
+                    "icon": "chevron-right",
+                    "permission": "forex_investments_access",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/forex/signals",
+                    "name": "Signals",
+                    "icon": "chevron-right",
+                    "permission": "forex_signals_access",
+                    "status": 1
+                },
+                {
+                    "name": "Forex Logs",
+                    "icon": "chevron-right",
+                    "permission": "forex_log",
+                    "status": 1,
+                    "url": "/admin/forex/log"
+                },
+                {
+                    "name": "Investment Logs",
+                    "icon": "chevron-right",
+                    "permission": "forex_investments_show",
+                    "status": 1,
+                    "url": "/admin/forex/investment/log"
+                }
+            ]
+        },
+        {
+            "name": "MLM Manager",
+            "icon": "diagram-3",
+            "permission": "mlm_access",
+            "status": 1,
+            "addon": 3,
+            "submenu": [{
+                    "url": "/admin/mlm",
+                    "name": "Ranks",
+                    "icon": "chevron-right",
+                    "permission": "mlm_show",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/mlm/transaction/logs",
+                    "name": "Transactions Log",
+                    "icon": "chevron-right",
+                    "permission": "mlm_log",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/mlm/bv/logs",
+                    "name": "BV Logs",
+                    "icon": "chevron-right",
+                    "permission": "mlm_log",
+                    "status": 1
+                }
+            ]
+        },
+        {
+            "name": "Staking Manager",
+            "icon": "boxes",
+            "permission": "staking_access",
+            "status": 1,
+            "addon": 6,
+            "submenu": [{
+                    "url": "/admin/staking",
+                    "name": "Coins",
+                    "icon": "chevron-right",
+                    "permission": "staking_show",
+                    "status": 1
+                },
+                {
+                    "name": "Logs",
+                    "icon": "chevron-right",
+                    "permission": "staking_log",
+                    "status": 1,
+                    "url": "/admin/staking/logs"
+                }
+            ]
+        },
+        {
+            "name": "Ecosystem",
+            "icon": "hdd-network",
+            "permission": "eco_access",
+            "status": 1,
+            "addon": 10,
+            "submenu": [{
+                    "url": "/admin/eco/blockchains",
+                    "name": "Blockchains",
+                    "icon": "chevron-right",
+                    "permission": "eco_access",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/eco/markets",
+                    "name": "Markets",
+                    "icon": "chevron-right",
+                    "permission": "eco_markets_access",
+                    "status": 1
+                }
+            ]
+        },
+        {
+            "name": "Knowledge Base",
+            "icon": "book",
+            "permission": "knowledge_base_access",
+            "status": 1,
+            "addon": 11,
+            "submenu": [{
+                    "url": "/admin/knowledge/articles",
+                    "name": "Articles",
+                    "icon": "chevron-right",
+                    "permission": "article_access",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/knowledge/categories",
+                    "name": "Categories",
+                    "icon": "chevron-right",
+                    "permission": "category_access",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/knowledge/tags",
+                    "name": "Tags",
+                    "icon": "chevron-right",
+                    "permission": "tag_access",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/knowledge/faq-categories",
+                    "name": "Faq Categories",
+                    "icon": "chevron-right",
+                    "permission": "faq_category_access",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/knowledge/faq-questions",
+                    "name": "Faq Questions",
+                    "icon": "chevron-right",
+                    "permission": "faq_question_access",
+                    "status": 1
+                }
+            ]
+        },
+        {
+            "name": "P2P Manager",
+            "icon": "bank2",
+            "status": 0,
+            "addon": 8,
+            "submenu": [{
+                    "url": "/admin/p2p/ads",
+                    "name": "Ads",
+                    "icon": "chevron-right",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/p2p/currencies",
+                    "name": "Currencies",
+                    "icon": "chevron-right",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/p2p",
+                    "name": "Requests",
+                    "icon": "chevron-right",
+                    "status": 1
+                }
+            ]
+        },
+        {
+            "name": "Logs",
+            "icon": "journal-album",
+            "permission": "logs_access",
+            "status": 1,
+            "submenu": [{
+                    "name": "Binary",
+                    "icon": "chevron-right",
+                    "status": 1,
+                    "submenu": [{
+                            "name": "Practice",
+                            "icon": "journal-medical",
+                            "permission": "binary_practice_log",
+                            "status": 1,
+                            "url": "/admin/binary/practice/trade/log"
+                        },
+                        {
+                            "name": "Trade",
+                            "icon": "journal-album",
+                            "permission": "binary_trade_log",
+                            "status": 1,
+                            "url": "/admin/binary/trade/log"
+                        }
+                    ]
+                },
+                {
+                    "name": "Trade Logs",
+                    "icon": "chevron-right",
+                    "permission": "trade_log",
+                    "status": 1,
+                    "url": "/admin/trade/log"
+                },
+                {
+                    "name": "Wallet Transfers",
+                    "icon": "chevron-right",
+                    "permission": "wallet_transfer_log",
+                    "status": 1,
+                    "submenu": [{
+                            "url": "/admin/report/wallet/transfer/trading",
+                            "name": "Trading Transfer",
+                            "icon": "chevron-right",
+                            "status": 1
+                        },
+                        {
+                            "url": "/admin/report/wallet/transfer/funding",
+                            "name": "Funding Transfer",
+                            "icon": "chevron-right",
+                            "status": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Deposits",
+            "icon": "wallet2",
+            "status": 1,
+            "permission": "deposit_access",
+            "submenu": [{
+                    "name": "Payment Methods",
+                    "icon": "credit-card-2-front",
+                    "status": 1,
+                    "submenu": [{
+                            "url": "/admin/payment/provider",
+                            "name": "Provider",
+                            "icon": "chevron-right",
+                            "permission": "automated_gateways_manager_show",
+                            "status": 1
+                        },
+                        {
+                            "url": "/admin/payment/manual",
+                            "name": "Manual",
+                            "icon": "chevron-right",
+                            "permission": "manual_gateways_manager_show",
+                            "status": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Funding Wallets",
+                    "icon": "chevron-right",
+                    "permission": "deposit_log",
+                    "status": 1,
+                    "submenu": [{
+                            "url": "/admin/deposit/pending",
+                            "name": "Pending Deposits",
+                            "icon": "chevron-right",
+                            "status": 1
+                        },
+                        {
+                            "url": "/admin/deposit/approved",
+                            "name": "Approved Deposits",
+                            "icon": "chevron-right",
+                            "status": 1
+                        },
+                        {
+                            "url": "/admin/deposit/successful",
+                            "name": "Successful Deposits",
+                            "icon": "chevron-right",
+                            "status": 1
+                        },
+                        {
+                            "url": "/admin/deposit/rejected",
+                            "name": "Rejected Deposits",
+                            "icon": "chevron-right",
+                            "status": 1
+                        },
+                        {
+                            "url": "/admin/deposit",
+                            "name": "All Deposits",
+                            "icon": "chevron-right",
+                            "status": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Trading Wallets",
+                    "icon": "chevron-right",
+                    "permission": "deposit_log",
+                    "status": 1,
+                    "submenu": [{
+                            "url": "/admin/report/wallet",
+                            "name": "All",
+                            "icon": "chevron-right",
+                            "status": 1
+                        },
+                        {
+                            "url": "/admin/report/wallet/deposit",
+                            "name": "Deposits",
+                            "icon": "chevron-right",
+                            "status": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Withdrawals",
+            "icon": "briefcase",
+            "status": 1,
+            "permission": "withdraw_access",
+            "submenu": [{
+                    "url": "/admin/withdraw",
+                    "name": "Withdraw Methods",
+                    "icon": "chevron-right",
+                    "permission": "withdraw_method_show",
+                    "status": 1
+                },
+                {
+                    "name": "Funding Wallets",
+                    "icon": "chevron-right",
+                    "permission": "withdraw_log",
+                    "status": 1,
+                    "submenu": [{
+                            "url": "/admin/withdraw/pending",
+                            "name": "Pending Log",
+                            "icon": "chevron-right",
+                            "status": 1
+                        },
+                        {
+                            "url": "/admin/withdraw/approved",
+                            "name": "Approved Log",
+                            "icon": "chevron-right",
+                            "status": 1
+                        },
+                        {
+                            "url": "/admin/withdraw/rejected",
+                            "name": "Rejected Log",
+                            "icon": "chevron-right",
+                            "status": 1
+                        },
+                        {
+                            "url": "/admin/withdraw/log",
+                            "name": "Withdrawals Log",
+                            "icon": "chevron-right",
+                            "status": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Trading Wallets",
+                    "icon": "chevron-right",
+                    "permission": "withdraw_log",
+                    "status": 1,
+                    "submenu": [{
+                            "url": "/admin/report/wallet",
+                            "name": "All",
+                            "icon": "chevron-right",
+                            "status": 1
+                        },
+                        {
+                            "url": "/admin/report/wallet/withdraw",
+                            "name": "Withdrawals",
+                            "icon": "chevron-right",
+                            "status": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Support Tickets",
+            "icon": "ticket",
+            "status": 1,
+            "permission": "support_ticket_show",
+            "url": "/admin/tickets"
+        },
+        {
+            "name": "Reports",
+            "icon": "flag",
+            "status": 1,
+            "permission": "reports_access",
+            "submenu": [{
+                    "url": "/admin/report/transaction",
+                    "name": "Transaction Log",
+                    "icon": "chevron-right",
+                    "permission": "transaction_log",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/report/commission",
+                    "name": "Commission Log",
+                    "icon": "chevron-right",
+                    "permission": "commission_log",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/report/login/history",
+                    "name": "Login History",
+                    "icon": "chevron-right",
+                    "permission": "user_login_log",
+                    "status": 1
+                }
+            ]
+        },
+        {
+            "name": "Settings",
+            "icon": "gear",
+            "permission": "settings_access",
+            "status": 1,
+            "submenu": [{
+                    "url": "/admin/settings",
+                    "name": "General Setting",
+                    "icon": "chevron-right",
+                    "permission": "general_settings_show",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/platform",
+                    "name": "Platform Setting",
+                    "icon": "chevron-right",
+                    "permission": "platform_manager_show",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/template/index",
+                    "name": "Frontend Builder",
+                    "icon": "chevron-right",
+                    "permission": "frontend_manager_access",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/builder",
+                    "name": "Page Builder",
+                    "icon": "chevron-right",
+                    "permission": "page_builder_access",
+                    "addon": 5,
+                    "status": 1
+                },
+                {
+                    "url": "/admin/settings/email",
+                    "name": "Email Manager",
+                    "icon": "chevron-right",
+                    "permission": "email_manager_show",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/setting/logo-icon",
+                    "name": "Logo Icon Setting",
+                    "icon": "chevron-right",
+                    "permission": "logo_show",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/currencies",
+                    "name": "Currency Manager",
+                    "icon": "chevron-right",
+                    "permission": "currencies_show",
+                    "status": 1
+                },
+                {
+                    "name": "Sidebar Manager",
+                    "icon": "list-ul",
+                    "permission": "sidebar_manager_access",
+                    "status": 1,
+                    "submenu": [{
+                            "url": "/admin/sidebar/admin",
+                            "name": "Admin Menu",
+                            "icon": "chevron-right",
+                            "permission": "admin_sidebar_show",
+                            "status": 1
+                        },
+                        {
+                            "url": "/admin/sidebar/user",
+                            "name": "User Menu",
+                            "icon": "chevron-right",
+                            "permission": "user_sidebar_show",
+                            "status": 1
+                        }
+                    ]
+                },
+                {
+                    "url": "/admin/seo-manager",
+                    "name": "SEO Manager",
+                    "icon": "chevron-right",
+                    "permission": "seo_manager_access",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/cron",
+                    "name": "Cron Manager",
+                    "icon": "chevron-right",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/popups",
+                    "name": "Popups Manager",
+                    "icon": "chevron-right",
+                    "permission": "popups_manager_access",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/tokens",
+                    "name": "API Manager",
+                    "icon": "chevron-right",
+                    "permission": "api_show",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/locale",
+                    "name": "Locales Manager",
+                    "icon": "chevron-right",
+                    "permission": "locale_manager_show",
+                    "status": 1
+                }
+            ]
+        },
+        {
+            "name": "System Manager",
+            "icon": "gear-fill",
+            "permission": "system_manager_access",
+            "status": 1,
+            "submenu": [{
+                    "url": "/admin/provider",
+                    "name": "Providers Manager",
+                    "icon": "chevron-right",
+                    "permission": "providers_manager_show",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/extensions",
+                    "name": "Extensions Manager",
+                    "icon": "chevron-right",
+                    "permission": "extensions_manager_show",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/update",
+                    "name": "Update",
+                    "icon": "chevron-right",
+                    "permission": "update_show",
+                    "status": 1
+                },
+                {
+                    "name": "License Manager",
+                    "icon": "key",
+                    "permission": "license_manager",
+                    "status": 1,
+                    "submenu": [{
+                            "url": "/admin/lic/activate",
+                            "name": "Activate",
+                            "icon": "chevron-right",
+                            "status": 1
+                        },
+                        {
+                            "url": "/admin/lic/deactivate",
+                            "name": "Deactivate",
+                            "icon": "chevron-right",
+                            "status": 1
+                        }
+                    ]
+                },
+                {
+                    "url": "/admin/clear",
+                    "name": "Optimize",
+                    "icon": "chevron-right",
+                    "status": 1
+                },
+                {
+                    "url": "/admin/settings/database",
+                    "name": "Database Optimizer",
+                    "icon": "chevron-right",
+                    "permission": "database_manager_show",
+                    "status": 1
+                }
+            ]
+        }
+    ],
+    "user": [{
+            "name": "Trade",
+            "icon": "currency-exchange",
+            "url": "/trade",
+            "status": 1
+        },
+        {
+            "name": "Binary",
+            "icon": "currency-bitcoin",
+            "status": 1,
+            "submenu": [{
+                    "url": "/binary",
+                    "name": "Dashboard",
+                    "icon": "chevron-right",
+                    "status": 1
+                },
+                {
+                    "url": "/binary/practice/contracts",
+                    "name": "Practice Contracts",
+                    "icon": "chevron-right",
+                    "status": 1
+                },
+                {
+                    "url": "/binary/trade/contracts",
+                    "name": "Trade Contracts",
+                    "icon": "chevron-right",
+                    "status": 1
+                }
+            ]
+        },
+        {
+            "name": "Forex",
+            "icon": "bar-chart",
+            "url": "/forex",
+            "addon": 4,
+            "status": 1
+        },
+        {
+            "name": "Market Analysis",
+            "icon": "coin",
+            "url": "/market",
+            "status": 1
+        },
+        {
+            "name": "Bots",
+            "icon": "robot",
+            "url": "/bot",
+            "addon": 1,
+            "status": 1
+        },
+        {
+            "url": "/ico",
+            "name": "Token Offers",
+            "icon": "cash-coin",
+            "addon": 2,
+            "status": 1
+        },
+        {
+            "name": "Staking",
+            "icon": "boxes",
+            "url": "/staking",
+            "addon": 6,
+            "status": 0
+        },
+        {
+            "url": "/wallets",
+            "name": "Wallets",
+            "icon": "wallet2",
+            "status": 1
+        },
+        {
+            "url": "/network",
+            "name": "Referrals",
+            "icon": "diagram-3",
+            "addon": 3,
+            "status": 1
+        },
+        {
+            "name": "Transactions",
+            "icon": "briefcase",
+            "status": 1,
+            "submenu": [{
+                    "name": "Deposit History",
+                    "icon": "chevron-right",
+                    "url": "/deposit/history",
+                    "status": 1
+                },
+                {
+                    "name": "Withdraw History",
+                    "icon": "chevron-right",
+                    "url": "/withdraw/history",
+                    "status": 1
+                },
+                {
+                    "name": "Transaction History",
+                    "icon": "chevron-right",
+                    "url": "/transaction/history",
+                    "status": 1
+                }
+            ]
+        },
+        {
+            "name": "Knowledge Base",
+            "icon": "book",
+            "url": "/knowledge",
+            "addon": 11,
+            "status": 1
+        },
+        {
+            "name": "P2P",
+            "icon": "people",
+            "url": "/p2p",
+            "status": 0
+        },
+        {
+            "name": "News",
+            "icon": "newspaper",
+            "url": "/news",
+            "status": 0
+        }
+    ]
+}

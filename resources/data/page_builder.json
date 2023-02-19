@@ -1,0 +1,9 @@
+[
+    {
+        "name": "test",
+        "slug": "/page/test",
+        "url": "/page/test",
+        "icon": "alarm-fill",
+        "status": 0
+    }
+]

@@ -1,0 +1,43 @@
+#section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+    margin-top: 280px;
+}
+
+#section2 .container1 {
+    display: flex;
+    gap:80px;
+}
+
+
+
+
+/* Mobile version */
+
+@media (max-width: 480px) {
+
+    #section2 {
+        gap: 24.444vw;
+        margin-top: 24.444vw;
+        width: 90vw;
+        margin: 50vw auto 0 auto;
+    }
+    
+    #section2 .container1 {
+        gap:32.222vw;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #section2 .container1 .height {
+        height: 12.989vw;
+    }
+
+    #section2 .container1 .width {
+        width: 12.989vw;
+    }
+    
+}

@@ -1,0 +1,104 @@
+/* Hover funcioanr apenas em computadores */
+
+@media (min-width: 920px) {
+
+    /* Hover dos textos do menu do header e footer */
+
+    header p:hover, footer nav p:hover {
+        color: var(--color-gray-3);
+    }
+    
+    /* Hover botão */
+
+    .button:hover {
+        transform: scale(1.05);
+    }
+
+}
+
+
+/* Section 3 - container 1 */
+
+.left, .right{
+    visibility: hidden;
+}
+
+
+/* Anim do blur da seção 3 */
+
+.blur_anim {
+    animation: blur_anim 1.6s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes blur_anim {
+    100% {
+        width: 330px;
+        height: 320px;
+        filter: blur(170px);
+    }
+}
+
+
+/* Hover icones seção de benefícios */
+
+#section4 .resource i:hover {
+    color: #00AEFF;
+    transition: all 700ms;
+}
+
+
+/* Anaimação imagens página de login */
+
+.img_coin1_anim {
+    animation: img_coin1 1.6s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes img_coin1 {
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+
+/* Animação riseup coin página de login */
+.sign_wallet:hover {
+    transform: scale(1.05);
+    
+}
+
+
+/* Checked dos checkbox de aceito os termos e lembrar a senha*/
+
+.checkbox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox i {
+    display: none;
+}
+
+.input_remember:checked ~ .checkbox  i, .input_terms:checked ~ .checkbox  i {
+    display: block;
+    position: absolute;
+    color: #00AEFF;
+    border-radius: 2px;
+    inset: auto;
+    margin: 0;
+    line-height: 0;
+}
+
+
+/* Rotação do celular na tela de registro */
+
+.smooth_rotate {
+    animation: smooth_rotate 1.6s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes smooth_rotate {
+    100% {
+        transform: rotateZ(-1deg);
+    }
+}

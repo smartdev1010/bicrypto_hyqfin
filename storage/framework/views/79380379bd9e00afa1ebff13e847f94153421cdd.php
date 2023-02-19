@@ -1,0 +1,1 @@
+<?php /**PATH D:\dev\vscode\resources\views/vendor/livewire-tables/stubs/custom.blade.php ENDPATH**/ ?>

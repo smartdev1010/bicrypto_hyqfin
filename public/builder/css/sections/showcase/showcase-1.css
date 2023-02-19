@@ -1,0 +1,38 @@
+.showcase-1 {
+  padding: 3rem 0; }
+  .showcase-1 .container {
+    margin: 0 auto;
+    padding: 0; }
+  .showcase-1 .col-md-6 {
+    padding: 0rem 2rem;
+    text-align: center; }
+    .showcase-1 .col-md-6 > div {
+      margin: auto;
+      display: inline-block;
+      text-align: left; }
+  .showcase-1 .col-img {
+    text-align: center;
+    padding: 0rem 0rem; }
+    .showcase-1 .col-img .frame {
+      width: 100%; }
+    .showcase-1 .col-img video {
+      width: 100%; }
+  .showcase-1 img {
+    margin: 0 auto;
+    display: block; }
+  .showcase-1 h3 {
+    margin-bottom: 1.4rem;
+    font-size: 2.1rem;
+    font-weight: 600; }
+  .showcase-1 a {
+    text-decoration: none; }
+  .showcase-1 p {
+    font-size: 1.4rem;
+    color: #222;
+    line-height: 2.4rem;
+    font-weight: 500; }
+
+.browser {
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(87, 87, 87, 0.1), 0 10px 15px 0 rgba(5, 4, 10, 0.06);
+  border-radius: 4px;
+  max-width: 100%; }

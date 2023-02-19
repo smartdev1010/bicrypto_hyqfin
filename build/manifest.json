@@ -1,0 +1,3254 @@
+{
+  "resources/js/fonts/flag-icon-css/flags/4x3/ae.svg": {
+    "file": "assets/ae-9e7bd671.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ae.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ad.svg": {
+    "file": "assets/ad-080eb2eb.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ad.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ad.svg": {
+    "file": "assets/ad-6bad73ce.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ad.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ag.svg": {
+    "file": "assets/ag-3b87961a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ag.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ag.svg": {
+    "file": "assets/ag-62715077.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ag.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/af.svg": {
+    "file": "assets/af-b3a905f0.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/af.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ai.svg": {
+    "file": "assets/ai-f04fc7dc.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ai.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/am.svg": {
+    "file": "assets/am-66d2101b.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/am.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/am.svg": {
+    "file": "assets/am-1f733da8.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/am.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ai.svg": {
+    "file": "assets/ai-e2dfab6d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ai.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/al.svg": {
+    "file": "assets/al-e785f57f.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/al.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/al.svg": {
+    "file": "assets/al-716bc976.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/al.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ao.svg": {
+    "file": "assets/ao-b1649307.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ao.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ao.svg": {
+    "file": "assets/ao-1ff3f36f.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ao.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/aq.svg": {
+    "file": "assets/aq-4511f83c.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/aq.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/aq.svg": {
+    "file": "assets/aq-503a5902.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/aq.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ar.svg": {
+    "file": "assets/ar-9dd4fb0e.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ar.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/at.svg": {
+    "file": "assets/at-aa7f7d7f.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/at.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/at.svg": {
+    "file": "assets/at-3d175980.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/at.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/af.svg": {
+    "file": "assets/af-d7586c5f.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/af.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ae.svg": {
+    "file": "assets/ae-d3554c17.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ae.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ar.svg": {
+    "file": "assets/ar-fa23d7a2.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ar.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/as.svg": {
+    "file": "assets/as-87cd7cbc.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/as.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/as.svg": {
+    "file": "assets/as-65abba4d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/as.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ax.svg": {
+    "file": "assets/ax-5716d7cf.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ax.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ax.svg": {
+    "file": "assets/ax-43b7a092.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ax.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/az.svg": {
+    "file": "assets/az-1c1cf72e.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/az.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/az.svg": {
+    "file": "assets/az-e3e3896e.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/az.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/au.svg": {
+    "file": "assets/au-dc4925a8.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/au.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/aw.svg": {
+    "file": "assets/aw-fbff1235.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/aw.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/aw.svg": {
+    "file": "assets/aw-e565aa50.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/aw.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ba.svg": {
+    "file": "assets/ba-8f2a0951.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ba.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/bd.svg": {
+    "file": "assets/bd-6775e35e.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/bd.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/au.svg": {
+    "file": "assets/au-c15a63f9.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/au.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/bd.svg": {
+    "file": "assets/bd-ac8f2bef.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/bd.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/be.svg": {
+    "file": "assets/be-be61fc26.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/be.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/bf.svg": {
+    "file": "assets/bf-c2b13ec5.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/bf.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/bg.svg": {
+    "file": "assets/bg-1de121a8.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/bg.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/bg.svg": {
+    "file": "assets/bg-278ee493.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/bg.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/bh.svg": {
+    "file": "assets/bh-4139844d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/bh.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/bh.svg": {
+    "file": "assets/bh-4bbb3350.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/bh.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ba.svg": {
+    "file": "assets/ba-b53f132d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ba.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/bb.svg": {
+    "file": "assets/bb-a54f24df.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/bb.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/bj.svg": {
+    "file": "assets/bj-83e1921c.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/bj.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/bj.svg": {
+    "file": "assets/bj-db4a021d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/bj.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/bl.svg": {
+    "file": "assets/bl-81179683.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/bl.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/gp.svg": {
+    "file": "assets/bl-da760bbd.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/gp.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/bb.svg": {
+    "file": "assets/bb-5b4028bc.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/bb.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/bi.svg": {
+    "file": "assets/bi-d0578c23.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/bi.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/bi.svg": {
+    "file": "assets/bi-310fd549.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/bi.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/bm.svg": {
+    "file": "assets/bm-e9af43ff.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/bm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/bo.svg": {
+    "file": "assets/bo-a4cc66d4.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/bo.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/bo.svg": {
+    "file": "assets/bo-a8bc4f6b.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/bo.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/bq.svg": {
+    "file": "assets/bq-dd391bcc.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/bq.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/be.svg": {
+    "file": "assets/be-44f5fc78.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/be.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/bm.svg": {
+    "file": "assets/bm-7941903a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/bm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/bq.svg": {
+    "file": "assets/bq-7475b646.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/bq.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/bn.svg": {
+    "file": "assets/bn-6b2e2009.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/bn.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/bs.svg": {
+    "file": "assets/bs-31c2baf0.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/bs.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/bs.svg": {
+    "file": "assets/bs-6071eb61.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/bs.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/bn.svg": {
+    "file": "assets/bn-8688d52d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/bn.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/br.svg": {
+    "file": "assets/br-30644f6c.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/br.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/bv.svg": {
+    "file": "assets/bv-c8c8d827.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/bv.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/bv.svg": {
+    "file": "assets/bv-64c216c0.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/bv.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/bw.svg": {
+    "file": "assets/bw-0f675f24.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/bw.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/br.svg": {
+    "file": "assets/br-8546caf4.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/br.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/bw.svg": {
+    "file": "assets/bw-0473f80d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/bw.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/bt.svg": {
+    "file": "assets/bt-97f02523.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/bt.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/by.svg": {
+    "file": "assets/by-1ac0092b.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/by.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/by.svg": {
+    "file": "assets/by-42330f35.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/by.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/bz.svg": {
+    "file": "assets/bz-2babff90.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/bz.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/bz.svg": {
+    "file": "assets/bz-db06a7f4.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/bz.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ca.svg": {
+    "file": "assets/ca-7df49b07.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ca.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/cd.svg": {
+    "file": "assets/cd-bb73adc9.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/cd.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/cc.svg": {
+    "file": "assets/cc-5d561e56.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/cc.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/cc.svg": {
+    "file": "assets/cc-78cea4a9.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/cc.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/cd.svg": {
+    "file": "assets/cd-11cab225.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/cd.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/bt.svg": {
+    "file": "assets/bt-d0a2157a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/bt.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/bf.svg": {
+    "file": "assets/bf-3f800b46.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/bf.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/cg.svg": {
+    "file": "assets/cg-fd9001d9.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/cg.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/cf.svg": {
+    "file": "assets/cf-4927642c.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/cf.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/cg.svg": {
+    "file": "assets/cg-60369a88.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/cg.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ch.svg": {
+    "file": "assets/ch-ec99e300.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ch.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ci.svg": {
+    "file": "assets/ci-097a3a7f.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ci.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ch.svg": {
+    "file": "assets/ch-444df510.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ch.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ci.svg": {
+    "file": "assets/ci-6ee974e0.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ci.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/cf.svg": {
+    "file": "assets/cf-7012703d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/cf.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/cl.svg": {
+    "file": "assets/cl-14d2c04a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/cl.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/cl.svg": {
+    "file": "assets/cl-bb0819d3.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/cl.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ck.svg": {
+    "file": "assets/ck-61d421b0.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ck.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ck.svg": {
+    "file": "assets/ck-273a641c.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ck.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/cm.svg": {
+    "file": "assets/cm-6aa2a51d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/cm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ca.svg": {
+    "file": "assets/ca-a67d564b.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ca.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/co.svg": {
+    "file": "assets/co-9317c370.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/co.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/co.svg": {
+    "file": "assets/co-247a3b45.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/co.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/cr.svg": {
+    "file": "assets/cr-b4e67e98.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/cr.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/cr.svg": {
+    "file": "assets/cr-ba85c81f.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/cr.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/cu.svg": {
+    "file": "assets/cu-98cd0148.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/cu.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/cu.svg": {
+    "file": "assets/cu-92d72f8b.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/cu.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/cm.svg": {
+    "file": "assets/cm-02d0c1fe.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/cm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/cn.svg": {
+    "file": "assets/cn-a8bb5678.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/cn.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/cn.svg": {
+    "file": "assets/cn-895ca958.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/cn.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/cv.svg": {
+    "file": "assets/cv-6faf0b2c.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/cv.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/cv.svg": {
+    "file": "assets/cv-63bb4f65.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/cv.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/cw.svg": {
+    "file": "assets/cw-7c5d826a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/cw.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/cw.svg": {
+    "file": "assets/cw-32aada31.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/cw.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/cx.svg": {
+    "file": "assets/cx-a3fb43bc.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/cx.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/cz.svg": {
+    "file": "assets/cz-b1bcdd31.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/cz.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/cz.svg": {
+    "file": "assets/cz-8108a5e5.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/cz.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/de.svg": {
+    "file": "assets/de-6e897f10.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/de.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/de.svg": {
+    "file": "assets/de-c0eb3381.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/de.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/dj.svg": {
+    "file": "assets/dj-9eae58f6.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/dj.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/dj.svg": {
+    "file": "assets/dj-eea3e44a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/dj.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/dk.svg": {
+    "file": "assets/dk-a68b01da.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/dk.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/dk.svg": {
+    "file": "assets/dk-a4a9dc29.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/dk.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/cx.svg": {
+    "file": "assets/cx-e7dc975e.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/cx.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/cy.svg": {
+    "file": "assets/cy-91c6f392.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/cy.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/cy.svg": {
+    "file": "assets/cy-b5e5f270.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/cy.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/dm.svg": {
+    "file": "assets/dm-dd9f1781.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/dm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/dz.svg": {
+    "file": "assets/dz-f198357e.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/dz.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/dz.svg": {
+    "file": "assets/dz-0dd9239d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/dz.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/dm.svg": {
+    "file": "assets/dm-6c4feaa7.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/dm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/do.svg": {
+    "file": "assets/do-1e08c9c7.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/do.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/do.svg": {
+    "file": "assets/do-bd5a3c67.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/do.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ee.svg": {
+    "file": "assets/ee-fa219bbb.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ee.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ee.svg": {
+    "file": "assets/ee-7a55d460.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ee.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ec.svg": {
+    "file": "assets/ec-aab217e4.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ec.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ec.svg": {
+    "file": "assets/ec-b3e093ad.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ec.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/eg.svg": {
+    "file": "assets/eg-eb3bffce.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/eg.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/eg.svg": {
+    "file": "assets/eg-7be86865.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/eg.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/eh.svg": {
+    "file": "assets/eh-d8c4fb30.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/eh.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/eh.svg": {
+    "file": "assets/eh-b86bcbdf.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/eh.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/er.svg": {
+    "file": "assets/er-94a803a0.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/er.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/er.svg": {
+    "file": "assets/er-94ef9e1a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/er.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/es.svg": {
+    "file": "assets/es-1804c041.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/es.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/es.svg": {
+    "file": "assets/es-37898372.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/es.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/et.svg": {
+    "file": "assets/et-63c7d6c0.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/et.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/et.svg": {
+    "file": "assets/et-22d8771a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/et.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/fi.svg": {
+    "file": "assets/fi-93eeadfa.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/fi.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/fj.svg": {
+    "file": "assets/fj-dc717125.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/fj.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/fj.svg": {
+    "file": "assets/fj-0d11d8a4.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/fj.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/fi.svg": {
+    "file": "assets/fi-0620a2a6.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/fi.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/fk.svg": {
+    "file": "assets/fk-79789a67.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/fk.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/fo.svg": {
+    "file": "assets/fo-66ebfba5.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/fo.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/fo.svg": {
+    "file": "assets/fo-7ac8de26.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/fo.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/gp.svg": {
+    "file": "assets/fr-9f63dd42.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/gp.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ga.svg": {
+    "file": "assets/ga-537fd262.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ga.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ga.svg": {
+    "file": "assets/ga-b15380b7.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ga.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/fk.svg": {
+    "file": "assets/fk-ad046027.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/fk.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/fm.svg": {
+    "file": "assets/fm-0fdefd8d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/fm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/fm.svg": {
+    "file": "assets/fm-b1bc7dd4.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/fm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/gb.svg": {
+    "file": "assets/gb-f1ca737a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/gb.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/gb.svg": {
+    "file": "assets/gb-c1cb6360.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/gb.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/gd.svg": {
+    "file": "assets/gd-a9c034be.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/gd.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/gf.svg": {
+    "file": "assets/gf-0f560ccf.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/gf.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/gf.svg": {
+    "file": "assets/gf-17c70bf3.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/gf.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ge.svg": {
+    "file": "assets/ge-780fc772.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ge.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/gd.svg": {
+    "file": "assets/gd-758caf33.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/gd.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/gh.svg": {
+    "file": "assets/gh-2c8501b7.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/gh.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/gh.svg": {
+    "file": "assets/gh-7f366747.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/gh.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ge.svg": {
+    "file": "assets/ge-5ce8c0ce.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ge.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/gg.svg": {
+    "file": "assets/gg-96238b72.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/gg.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/gl.svg": {
+    "file": "assets/gl-8232d967.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/gl.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/gl.svg": {
+    "file": "assets/gl-2dd64050.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/gl.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/gm.svg": {
+    "file": "assets/gm-e1148d32.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/gm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/gm.svg": {
+    "file": "assets/gm-c3ac963d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/gm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/gg.svg": {
+    "file": "assets/gg-db99728a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/gg.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/gn.svg": {
+    "file": "assets/gn-3c216900.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/gn.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/gn.svg": {
+    "file": "assets/gn-5b8a73b0.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/gn.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/gi.svg": {
+    "file": "assets/gi-c00e1375.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/gi.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/gi.svg": {
+    "file": "assets/gi-58e355db.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/gi.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/gq.svg": {
+    "file": "assets/gq-b2233647.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/gq.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/gr.svg": {
+    "file": "assets/gr-6839e2e4.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/gr.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/gq.svg": {
+    "file": "assets/gq-e9cd403e.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/gq.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/gr.svg": {
+    "file": "assets/gr-87618863.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/gr.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/gs.svg": {
+    "file": "assets/gs-ff4be2a3.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/gs.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/gs.svg": {
+    "file": "assets/gs-80808725.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/gs.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/gt.svg": {
+    "file": "assets/gt-628b52f5.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/gt.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/gw.svg": {
+    "file": "assets/gw-b121a552.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/gw.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/gw.svg": {
+    "file": "assets/gw-412fd1b3.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/gw.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/gy.svg": {
+    "file": "assets/gy-6e46f634.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/gy.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/gy.svg": {
+    "file": "assets/gy-3423233e.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/gy.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/gt.svg": {
+    "file": "assets/gt-f70c6dd2.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/gt.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/gu.svg": {
+    "file": "assets/gu-2d92cbf6.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/gu.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/gu.svg": {
+    "file": "assets/gu-f0ef652c.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/gu.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/hk.svg": {
+    "file": "assets/hk-332c4f09.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/hk.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/hk.svg": {
+    "file": "assets/hk-5d9f1677.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/hk.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/hm.svg": {
+    "file": "assets/hm-51b0702c.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/hm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/hm.svg": {
+    "file": "assets/hm-1c8ea71b.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/hm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/hn.svg": {
+    "file": "assets/hn-84b44721.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/hn.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/hn.svg": {
+    "file": "assets/hn-f76ac114.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/hn.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/hr.svg": {
+    "file": "assets/hr-aba0dd4a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/hr.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/hu.svg": {
+    "file": "assets/hu-7e061f5e.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/hu.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/hu.svg": {
+    "file": "assets/hu-647bcc48.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/hu.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/id.svg": {
+    "file": "assets/id-a7d08182.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/id.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/id.svg": {
+    "file": "assets/id-87c6e112.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/id.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ie.svg": {
+    "file": "assets/ie-f10371bc.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ie.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/hr.svg": {
+    "file": "assets/hr-65c36ef6.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/hr.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ht.svg": {
+    "file": "assets/ht-757b4764.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ht.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ie.svg": {
+    "file": "assets/ie-ebf20db5.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ie.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ht.svg": {
+    "file": "assets/ht-fae149f1.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ht.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/il.svg": {
+    "file": "assets/il-57933f95.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/il.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/im.svg": {
+    "file": "assets/im-07264d99.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/im.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/il.svg": {
+    "file": "assets/il-296e39b6.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/il.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/in.svg": {
+    "file": "assets/in-88785d1d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/in.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/im.svg": {
+    "file": "assets/im-903ab7e9.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/im.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/io.svg": {
+    "file": "assets/io-15625483.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/io.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/in.svg": {
+    "file": "assets/in-ec22de93.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/in.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/iq.svg": {
+    "file": "assets/iq-3bb08b24.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/iq.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/iq.svg": {
+    "file": "assets/iq-2a52cd48.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/iq.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/io.svg": {
+    "file": "assets/io-3c2619fd.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/io.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ir.svg": {
+    "file": "assets/ir-87810cc0.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ir.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ir.svg": {
+    "file": "assets/ir-3201d096.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ir.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/is.svg": {
+    "file": "assets/is-7c1cac1f.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/is.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/is.svg": {
+    "file": "assets/is-5b0cd0c4.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/is.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/it.svg": {
+    "file": "assets/it-791155db.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/it.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/it.svg": {
+    "file": "assets/it-cc9ba831.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/it.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/je.svg": {
+    "file": "assets/je-1bf6584d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/je.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/je.svg": {
+    "file": "assets/je-2f39b44e.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/je.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/jm.svg": {
+    "file": "assets/jm-184b97d6.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/jm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/jm.svg": {
+    "file": "assets/jm-7d0e73b8.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/jm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/jo.svg": {
+    "file": "assets/jo-375e27e8.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/jo.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/jo.svg": {
+    "file": "assets/jo-86161e83.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/jo.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/jp.svg": {
+    "file": "assets/jp-3b55849b.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/jp.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/jp.svg": {
+    "file": "assets/jp-ac6b18cf.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/jp.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ke.svg": {
+    "file": "assets/ke-e5be6370.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ke.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ke.svg": {
+    "file": "assets/ke-a6831d24.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ke.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/kg.svg": {
+    "file": "assets/kg-0fb3eb4a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/kg.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/kg.svg": {
+    "file": "assets/kg-520cda87.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/kg.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/kh.svg": {
+    "file": "assets/kh-c76eaa9e.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/kh.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/kh.svg": {
+    "file": "assets/kh-e4bcb3af.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/kh.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ki.svg": {
+    "file": "assets/ki-d393f22b.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ki.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ki.svg": {
+    "file": "assets/ki-b6e29ca9.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ki.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/kn.svg": {
+    "file": "assets/kn-6816081b.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/kn.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/kn.svg": {
+    "file": "assets/kn-af31e3a0.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/kn.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/km.svg": {
+    "file": "assets/km-2c0bb388.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/km.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/km.svg": {
+    "file": "assets/km-64b6be62.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/km.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/kp.svg": {
+    "file": "assets/kp-f4af10fa.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/kp.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/kp.svg": {
+    "file": "assets/kp-0dfc307b.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/kp.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/kr.svg": {
+    "file": "assets/kr-64245fb4.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/kr.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/kr.svg": {
+    "file": "assets/kr-1d19732d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/kr.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/kw.svg": {
+    "file": "assets/kw-92e05d7a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/kw.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/kw.svg": {
+    "file": "assets/kw-81c0794f.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/kw.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ky.svg": {
+    "file": "assets/ky-6abc6659.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ky.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ky.svg": {
+    "file": "assets/ky-ff30fae4.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ky.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/kz.svg": {
+    "file": "assets/kz-6b74cc51.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/kz.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/kz.svg": {
+    "file": "assets/kz-a6610ee0.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/kz.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/la.svg": {
+    "file": "assets/la-73ce24c2.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/la.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/la.svg": {
+    "file": "assets/la-8fea1603.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/la.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/lb.svg": {
+    "file": "assets/lb-74ccb296.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/lb.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/lb.svg": {
+    "file": "assets/lb-936db54a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/lb.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/lc.svg": {
+    "file": "assets/lc-732770de.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/lc.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/lc.svg": {
+    "file": "assets/lc-a61ee722.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/lc.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/li.svg": {
+    "file": "assets/li-b7e6997b.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/li.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/li.svg": {
+    "file": "assets/li-0a27f07c.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/li.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/lk.svg": {
+    "file": "assets/lk-f8cffaa9.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/lk.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/lk.svg": {
+    "file": "assets/lk-75e16d87.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/lk.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/lr.svg": {
+    "file": "assets/lr-cc412b5e.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/lr.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/lr.svg": {
+    "file": "assets/lr-86b0f678.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/lr.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ls.svg": {
+    "file": "assets/ls-0d284a44.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ls.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ls.svg": {
+    "file": "assets/ls-e244e4e0.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ls.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/lt.svg": {
+    "file": "assets/lt-d1cf2cbb.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/lt.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/lt.svg": {
+    "file": "assets/lt-29d0df28.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/lt.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/lu.svg": {
+    "file": "assets/lu-db28b59d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/lu.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/lu.svg": {
+    "file": "assets/lu-a8760f00.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/lu.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/lv.svg": {
+    "file": "assets/lv-6d63a8fa.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/lv.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ma.svg": {
+    "file": "assets/ma-3742df61.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ma.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ma.svg": {
+    "file": "assets/ma-ad8942a0.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ma.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/lv.svg": {
+    "file": "assets/lv-be0d0d47.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/lv.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ly.svg": {
+    "file": "assets/ly-2bfcea5e.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ly.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ly.svg": {
+    "file": "assets/ly-04853da6.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ly.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/mc.svg": {
+    "file": "assets/mc-366dd7db.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/mc.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/mc.svg": {
+    "file": "assets/mc-862a97f9.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/mc.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/md.svg": {
+    "file": "assets/md-37994e4d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/md.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/md.svg": {
+    "file": "assets/md-9d784986.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/md.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/me.svg": {
+    "file": "assets/me-87474a3f.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/me.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/me.svg": {
+    "file": "assets/me-2add39d8.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/me.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/mf.svg": {
+    "file": "assets/mf-d15c4cae.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/mf.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/mf.svg": {
+    "file": "assets/mf-52c24186.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/mf.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/mg.svg": {
+    "file": "assets/mg-69071509.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/mg.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/mk.svg": {
+    "file": "assets/mk-3d3f89d0.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/mk.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/mk.svg": {
+    "file": "assets/mk-ffc3b101.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/mk.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/mg.svg": {
+    "file": "assets/mg-5816d379.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/mg.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/mh.svg": {
+    "file": "assets/mh-b0c00b51.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/mh.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/mh.svg": {
+    "file": "assets/mh-8b0fd075.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/mh.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ml.svg": {
+    "file": "assets/ml-391bbc8c.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ml.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ml.svg": {
+    "file": "assets/ml-2b6bfdf3.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ml.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/mn.svg": {
+    "file": "assets/mn-1b9cc7c0.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/mn.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/mn.svg": {
+    "file": "assets/mn-7096f9f5.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/mn.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/mm.svg": {
+    "file": "assets/mm-b5f6230e.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/mm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/mm.svg": {
+    "file": "assets/mm-d608b096.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/mm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/mo.svg": {
+    "file": "assets/mo-a1ee9203.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/mo.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/mp.svg": {
+    "file": "assets/mp-705ef233.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/mp.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/mq.svg": {
+    "file": "assets/mq-00b6420a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/mq.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/mq.svg": {
+    "file": "assets/mq-440d4fc9.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/mq.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/mr.svg": {
+    "file": "assets/mr-7b6202f8.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/mr.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/mr.svg": {
+    "file": "assets/mr-d4f5fa53.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/mr.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ms.svg": {
+    "file": "assets/ms-23f71e4b.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ms.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ms.svg": {
+    "file": "assets/ms-3565bc34.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ms.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/mt.svg": {
+    "file": "assets/mt-d05b8c8a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/mt.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/mt.svg": {
+    "file": "assets/mt-5814c87c.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/mt.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/mu.svg": {
+    "file": "assets/mu-7cc955c5.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/mu.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/mu.svg": {
+    "file": "assets/mu-ecda7eeb.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/mu.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/mw.svg": {
+    "file": "assets/mw-cc14f40b.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/mw.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/mv.svg": {
+    "file": "assets/mv-1032854c.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/mv.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/mx.svg": {
+    "file": "assets/mx-9ac116fe.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/mx.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/my.svg": {
+    "file": "assets/my-c9895ff1.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/my.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/mw.svg": {
+    "file": "assets/mw-8f121e84.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/mw.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/my.svg": {
+    "file": "assets/my-f6a54511.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/my.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/mz.svg": {
+    "file": "assets/mz-e74f0f4b.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/mz.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/mz.svg": {
+    "file": "assets/mz-f3168e0f.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/mz.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/na.svg": {
+    "file": "assets/na-9751b9db.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/na.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/na.svg": {
+    "file": "assets/na-65e22156.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/na.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/nc.svg": {
+    "file": "assets/nc-4e3efce8.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/nc.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/nc.svg": {
+    "file": "assets/nc-4b81032f.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/nc.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ne.svg": {
+    "file": "assets/ne-6c33922e.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ne.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ne.svg": {
+    "file": "assets/ne-bb8f6970.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ne.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/nf.svg": {
+    "file": "assets/nf-f80afaa0.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/nf.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/nf.svg": {
+    "file": "assets/nf-554f5750.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/nf.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ni.svg": {
+    "file": "assets/ni-d4ee107a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ni.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ng.svg": {
+    "file": "assets/ng-4ad255e0.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ng.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ni.svg": {
+    "file": "assets/ni-e938f639.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ni.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/mo.svg": {
+    "file": "assets/mo-aab75bae.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/mo.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/mp.svg": {
+    "file": "assets/mp-395f503a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/mp.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/mv.svg": {
+    "file": "assets/mv-8142cdc5.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/mv.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/no.svg": {
+    "file": "assets/no-63e38c60.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/no.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/no.svg": {
+    "file": "assets/no-c21d9704.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/no.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/nl.svg": {
+    "file": "assets/nl-02f6da28.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/nl.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/nl.svg": {
+    "file": "assets/nl-83430c69.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/nl.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ng.svg": {
+    "file": "assets/ng-9d7997ea.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ng.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/mx.svg": {
+    "file": "assets/mx-76dc5527.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/mx.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/np.svg": {
+    "file": "assets/np-a1d2f091.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/np.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/nr.svg": {
+    "file": "assets/nr-c62d6ea9.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/nr.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/np.svg": {
+    "file": "assets/np-9643ef74.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/np.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/nu.svg": {
+    "file": "assets/nu-1906bd6e.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/nu.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/nu.svg": {
+    "file": "assets/nu-40c4f014.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/nu.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/nz.svg": {
+    "file": "assets/nz-e0629306.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/nz.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/om.svg": {
+    "file": "assets/om-096a6368.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/om.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/nz.svg": {
+    "file": "assets/nz-96352236.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/nz.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/om.svg": {
+    "file": "assets/om-7a65ce5d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/om.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/pa.svg": {
+    "file": "assets/pa-37e7834e.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/pa.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/pe.svg": {
+    "file": "assets/pe-883846d1.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/pe.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/pa.svg": {
+    "file": "assets/pa-19481b12.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/pa.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/pe.svg": {
+    "file": "assets/pe-91021f1c.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/pe.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/pf.svg": {
+    "file": "assets/pf-d55f2db6.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/pf.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/pf.svg": {
+    "file": "assets/pf-9108f41b.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/pf.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/nr.svg": {
+    "file": "assets/nr-aeefa3e8.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/nr.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/pg.svg": {
+    "file": "assets/pg-54dd5436.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/pg.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/pg.svg": {
+    "file": "assets/pg-d7206e4e.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/pg.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ph.svg": {
+    "file": "assets/ph-015a1670.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ph.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/pk.svg": {
+    "file": "assets/pk-4c5121f9.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/pk.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/pl.svg": {
+    "file": "assets/pl-6ccbe957.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/pl.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/pk.svg": {
+    "file": "assets/pk-065a9abc.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/pk.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/pl.svg": {
+    "file": "assets/pl-d85c0ca7.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/pl.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/pm.svg": {
+    "file": "assets/pm-1e86a6ae.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/pm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/pn.svg": {
+    "file": "assets/pn-bdf7c7aa.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/pn.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/pm.svg": {
+    "file": "assets/pm-e23c26b1.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/pm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/pn.svg": {
+    "file": "assets/pn-86e239b3.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/pn.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ph.svg": {
+    "file": "assets/ph-1c9c9b28.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ph.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/pr.svg": {
+    "file": "assets/pr-cafdc869.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/pr.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ps.svg": {
+    "file": "assets/ps-88d596fd.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ps.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/pr.svg": {
+    "file": "assets/pr-f8703181.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/pr.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/pw.svg": {
+    "file": "assets/pw-6275ffae.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/pw.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/pt.svg": {
+    "file": "assets/pt-811c214a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/pt.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ps.svg": {
+    "file": "assets/ps-c9e4a6f4.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ps.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/pt.svg": {
+    "file": "assets/pt-f9c75065.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/pt.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/pw.svg": {
+    "file": "assets/pw-c451a62d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/pw.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/py.svg": {
+    "file": "assets/py-98398ad4.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/py.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/py.svg": {
+    "file": "assets/py-cbeb2b01.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/py.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/qa.svg": {
+    "file": "assets/qa-8ee9868a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/qa.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/qa.svg": {
+    "file": "assets/qa-4a92950c.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/qa.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/re.svg": {
+    "file": "assets/re-1670479b.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/re.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/re.svg": {
+    "file": "assets/re-37a94d94.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/re.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ro.svg": {
+    "file": "assets/ro-3d54edc9.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ro.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ro.svg": {
+    "file": "assets/ro-e1f8380a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ro.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ru.svg": {
+    "file": "assets/ru-3317478c.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ru.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/rw.svg": {
+    "file": "assets/rw-feb6513c.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/rw.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ru.svg": {
+    "file": "assets/ru-d10cb52a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ru.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/rw.svg": {
+    "file": "assets/rw-b9d86a2e.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/rw.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/sa.svg": {
+    "file": "assets/sa-44144a27.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/sa.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/sa.svg": {
+    "file": "assets/sa-12a8023f.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/sa.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/sb.svg": {
+    "file": "assets/sb-22ace23f.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/sb.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/sb.svg": {
+    "file": "assets/sb-2823f294.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/sb.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/sc.svg": {
+    "file": "assets/sc-23561b49.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/sc.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/sc.svg": {
+    "file": "assets/sc-fed26b3d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/sc.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/sd.svg": {
+    "file": "assets/sd-7df7d6c6.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/sd.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/sd.svg": {
+    "file": "assets/sd-c4dad76a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/sd.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/se.svg": {
+    "file": "assets/se-dd033ca1.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/se.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/se.svg": {
+    "file": "assets/se-aed25950.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/se.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/sg.svg": {
+    "file": "assets/sg-fcdf581e.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/sg.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/sg.svg": {
+    "file": "assets/sg-a0992413.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/sg.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/sh.svg": {
+    "file": "assets/sh-73ea225d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/sh.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/sh.svg": {
+    "file": "assets/sh-40167052.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/sh.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/si.svg": {
+    "file": "assets/si-a009e5e5.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/si.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/si.svg": {
+    "file": "assets/si-23539247.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/si.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/sj.svg": {
+    "file": "assets/sj-843a9f78.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/sj.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/sj.svg": {
+    "file": "assets/sj-fc638484.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/sj.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/sk.svg": {
+    "file": "assets/sk-a9740c6b.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/sk.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/sk.svg": {
+    "file": "assets/sk-58092ea0.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/sk.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/sl.svg": {
+    "file": "assets/sl-cc7ffdea.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/sl.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/sl.svg": {
+    "file": "assets/sl-97024a90.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/sl.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/sm.svg": {
+    "file": "assets/sm-7f648664.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/sm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/sm.svg": {
+    "file": "assets/sm-0a82f492.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/sm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/sn.svg": {
+    "file": "assets/sn-ff0fe7e8.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/sn.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/sn.svg": {
+    "file": "assets/sn-e68547d8.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/sn.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/sr.svg": {
+    "file": "assets/sr-537d7c0f.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/sr.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/so.svg": {
+    "file": "assets/so-9a447de1.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/so.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/so.svg": {
+    "file": "assets/so-addf24c6.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/so.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/sr.svg": {
+    "file": "assets/sr-46b14183.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/sr.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ss.svg": {
+    "file": "assets/ss-8d88c0ee.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ss.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ss.svg": {
+    "file": "assets/ss-da057e5f.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ss.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/st.svg": {
+    "file": "assets/st-9cc6959e.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/st.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/st.svg": {
+    "file": "assets/st-d1dc0f11.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/st.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/sv.svg": {
+    "file": "assets/sv-a555c654.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/sv.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/sv.svg": {
+    "file": "assets/sv-7f456bdd.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/sv.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/sx.svg": {
+    "file": "assets/sx-cfcb43ee.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/sx.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/sx.svg": {
+    "file": "assets/sx-fa10fc67.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/sx.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/sy.svg": {
+    "file": "assets/sy-288d94dd.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/sy.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/sy.svg": {
+    "file": "assets/sy-73a55eaa.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/sy.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/sz.svg": {
+    "file": "assets/sz-f29ebb91.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/sz.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/sz.svg": {
+    "file": "assets/sz-bf321e0f.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/sz.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/tc.svg": {
+    "file": "assets/tc-b8368986.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/tc.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/tc.svg": {
+    "file": "assets/tc-26d7736c.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/tc.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/td.svg": {
+    "file": "assets/td-5e3c96b8.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/td.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/td.svg": {
+    "file": "assets/td-72368dc1.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/td.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/tf.svg": {
+    "file": "assets/tf-77b92fc3.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/tf.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/tf.svg": {
+    "file": "assets/tf-bbb5f04e.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/tf.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/tg.svg": {
+    "file": "assets/tg-09983d95.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/tg.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/tg.svg": {
+    "file": "assets/tg-1052fe54.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/tg.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/th.svg": {
+    "file": "assets/th-d70b1e35.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/th.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/th.svg": {
+    "file": "assets/th-152e8680.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/th.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/tj.svg": {
+    "file": "assets/tj-4e57499f.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/tj.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/tj.svg": {
+    "file": "assets/tj-92859fdd.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/tj.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/tk.svg": {
+    "file": "assets/tk-d830eea8.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/tk.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/tk.svg": {
+    "file": "assets/tk-3db8f9a4.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/tk.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/tl.svg": {
+    "file": "assets/tl-c2beee6f.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/tl.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/tl.svg": {
+    "file": "assets/tl-1a525159.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/tl.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/tm.svg": {
+    "file": "assets/tm-a22668a5.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/tm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/tm.svg": {
+    "file": "assets/tm-a59b9de1.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/tm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/tn.svg": {
+    "file": "assets/tn-71f5c17f.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/tn.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/tr.svg": {
+    "file": "assets/tr-77e49131.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/tr.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/tr.svg": {
+    "file": "assets/tr-8ba62a8e.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/tr.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/to.svg": {
+    "file": "assets/to-dccb8201.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/to.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/tn.svg": {
+    "file": "assets/tn-e15f0713.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/tn.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/to.svg": {
+    "file": "assets/to-d88a5c59.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/to.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/tt.svg": {
+    "file": "assets/tt-892a252a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/tt.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/tt.svg": {
+    "file": "assets/tt-12034bdb.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/tt.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/tv.svg": {
+    "file": "assets/tv-757ab21f.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/tv.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/tv.svg": {
+    "file": "assets/tv-49316c34.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/tv.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/tw.svg": {
+    "file": "assets/tw-6c3490bd.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/tw.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/tw.svg": {
+    "file": "assets/tw-13be956b.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/tw.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/tz.svg": {
+    "file": "assets/tz-65f79312.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/tz.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/tz.svg": {
+    "file": "assets/tz-fbdfbcd8.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/tz.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ua.svg": {
+    "file": "assets/ua-0886f11f.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ua.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ua.svg": {
+    "file": "assets/ua-23f3a011.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ua.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ug.svg": {
+    "file": "assets/ug-51a9154c.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ug.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ug.svg": {
+    "file": "assets/ug-a237554d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ug.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/um.svg": {
+    "file": "assets/um-77aa5726.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/um.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/um.svg": {
+    "file": "assets/um-78bebf78.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/um.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/us.svg": {
+    "file": "assets/us-a2983cb1.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/us.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/us.svg": {
+    "file": "assets/us-e837400a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/us.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/uy.svg": {
+    "file": "assets/uy-b1d6fdd6.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/uy.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/uy.svg": {
+    "file": "assets/uy-3bdce4b7.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/uy.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/uz.svg": {
+    "file": "assets/uz-2d96afc8.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/uz.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/uz.svg": {
+    "file": "assets/uz-0e5ca7d6.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/uz.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/va.svg": {
+    "file": "assets/va-7b048942.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/va.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/vc.svg": {
+    "file": "assets/vc-4540d212.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/vc.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/va.svg": {
+    "file": "assets/va-be0e7499.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/va.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/vc.svg": {
+    "file": "assets/vc-9b6b3849.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/vc.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ve.svg": {
+    "file": "assets/ve-713e44ad.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ve.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ve.svg": {
+    "file": "assets/ve-77899c42.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ve.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/vg.svg": {
+    "file": "assets/vg-8c54f6c0.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/vg.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/vg.svg": {
+    "file": "assets/vg-cb2b05d7.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/vg.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/vi.svg": {
+    "file": "assets/vi-810b5e2f.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/vi.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/vi.svg": {
+    "file": "assets/vi-748c760f.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/vi.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/vn.svg": {
+    "file": "assets/vn-ef52641a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/vn.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/vn.svg": {
+    "file": "assets/vn-f2d5f934.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/vn.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/vu.svg": {
+    "file": "assets/vu-8270fcc4.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/vu.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/vu.svg": {
+    "file": "assets/vu-f06addea.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/vu.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/wf.svg": {
+    "file": "assets/wf-7eae20a3.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/wf.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/wf.svg": {
+    "file": "assets/wf-44a91720.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/wf.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ws.svg": {
+    "file": "assets/ws-1cad93c5.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ws.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ws.svg": {
+    "file": "assets/ws-135b48e3.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ws.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/ye.svg": {
+    "file": "assets/ye-20aeaaf1.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/ye.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/ye.svg": {
+    "file": "assets/ye-7431f5e4.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/ye.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/yt.svg": {
+    "file": "assets/yt-cb82f676.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/yt.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/yt.svg": {
+    "file": "assets/yt-924d4fef.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/yt.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/za.svg": {
+    "file": "assets/za-a0f0e6a0.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/za.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/za.svg": {
+    "file": "assets/za-51d009fd.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/za.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/zm.svg": {
+    "file": "assets/zm-083dbc57.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/zm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/zm.svg": {
+    "file": "assets/zm-5ac09f99.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/zm.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/zw.svg": {
+    "file": "assets/zw-4f7d13b8.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/zw.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/gb-eng.svg": {
+    "file": "assets/gb-eng-d8349993.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/gb-eng.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/gb-eng.svg": {
+    "file": "assets/gb-eng-265fbad3.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/gb-eng.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/gb-sct.svg": {
+    "file": "assets/gb-sct-7962309a.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/gb-sct.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/gb-sct.svg": {
+    "file": "assets/gb-sct-d0998d07.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/gb-sct.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/zw.svg": {
+    "file": "assets/zw-08127504.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/zw.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/eu.svg": {
+    "file": "assets/eu-60a843a1.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/eu.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/eu.svg": {
+    "file": "assets/eu-d8a6ce5d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/eu.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/gb-wls.svg": {
+    "file": "assets/gb-wls-1300cb93.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/gb-wls.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/gb-wls.svg": {
+    "file": "assets/gb-wls-d715adbb.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/gb-wls.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/rs.svg": {
+    "file": "assets/rs-42da3c7d.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/rs.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/rs.svg": {
+    "file": "assets/rs-334eabc7.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/rs.svg"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-1b962f11.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/src/extensions/knowledge/FaqSearch.css": {
+    "file": "assets/FaqSearch-f7f8efbd.css",
+    "src": "resources/src/extensions/knowledge/FaqSearch.css"
+  },
+  "flag-icon.css": {
+    "file": "assets/flag-icon-ac31439e.css",
+    "src": "flag-icon.css"
+  },
+  "vue-qrcode.css": {
+    "file": "assets/vue-qrcode-a4179782.css",
+    "src": "vue-qrcode.css"
+  },
+  "resources/src/main/Trading.css": {
+    "file": "assets/Trading-ed6ff59b.css",
+    "src": "resources/src/main/Trading.css"
+  },
+  "resources/src/extensions/knowledge/Faq.css": {
+    "file": "assets/Faq-551afa70.css",
+    "src": "resources/src/extensions/knowledge/Faq.css"
+  },
+  "resources/src/extensions/eco/EcoTrading.css": {
+    "file": "assets/EcoTrading-dddc401f.css",
+    "src": "resources/src/extensions/eco/EcoTrading.css"
+  },
+  "resources/src/extensions/knowledge/Tags.css": {
+    "file": "assets/Tags-d0e23fa4.css",
+    "src": "resources/src/extensions/knowledge/Tags.css"
+  },
+  "resources/src/extensions/Forex/Forex.css": {
+    "file": "assets/Forex-82f21b76.css",
+    "src": "resources/src/extensions/Forex/Forex.css"
+  },
+  "resources/src/main/binary/logs/Preview.css": {
+    "file": "assets/Preview-26f3d977.css",
+    "src": "resources/src/main/binary/logs/Preview.css"
+  },
+  "resources/src/extensions/knowledge/Index.css": {
+    "file": "assets/Index-bbc96d21.css",
+    "src": "resources/src/extensions/knowledge/Index.css"
+  },
+  "resources/src/main/support/ChatPage.css": {
+    "file": "assets/ChatPage-add72511.css",
+    "src": "resources/src/main/support/ChatPage.css"
+  },
+  "resources/src/extensions/bot/BotTradePage.css": {
+    "file": "assets/BotTradePage-216f4135.css",
+    "src": "resources/src/extensions/bot/BotTradePage.css"
+  },
+  "resources/src/main/binary/BinaryTrading.css": {
+    "file": "assets/BinaryTrading-e13ec53d.css",
+    "src": "resources/src/main/binary/BinaryTrading.css"
+  },
+  "resources/src/extensions/knowledge/Categories.css": {
+    "file": "assets/Categories-42cf6421.css",
+    "src": "resources/src/extensions/knowledge/Categories.css"
+  },
+  "resources/src/user.css": {
+    "file": "assets/user-d6182a99.css",
+    "src": "resources/src/user.css"
+  },
+  "resources/src/frontend/trading.css": {
+    "file": "assets/trading-43b7120d.css",
+    "src": "resources/src/frontend/trading.css"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-320eeb28.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/css/kyc.css": {
+    "file": "assets/kyc-98001000.css",
+    "src": "resources/css/kyc.css",
+    "isEntry": true
+  },
+  "resources/src/main/Dashboard.css": {
+    "file": "assets/Dashboard-9a5165fc.css",
+    "src": "resources/src/main/Dashboard.css"
+  },
+  "ListItem.css": {
+    "file": "assets/ListItem-61862b32.css",
+    "src": "ListItem.css"
+  },
+  "resources/src/main/wallets/MainWalletDetail.css": {
+    "file": "assets/MainWalletDetail-52e46b47.css",
+    "src": "resources/src/main/wallets/MainWalletDetail.css"
+  },
+  "__commonjsHelpers-87174ba5.js": {
+    "file": "assets/_commonjsHelpers-87174ba5.js"
+  },
+  "resources/lang/ur.json": {
+    "file": "assets/ur-2b066f9b.js",
+    "src": "resources/lang/ur.json",
+    "isDynamicEntry": true
+  },
+  "resources/src/extensions/mlm/Referral.vue": {
+    "file": "assets/Referral-e0aa4562.js",
+    "src": "resources/src/extensions/mlm/Referral.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "__plugin-vue_export-helper-8676f0c8.js"
+    ]
+  },
+  "_pinia-72e453fe.js": {
+    "file": "assets/pinia-72e453fe.js",
+    "imports": [
+      "__plugin-vue_export-helper-8676f0c8.js"
+    ]
+  },
+  "_Orderbook-dfa75b3e.js": {
+    "file": "assets/Orderbook-dfa75b3e.js",
+    "imports": [
+      "_market-6d56493b.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_ListItem-d13f255d.js",
+      "_vue-qrcode.esm-9e0a6c12.js"
+    ]
+  },
+  "_browser-e552b3f6.js": {
+    "file": "assets/browser-e552b3f6.js",
+    "imports": [
+      "_dijkstra-59d11638.js"
+    ]
+  },
+  "_Orders-63c0a853.js": {
+    "file": "assets/Orders-63c0a853.js",
+    "imports": [
+      "_flowbite-vue-d44f90c4.js",
+      "_toMoney-899207f6.js",
+      "_toDate-7f2bc02f.js",
+      "_Col-495fd683.js",
+      "_market-6d56493b.js",
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "__plugin-vue_export-helper-8676f0c8.js"
+    ]
+  },
+  "_market-6d56493b.js": {
+    "file": "assets/market-6d56493b.js",
+    "imports": [
+      "_pinia-72e453fe.js"
+    ]
+  },
+  "_toMoney-899207f6.js": {
+    "file": "assets/toMoney-899207f6.js",
+    "imports": [
+      "__plugin-vue_export-helper-8676f0c8.js"
+    ]
+  },
+  "resources/js/dark-mode.js": {
+    "file": "assets/dark-mode-787e0d6d.js",
+    "src": "resources/js/dark-mode.js",
+    "isEntry": true
+  },
+  "resources/src/extensions/ico/ICO.vue": {
+    "file": "assets/ICO-8de5dafd.js",
+    "src": "resources/src/extensions/ico/ICO.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "__plugin-vue_export-helper-8676f0c8.js"
+    ]
+  },
+  "_tslib-4d46970e.js": {
+    "file": "assets/tslib-4d46970e.js",
+    "imports": [
+      "__commonjsHelpers-87174ba5.js"
+    ]
+  },
+  "_toDate-7f2bc02f.js": {
+    "file": "assets/toDate-7f2bc02f.js",
+    "imports": [
+      "__plugin-vue_export-helper-8676f0c8.js"
+    ]
+  },
+  "node_modules/@web3modal/standalone/dist/index.js": {
+    "file": "assets/index-6fecb0d5.js",
+    "src": "node_modules/@web3modal/standalone/dist/index.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-6f27e6cf.js",
+      "_index-49b55558.js",
+      "__commonjsHelpers-87174ba5.js"
+    ],
+    "dynamicImports": [
+      "node_modules/@web3modal/ui/dist/index.js"
+    ]
+  },
+  "_Col-495fd683.js": {
+    "file": "assets/Col-495fd683.js",
+    "imports": [
+      "__plugin-vue_export-helper-8676f0c8.js"
+    ]
+  },
+  "_binary-9f5b1eb3.js": {
+    "file": "assets/binary-9f5b1eb3.js",
+    "imports": [
+      "_pinia-72e453fe.js"
+    ]
+  },
+  "resources/src/main/logs/Deposit.vue": {
+    "file": "assets/Deposit-5b2284ec.js",
+    "src": "resources/src/main/logs/Deposit.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_toMoney-899207f6.js",
+      "_toDate-7f2bc02f.js",
+      "_Col-495fd683.js",
+      "_log-ebdf96d3.js",
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_pinia-72e453fe.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ]
+  },
+  "_wallets-97f51468.js": {
+    "file": "assets/wallets-97f51468.js",
+    "imports": [
+      "_pinia-72e453fe.js"
+    ]
+  },
+  "resources/src/main/logs/Transactions.vue": {
+    "file": "assets/Transactions-719e7ad8.js",
+    "src": "resources/src/main/logs/Transactions.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_toMoney-899207f6.js",
+      "_toDate-7f2bc02f.js",
+      "_Col-495fd683.js",
+      "_log-ebdf96d3.js",
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_pinia-72e453fe.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ]
+  },
+  "_dijkstra-59d11638.js": {
+    "file": "assets/dijkstra-59d11638.js"
+  },
+  "resources/src/main/logs/Withdraw.vue": {
+    "file": "assets/Withdraw-973d67c6.js",
+    "src": "resources/src/main/logs/Withdraw.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_toMoney-899207f6.js",
+      "_toDate-7f2bc02f.js",
+      "_Col-495fd683.js",
+      "_log-ebdf96d3.js",
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_pinia-72e453fe.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ]
+  },
+  "resources/js/sidebar.js": {
+    "file": "assets/sidebar-e8ed7e48.js",
+    "src": "resources/js/sidebar.js",
+    "isEntry": true
+  },
+  "resources/src/Login.vue": {
+    "file": "assets/Login-a6202f5f.js",
+    "src": "resources/src/Login.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-49b55558.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_preload-helper-6f27e6cf.js"
+    ]
+  },
+  "_preload-helper-6f27e6cf.js": {
+    "file": "assets/preload-helper-6f27e6cf.js"
+  },
+  "resources/lang/nb.json": {
+    "file": "assets/nb-b50f1be7.js",
+    "src": "resources/lang/nb.json",
+    "isDynamicEntry": true
+  },
+  "resources/src/main/support/Support.vue": {
+    "file": "assets/Support-7807b29a.js",
+    "src": "resources/src/main/support/Support.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_toDate-7f2bc02f.js",
+      "_Col-495fd683.js",
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_pinia-72e453fe.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ]
+  },
+  "resources/src/main/wallets/WalletDetail.vue": {
+    "file": "assets/WalletDetail-e6ab9951.js",
+    "src": "resources/src/main/wallets/WalletDetail.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_flowbite-vue-d44f90c4.js",
+      "_Col-495fd683.js",
+      "_toMoney-899207f6.js",
+      "_wallets-97f51468.js",
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_pinia-72e453fe.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ]
+  },
+  "resources/src/main/binary/logs/Practice.vue": {
+    "file": "assets/Practice-c0ee638d.js",
+    "src": "resources/src/main/binary/logs/Practice.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_toMoney-899207f6.js",
+      "_toDate-7f2bc02f.js",
+      "_Col-495fd683.js",
+      "_binary-9f5b1eb3.js",
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_pinia-72e453fe.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ]
+  },
+  "resources/src/extensions/Swap.vue": {
+    "file": "assets/Swap-8de5dafd.js",
+    "src": "resources/src/extensions/Swap.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "__plugin-vue_export-helper-8676f0c8.js"
+    ]
+  },
+  "resources/src/extensions/bot/Bots.vue": {
+    "file": "assets/Bots-74d558db.js",
+    "src": "resources/src/extensions/bot/Bots.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_toMoney-899207f6.js",
+      "_Col-495fd683.js",
+      "_bot-b554c642.js",
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_pinia-72e453fe.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ]
+  },
+  "node_modules/@web3modal/ui/dist/index.js": {
+    "file": "assets/index-fcc880b3.js",
+    "src": "node_modules/@web3modal/ui/dist/index.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-49b55558.js",
+      "_browser-e552b3f6.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_preload-helper-6f27e6cf.js",
+      "_dijkstra-59d11638.js"
+    ]
+  },
+  "resources/src/extensions/knowledge/Index.vue": {
+    "file": "assets/Index-8deb463b.js",
+    "src": "resources/src/extensions/knowledge/Index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_pinia-72e453fe.js",
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ],
+    "css": [
+      "assets/Index-bbc96d21.css"
+    ]
+  },
+  "resources/src/user.js": {
+    "file": "assets/user-8125f0e7.js",
+    "src": "resources/src/user.js",
+    "isEntry": true,
+    "imports": [
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "_pinia-72e453fe.js",
+      "_preload-helper-6f27e6cf.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ],
+    "dynamicImports": [
+      "resources/lang/ar.json",
+      "resources/lang/bn.json",
+      "resources/lang/de.json",
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "resources/lang/es.json",
+      "resources/lang/fa.json",
+      "resources/lang/fr.json",
+      "resources/lang/hi.json",
+      "resources/lang/hu.json",
+      "resources/lang/id.json",
+      "resources/lang/it.json",
+      "resources/lang/ja.json",
+      "resources/lang/ko.json",
+      "resources/lang/nb.json",
+      "resources/lang/nl.json",
+      "resources/lang/pl.json",
+      "resources/lang/pt.json",
+      "resources/lang/ru.json",
+      "resources/lang/th.json",
+      "resources/lang/tr.json",
+      "resources/lang/uk.json",
+      "resources/lang/ur.json",
+      "resources/lang/vi.json",
+      "resources/lang/zh.json",
+      "resources/src/Login.vue",
+      "resources/src/main/Dashboard.vue",
+      "resources/src/main/Trading.vue",
+      "resources/src/extensions/Swap.vue",
+      "resources/src/main/Dashboard.vue",
+      "resources/src/main/Wallets.vue",
+      "resources/src/main/wallets/WalletDetail.vue",
+      "resources/src/main/wallets/MainWalletDetail.vue",
+      "resources/src/main/logs/Deposit.vue",
+      "resources/src/main/logs/Withdraw.vue",
+      "resources/src/main/logs/Transactions.vue",
+      "resources/src/main/support/Support.vue",
+      "resources/src/main/support/ChatPage.vue",
+      "resources/src/main/Api.vue",
+      "resources/src/main/binary/Binary.vue",
+      "resources/src/main/binary/BinaryTrading.vue",
+      "resources/src/main/binary/logs/Practice.vue",
+      "resources/src/main/binary/logs/Trade.vue",
+      "resources/src/main/binary/logs/Preview.vue",
+      "resources/src/extensions/bot/Bots.vue",
+      "resources/src/extensions/bot/BotTradePage.vue",
+      "resources/src/extensions/ico/ICO.vue",
+      "resources/src/extensions/ico/ICODetails.vue",
+      "resources/src/extensions/mlm/Referral.vue",
+      "resources/src/extensions/Forex/Forex.vue",
+      "resources/src/extensions/Forex/Trading.vue",
+      "resources/src/extensions/staking/Staking.vue",
+      "resources/src/extensions/staking/StakingLogs.vue",
+      "resources/src/extensions/builder/PageBuilder.vue",
+      "resources/src/extensions/eco/EcoTrading.vue",
+      "resources/src/extensions/p2p/p2p.vue",
+      "resources/src/extensions/p2p/p2pchat.vue",
+      "resources/src/extensions/p2p/p2porders.vue",
+      "resources/src/extensions/knowledge/Index.vue",
+      "resources/src/extensions/knowledge/Categories.vue",
+      "resources/src/extensions/knowledge/Tags.vue",
+      "resources/src/extensions/knowledge/Article.vue",
+      "resources/src/extensions/knowledge/Faq.vue",
+      "resources/src/extensions/knowledge/FaqSearch.vue"
+    ],
+    "css": [
+      "assets/user-d6182a99.css",
+      "assets/flag-icon-ac31439e.css"
+    ]
+  },
+  "resources/src/main/binary/BinaryTrading.vue": {
+    "file": "assets/BinaryTrading-0eca6630.js",
+    "src": "resources/src/main/binary/BinaryTrading.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-6f27e6cf.js",
+      "_toMoney-899207f6.js",
+      "_toDate-7f2bc02f.js",
+      "_Col-495fd683.js",
+      "_Orderbook-dfa75b3e.js",
+      "_ListItem-d13f255d.js",
+      "_index-dc8c00ce.js",
+      "_market-6d56493b.js",
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_Trades-7a4a962d.js",
+      "_pinia-72e453fe.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ],
+    "dynamicImports": [
+      "resources/src/main/trading/Tradingview.vue",
+      "resources/src/extensions/eco/components/Tradingview.vue"
+    ],
+    "css": [
+      "assets/BinaryTrading-e13ec53d.css"
+    ]
+  },
+  "resources/src/extensions/knowledge/Categories.vue": {
+    "file": "assets/Categories-527fc562.js",
+    "src": "resources/src/extensions/knowledge/Categories.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "__plugin-vue_export-helper-8676f0c8.js"
+    ],
+    "css": [
+      "assets/Categories-42cf6421.css"
+    ]
+  },
+  "resources/lang/ja.json": {
+    "file": "assets/ja-4cf47378.js",
+    "src": "resources/lang/ja.json",
+    "isDynamicEntry": true
+  },
+  "resources/src/extensions/eco/EcoTrading.vue": {
+    "file": "assets/EcoTrading-a584dd02.js",
+    "src": "resources/src/extensions/eco/EcoTrading.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_ListItem-d13f255d.js",
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_datafeed-a8c86d1b.js",
+      "_flowbite-vue-d44f90c4.js",
+      "_pinia-72e453fe.js",
+      "_toMoney-899207f6.js",
+      "_toDate-7f2bc02f.js",
+      "_Col-495fd683.js",
+      "_market-6d56493b.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ],
+    "css": [
+      "assets/EcoTrading-dddc401f.css"
+    ]
+  },
+  "resources/src/extensions/p2p/p2p.vue": {
+    "file": "assets/p2p-8de5dafd.js",
+    "src": "resources/src/extensions/p2p/p2p.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "__plugin-vue_export-helper-8676f0c8.js"
+    ]
+  },
+  "resources/src/extensions/Forex/Forex.vue": {
+    "file": "assets/Forex-6e1b3f86.js",
+    "src": "resources/src/extensions/Forex/Forex.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_flowbite-vue-d44f90c4.js",
+      "_toMoney-899207f6.js",
+      "_pinia-72e453fe.js",
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "_wallets-97f51468.js",
+      "_toDate-7f2bc02f.js",
+      "_Col-495fd683.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ],
+    "css": [
+      "assets/Forex-82f21b76.css"
+    ]
+  },
+  "resources/src/extensions/builder/PageBuilder.vue": {
+    "file": "assets/PageBuilder-846f7364.js",
+    "src": "resources/src/extensions/builder/PageBuilder.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "__plugin-vue_export-helper-8676f0c8.js"
+    ]
+  },
+  "resources/src/extensions/bot/BotTradePage.vue": {
+    "file": "assets/BotTradePage-9714c476.js",
+    "src": "resources/src/extensions/bot/BotTradePage.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-6f27e6cf.js",
+      "_flowbite-vue-d44f90c4.js",
+      "_Orderbook-dfa75b3e.js",
+      "_ListItem-d13f255d.js",
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_market-6d56493b.js",
+      "_bot-b554c642.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_pinia-72e453fe.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ],
+    "dynamicImports": [
+      "resources/src/main/trading/Tradingview.vue",
+      "resources/src/extensions/eco/components/Tradingview.vue"
+    ],
+    "css": [
+      "assets/BotTradePage-216f4135.css"
+    ]
+  },
+  "resources/src/main/binary/logs/Preview.vue": {
+    "file": "assets/Preview-f7562f00.js",
+    "src": "resources/src/main/binary/logs/Preview.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-dc8c00ce.js",
+      "_toMoney-899207f6.js",
+      "_toDate-7f2bc02f.js",
+      "__plugin-vue_export-helper-8676f0c8.js"
+    ],
+    "css": [
+      "assets/Preview-26f3d977.css"
+    ]
+  },
+  "resources/src/extensions/knowledge/Faq.vue": {
+    "file": "assets/Faq-d4944e37.js",
+    "src": "resources/src/extensions/knowledge/Faq.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_pinia-72e453fe.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ],
+    "css": [
+      "assets/Faq-551afa70.css"
+    ]
+  },
+  "resources/src/main/Trading.vue": {
+    "file": "assets/Trading-e784ccd5.js",
+    "src": "resources/src/main/Trading.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-6f27e6cf.js",
+      "_ListItem-d13f255d.js",
+      "_Trades-7a4a962d.js",
+      "_Orderbook-dfa75b3e.js",
+      "_market-6d56493b.js",
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_Orders-63c0a853.js",
+      "_pinia-72e453fe.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js",
+      "_flowbite-vue-d44f90c4.js",
+      "_toMoney-899207f6.js",
+      "_toDate-7f2bc02f.js",
+      "_Col-495fd683.js"
+    ],
+    "dynamicImports": [
+      "resources/src/main/trading/Tradingview.vue",
+      "resources/src/extensions/eco/components/Tradingview.vue"
+    ],
+    "css": [
+      "assets/Trading-ed6ff59b.css"
+    ]
+  },
+  "resources/src/extensions/eco/components/Tradingview.vue": {
+    "file": "assets/Tradingview-7305876a.js",
+    "src": "resources/src/extensions/eco/components/Tradingview.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_datafeed-a8c86d1b.js",
+      "_market-6d56493b.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_pinia-72e453fe.js"
+    ]
+  },
+  "resources/src/extensions/knowledge/Tags.vue": {
+    "file": "assets/Tags-bae5a84c.js",
+    "src": "resources/src/extensions/knowledge/Tags.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "__plugin-vue_export-helper-8676f0c8.js"
+    ],
+    "css": [
+      "assets/Tags-d0e23fa4.css"
+    ]
+  },
+  "resources/src/partials/KYC.vue": {
+    "file": "assets/KYC-a62f3523.js",
+    "src": "resources/src/partials/KYC.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_pinia-72e453fe.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ]
+  },
+  "resources/src/extensions/ico/ICODetails.vue": {
+    "file": "assets/ICODetails-e66c2aac.js",
+    "src": "resources/src/extensions/ico/ICODetails.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "__plugin-vue_export-helper-8676f0c8.js"
+    ]
+  },
+  "_bot-b554c642.js": {
+    "file": "assets/bot-b554c642.js",
+    "imports": [
+      "_pinia-72e453fe.js"
+    ]
+  },
+  "resources/src/main/Api.vue": {
+    "file": "assets/Api-7b7dfb9d.js",
+    "src": "resources/src/main/Api.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_pinia-72e453fe.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ]
+  },
+  "resources/src/extensions/Forex/Trading.vue": {
+    "file": "assets/Trading-9d5479ba.js",
+    "src": "resources/src/extensions/Forex/Trading.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "__plugin-vue_export-helper-8676f0c8.js"
+    ]
+  },
+  "resources/lang/vi.json": {
+    "file": "assets/vi-28ea8aa5.js",
+    "src": "resources/lang/vi.json",
+    "isDynamicEntry": true
+  },
+  "_axios-c0bebe37.js": {
+    "file": "assets/axios-c0bebe37.js"
+  },
+  "_index-47d1cea2.js": {
+    "file": "assets/index-47d1cea2.js",
+    "imports": [
+      "_tslib-4d46970e.js",
+      "__commonjsHelpers-87174ba5.js"
+    ]
+  },
+  "_log-ebdf96d3.js": {
+    "file": "assets/log-ebdf96d3.js",
+    "imports": [
+      "_pinia-72e453fe.js"
+    ]
+  },
+  "resources/lang/nl.json": {
+    "file": "assets/nl-1ac0e0f0.js",
+    "src": "resources/lang/nl.json",
+    "isDynamicEntry": true
+  },
+  "resources/src/main/support/ChatPage.vue": {
+    "file": "assets/ChatPage-2eeed7dc.js",
+    "src": "resources/src/main/support/ChatPage.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "__plugin-vue_export-helper-8676f0c8.js"
+    ],
+    "css": [
+      "assets/ChatPage-add72511.css"
+    ]
+  },
+  "_Trades-7a4a962d.js": {
+    "file": "assets/Trades-7a4a962d.js",
+    "imports": [
+      "_market-6d56493b.js",
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "__plugin-vue_export-helper-8676f0c8.js"
+    ]
+  },
+  "_datafeed-a8c86d1b.js": {
+    "file": "assets/datafeed-a8c86d1b.js",
+    "imports": [
+      "__commonjsHelpers-87174ba5.js"
+    ]
+  },
+  "resources/src/extensions/knowledge/Article.vue": {
+    "file": "assets/Article-16b8a90e.js",
+    "src": "resources/src/extensions/knowledge/Article.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_toDate-7f2bc02f.js",
+      "__plugin-vue_export-helper-8676f0c8.js"
+    ]
+  },
+  "resources/src/extensions/staking/Staking.vue": {
+    "file": "assets/Staking-8438023d.js",
+    "src": "resources/src/extensions/staking/Staking.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_toMoney-899207f6.js",
+      "_toDate-7f2bc02f.js",
+      "_Col-495fd683.js",
+      "_staking-4eb95367.js",
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "_flowbite-vue-d44f90c4.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_pinia-72e453fe.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ]
+  },
+  "_staking-4eb95367.js": {
+    "file": "assets/staking-4eb95367.js",
+    "imports": [
+      "_pinia-72e453fe.js"
+    ]
+  },
+  "resources/src/extensions/p2p/p2pchat.vue": {
+    "file": "assets/p2pchat-aa7dcae6.js",
+    "src": "resources/src/extensions/p2p/p2pchat.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "__plugin-vue_export-helper-8676f0c8.js"
+    ]
+  },
+  "resources/src/extensions/p2p/p2porders.vue": {
+    "file": "assets/p2porders-3b82280a.js",
+    "src": "resources/src/extensions/p2p/p2porders.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "__plugin-vue_export-helper-8676f0c8.js"
+    ]
+  },
+  "_flowbite-vue-d44f90c4.js": {
+    "file": "assets/flowbite-vue-d44f90c4.js",
+    "imports": [
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "__plugin-vue_export-helper-8676f0c8.js"
+    ]
+  },
+  "resources/src/main/Wallets.vue": {
+    "file": "assets/Wallets-53614211.js",
+    "src": "resources/src/main/Wallets.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_toMoney-899207f6.js",
+      "_wallets-97f51468.js",
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "_flowbite-vue-d44f90c4.js",
+      "_Col-495fd683.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_pinia-72e453fe.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ]
+  },
+  "resources/src/main/trading/Tradingview.vue": {
+    "file": "assets/Tradingview-6f81ad6a.js",
+    "src": "resources/src/main/trading/Tradingview.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "__plugin-vue_export-helper-8676f0c8.js"
+    ]
+  },
+  "resources/lang/zh.json": {
+    "file": "assets/zh-3b012e15.js",
+    "src": "resources/lang/zh.json",
+    "isDynamicEntry": true
+  },
+  "resources/src/main/binary/Binary.vue": {
+    "file": "assets/Binary-15715ecd.js",
+    "src": "resources/src/main/binary/Binary.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-6f27e6cf.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_flowbite-vue-d44f90c4.js",
+      "_toMoney-899207f6.js",
+      "_binary-9f5b1eb3.js",
+      "_axios-c0bebe37.js",
+      "_pinia-72e453fe.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ],
+    "dynamicImports": [
+      "resources/src/partials/KYC.vue"
+    ]
+  },
+  "resources/lang/hu.json": {
+    "file": "assets/hu-8b748416.js",
+    "src": "resources/lang/hu.json",
+    "isDynamicEntry": true
+  },
+  "resources/lang/ar.json": {
+    "file": "assets/ar-26b0d47c.js",
+    "src": "resources/lang/ar.json",
+    "isDynamicEntry": true
+  },
+  "resources/lang/bn.json": {
+    "file": "assets/bn-d04f1988.js",
+    "src": "resources/lang/bn.json",
+    "isDynamicEntry": true
+  },
+  "resources/lang/ko.json": {
+    "file": "assets/ko-433fa6f3.js",
+    "src": "resources/lang/ko.json",
+    "isDynamicEntry": true
+  },
+  "resources/lang/id.json": {
+    "file": "assets/id-7581c1e0.js",
+    "src": "resources/lang/id.json",
+    "isDynamicEntry": true
+  },
+  "resources/lang/it.json": {
+    "file": "assets/it-900a4e9a.js",
+    "src": "resources/lang/it.json",
+    "isDynamicEntry": true
+  },
+  "_index-b8088a94.js": {
+    "file": "assets/index-b8088a94.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__commonjsHelpers-87174ba5.js",
+      "_tslib-4d46970e.js",
+      "_index-49b55558.js"
+    ]
+  },
+  "resources/css/user.css": {
+    "file": "assets/user-4ed993c7.js",
+    "src": "resources/css/user.css",
+    "isEntry": true
+  },
+  "resources/src/login.js": {
+    "file": "assets/login-4661e9d1.js",
+    "src": "resources/src/login.js",
+    "isEntry": true,
+    "imports": [
+      "_index-49b55558.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_preload-helper-6f27e6cf.js"
+    ]
+  },
+  "resources/src/main/binary/logs/Trade.vue": {
+    "file": "assets/Trade-675eb116.js",
+    "src": "resources/src/main/binary/logs/Trade.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_toMoney-899207f6.js",
+      "_toDate-7f2bc02f.js",
+      "_Col-495fd683.js",
+      "_binary-9f5b1eb3.js",
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_pinia-72e453fe.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ]
+  },
+  "_index-dc8c00ce.js": {
+    "file": "assets/index-dc8c00ce.js"
+  },
+  "resources/src/extensions/staking/StakingLogs.vue": {
+    "file": "assets/StakingLogs-4f54bec9.js",
+    "src": "resources/src/extensions/staking/StakingLogs.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_toMoney-899207f6.js",
+      "_toDate-7f2bc02f.js",
+      "_Col-495fd683.js",
+      "_staking-4eb95367.js",
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_pinia-72e453fe.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ]
+  },
+  "resources/src/frontend/trading.js": {
+    "file": "assets/trading-4a0f1548.js",
+    "src": "resources/src/frontend/trading.js",
+    "isEntry": true,
+    "imports": [
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "_pinia-72e453fe.js",
+      "_preload-helper-6f27e6cf.js",
+      "_ListItem-d13f255d.js",
+      "_Trades-7a4a962d.js",
+      "_Orderbook-dfa75b3e.js",
+      "_market-6d56493b.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_Orders-63c0a853.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js",
+      "_flowbite-vue-d44f90c4.js",
+      "_toMoney-899207f6.js",
+      "_toDate-7f2bc02f.js",
+      "_Col-495fd683.js"
+    ],
+    "dynamicImports": [
+      "resources/src/main/trading/Tradingview.vue",
+      "resources/src/extensions/eco/components/Tradingview.vue",
+      "resources/src/extensions/eco/EcoTrading.vue"
+    ],
+    "css": [
+      "assets/trading-43b7120d.css"
+    ]
+  },
+  "resources/lang/tr.json": {
+    "file": "assets/tr-6c255cc4.js",
+    "src": "resources/lang/tr.json",
+    "isDynamicEntry": true
+  },
+  "__plugin-vue_export-helper-8676f0c8.js": {
+    "file": "assets/_plugin-vue_export-helper-8676f0c8.js"
+  },
+  "resources/lang/pl.json": {
+    "file": "assets/pl-ff4152ea.js",
+    "src": "resources/lang/pl.json",
+    "isDynamicEntry": true
+  },
+  "resources/lang/uk.json": {
+    "file": "assets/uk-65059698.js",
+    "src": "resources/lang/uk.json",
+    "isDynamicEntry": true
+  },
+  "resources/src/extensions/knowledge/FaqSearch.vue": {
+    "file": "assets/FaqSearch-b04b5fe1.js",
+    "src": "resources/src/extensions/knowledge/FaqSearch.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_pinia-72e453fe.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ],
+    "css": [
+      "assets/FaqSearch-f7f8efbd.css"
+    ]
+  },
+  "resources/lang/th.json": {
+    "file": "assets/th-982af9d4.js",
+    "src": "resources/lang/th.json",
+    "isDynamicEntry": true
+  },
+  "node_modules/@walletconnect/universal-provider/dist/index.es.js": {
+    "file": "assets/index.es-ffcfb61a.js",
+    "src": "node_modules/@walletconnect/universal-provider/dist/index.es.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__commonjsHelpers-87174ba5.js",
+      "_tslib-4d46970e.js",
+      "_index-47d1cea2.js",
+      "_index-49b55558.js",
+      "_preload-helper-6f27e6cf.js"
+    ]
+  },
+  "resources/lang/fr.json": {
+    "file": "assets/fr-33f67971.js",
+    "src": "resources/lang/fr.json",
+    "isDynamicEntry": true
+  },
+  "resources/lang/de.json": {
+    "file": "assets/de-65341417.js",
+    "src": "resources/lang/de.json",
+    "isDynamicEntry": true
+  },
+  "resources/lang/es.json": {
+    "file": "assets/es-cbd6ee34.js",
+    "src": "resources/lang/es.json",
+    "isDynamicEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-87039d77.js",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "imports": [
+      "__commonjsHelpers-87174ba5.js",
+      "_axios-c0bebe37.js"
+    ],
+    "css": [
+      "assets/app-320eeb28.css",
+      "assets/flag-icon-ac31439e.css"
+    ]
+  },
+  "resources/lang/fa.json": {
+    "file": "assets/fa-6193e37b.js",
+    "src": "resources/lang/fa.json",
+    "isDynamicEntry": true
+  },
+  "_vue-qrcode.esm-9e0a6c12.js": {
+    "file": "assets/vue-qrcode.esm-9e0a6c12.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_pinia-72e453fe.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_browser-e552b3f6.js"
+    ],
+    "css": [
+      "assets/vue-qrcode-a4179782.css"
+    ]
+  },
+  "resources/lang/ru.json": {
+    "file": "assets/ru-2dc4b9bf.js",
+    "src": "resources/lang/ru.json",
+    "isDynamicEntry": true
+  },
+  "_index-49b55558.js": {
+    "file": "assets/index-49b55558.js",
+    "imports": [
+      "__commonjsHelpers-87174ba5.js",
+      "_preload-helper-6f27e6cf.js"
+    ],
+    "dynamicImports": [
+      "_index-b8088a94.js",
+      "node_modules/@walletconnect/ethereum-provider/dist/esm/index.js",
+      "node_modules/@web3modal/standalone/dist/index.js",
+      "node_modules/@walletconnect/universal-provider/dist/index.es.js",
+      "node_modules/@web3modal/ui/dist/index.js"
+    ]
+  },
+  "node_modules/@walletconnect/ethereum-provider/dist/esm/index.js": {
+    "file": "assets/index-3640a76d.js",
+    "src": "node_modules/@walletconnect/ethereum-provider/dist/esm/index.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-49b55558.js",
+      "_index-47d1cea2.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_dijkstra-59d11638.js",
+      "_preload-helper-6f27e6cf.js",
+      "_tslib-4d46970e.js"
+    ]
+  },
+  "resources/lang/pt.json": {
+    "file": "assets/pt-58bfebfc.js",
+    "src": "resources/lang/pt.json",
+    "isDynamicEntry": true
+  },
+  "resources/lang/hi.json": {
+    "file": "assets/hi-6cee18d4.js",
+    "src": "resources/lang/hi.json",
+    "isDynamicEntry": true
+  },
+  "resources/src/main/Dashboard.vue": {
+    "file": "assets/Dashboard-4af85764.js",
+    "src": "resources/src/main/Dashboard.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_toMoney-899207f6.js",
+      "_toDate-7f2bc02f.js",
+      "_Col-495fd683.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_market-6d56493b.js",
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "_pinia-72e453fe.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ],
+    "css": [
+      "assets/Dashboard-9a5165fc.css"
+    ]
+  },
+  "_ListItem-d13f255d.js": {
+    "file": "assets/ListItem-d13f255d.js",
+    "imports": [
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_market-6d56493b.js"
+    ],
+    "css": [
+      "assets/ListItem-61862b32.css"
+    ]
+  },
+  "resources/src/main/wallets/MainWalletDetail.vue": {
+    "file": "assets/MainWalletDetail-34d3e277.js",
+    "src": "resources/src/main/wallets/MainWalletDetail.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_flowbite-vue-d44f90c4.js",
+      "_Col-495fd683.js",
+      "_vue-qrcode.esm-9e0a6c12.js",
+      "_toMoney-899207f6.js",
+      "_toDate-7f2bc02f.js",
+      "_wallets-97f51468.js",
+      "__plugin-vue_export-helper-8676f0c8.js",
+      "_axios-c0bebe37.js",
+      "__commonjsHelpers-87174ba5.js",
+      "_pinia-72e453fe.js",
+      "_browser-e552b3f6.js",
+      "_dijkstra-59d11638.js"
+    ],
+    "css": [
+      "assets/MainWalletDetail-52e46b47.css"
+    ]
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/bl.svg": {
+    "file": "assets/bl-da760bbd.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/gp.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/4x3/fr.svg": {
+    "file": "assets/fr-9f63dd42.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/4x3/gp.svg"
+  },
+  "resources/js/fonts/flag-icon-css/flags/1x1/fr.svg": {
+    "file": "assets/bl-da760bbd.svg",
+    "src": "resources/js/fonts/flag-icon-css/flags/1x1/gp.svg"
+  }
+}

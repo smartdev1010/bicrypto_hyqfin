@@ -1,0 +1,14 @@
+.colors-list li {
+  padding: 0.4rem;
+}
+
+.colors-list li i,
+.colors-list li svg {
+  height: 1.2rem;
+  width: 1.2rem;
+  top: 0;
+  position: relative;
+  margin-right: 0.25rem;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY3NzL2Jhc2UvcGFnZXMvdWktY29sb3JzLmNzcyIsIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0FBQ0Y7O0FBQ0E7O0VBRUU7RUFDQTtFQUNBO0VBQ0E7RUFDQTtBQUVGLEMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Nzcy9iYXNlL3BhZ2VzL3VpLWNvbG9ycy5zY3NzIl0sInNvdXJjZXNDb250ZW50IjpbIi5jb2xvcnMtbGlzdCBsaSB7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbn1cbi5jb2xvcnMtbGlzdCBsaSBpLFxuLmNvbG9ycy1saXN0IGxpIHN2ZyB7XG4gIGhlaWdodDogMS4ycmVtO1xuICB3aWR0aDogMS4ycmVtO1xuICB0b3A6IDA7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgbWFyZ2luLXJpZ2h0OiAwLjI1cmVtO1xufSJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==*/

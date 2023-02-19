@@ -1,0 +1,1 @@
+<?php /**PATH /home/hyqfin/public_html/resources/views/vendor/livewire-tables/stubs/custom.blade.php ENDPATH**/ ?>

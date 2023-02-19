@@ -1,0 +1,61 @@
+/*
+ * Style common for all sections
+ */
+body > section, body > footer, body > header {
+  position: relative; }
+  body > section.bg-alternate:nth-child(even), body > footer.bg-alternate:nth-child(even), body > header.bg-alternate:nth-child(even) {
+    background-color: #fafafa; }
+  body > section .background-container, body > footer .background-container, body > header .background-container {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%; }
+  body > section .separator, body > footer .separator, body > header .separator {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 5rem;
+    color: #fff; }
+    body > section .separator > svg, body > section .separator > img, body > footer .separator > svg, body > footer .separator > img, body > header .separator > svg, body > header .separator > img {
+      width: 100%;
+      height: 100%; }
+    body > section .separator.bottom, body > footer .separator.bottom, body > header .separator.bottom {
+      bottom: 0; }
+    body > section .separator.top, body > footer .separator.top, body > header .separator.top {
+      top: 0px; }
+  body > section.overlay, body > footer.overlay, body > header.overlay {
+    position: relative; }
+    body > section.overlay:before, body > footer.overlay:before, body > header.overlay:before {
+      z-index: 1;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      content: "";
+      background: rgba(0, 0, 0, 0.4); }
+
+.logo-sticky {
+  display: none; }
+
+.sticky .logo-sticky {
+  display: unset; }
+
+.sticky .logo-default {
+  display: none; }
+
+.sticky .logo-default {
+  display: none; }
+
+.navbar-dark .logo-default {
+  display: none; }
+
+.navbar-dark .logo-default-dark {
+  display: unset; }
+
+.navbar-light .logo-default {
+  display: unset; }
+
+.navbar-light .logo-default-dark {
+  display: none; }

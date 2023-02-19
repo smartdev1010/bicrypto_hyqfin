@@ -1,0 +1,157 @@
+    /* Division */
+
+    #hr_1 {
+        margin: 280px 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+#section6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 108px;
+}
+
+#section6 .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+#section6 .header .tittle {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--color-gray-1);
+}
+
+#section6 .faq_group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    width: 60vw;
+    max-width: 988px;
+}
+
+#section6 .faq_group .faq {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#section6 .faq_group .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 145.5%;
+    color: #B1C3CC;
+    cursor: pointer;
+}
+
+#section6 .faq_group .question i {
+    font-size: 20px;
+    line-height: 0;
+    color: #66808C;
+    transition: all 0.3s ease;
+}
+
+#section6 .faq_group .answer {
+    width: 100%;
+    color: #66808C;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 145%;
+    letter-spacing: 0.03em;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-20%);
+    transition: all 0.3s ease;
+}
+
+.iactive {
+    transform: rotateZ(45deg);
+}
+
+
+.active {
+    height: fit-content !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+
+
+
+    /* Division */
+
+    #hr_2 {
+        margin: 280px auto 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+
+
+/* Mobile version */
+
+@media (max-width: 480px) {
+
+
+        #hr_1 {
+            margin: 50vw auto 50vw auto;
+        }
+    
+    
+    #section6 {
+        width: 90vw;
+        margin: 0 auto;
+        gap: 17.778vw;
+    }
+    
+    #section6 .header {
+        gap: 2.222vw;
+        text-align: center;
+    }
+    
+    #section6 .header .tittle {
+        font-size: 6.667vw;
+    }
+    
+    #section6 .faq_group {
+        gap: 13.333vw;
+        width: 90vw;
+    }
+
+    #section6 .faq_group .faq {
+        gap: 3.333vw;
+    }
+    
+    #section6 .faq_group .question {
+        width: 100%;
+        font-size: 4.444vw;
+        line-height: 150%;
+    }
+    
+    #section6 .faq_group .question i {
+        font-size: 5vw;
+    }
+
+    #section6 .faq_group .answer {
+        font-size: 4.444vw;
+    }
+    
+    
+    
+        #hr_2 {
+            margin: 50vw auto 0 auto;
+        }
+
+}

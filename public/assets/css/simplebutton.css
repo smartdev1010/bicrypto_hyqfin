@@ -1,0 +1,49 @@
+.simple_btn {
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+    width: fit-content;
+}
+
+.simple_btn hr {
+    height: 2px;
+    border: none;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.simple_btn span {
+    display: flex;
+    align-items: center;
+    gap:10px;
+    line-height: 1;
+    color: var(--color-gray-1);
+    font-size: 20px;
+}
+
+.simple_btn span i {
+    font-size: 12px;
+}
+
+
+/* Mobile version */
+
+@media (max-width: 480px) {
+
+    .simple_btn {
+        gap:0.556vw;
+    }
+    
+    .simple_btn hr {
+        height: 0.556vw;
+    }
+    
+    .simple_btn span {
+        gap:2.778vw;
+        font-size: 5vw;
+    }
+    
+    .simple_btn span i {
+        font-size: 3vw;
+    }
+
+}

@@ -1,0 +1,28 @@
+.hat {
+    width: fit-content;
+    padding: 5px 20px;
+    background-color: #0B1E26;
+    border: 1px solid #203640;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 200px;
+}
+
+.hat span {
+    background: linear-gradient(to right,var(--primary-color), var(--secondary-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Mobile version */
+
+@media (max-width: 480px) {
+
+    .hat {
+        padding: 1.219vw 4.878vw;
+        font-size: 3.889vw;
+    }
+
+}

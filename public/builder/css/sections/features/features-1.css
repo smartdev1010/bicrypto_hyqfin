@@ -1,0 +1,16 @@
+.features-1 {
+  color: #8d97ad;
+  font-weight: 300; }
+  .features-1 .badge {
+    font-weight: 500;
+    line-height: 14px; }
+  .features-1 .badge-info {
+    background: #188ef4; }
+  .features-1 .wrap .max-box {
+    max-width: 580px; }
+  .features-1 .linking {
+    color: #3e4555; }
+    .features-1 .linking:hover {
+      color: #316ce8; }
+  .features-1 h1, .features-1 h2, .features-1 h3, .features-1 h4, .features-1 h5, .features-1 h6 {
+    color: #3e4555; }

@@ -1,0 +1,45 @@
+.registration-form-3 {
+  width: 480px;
+  background: #fff;
+  padding: 15px 30px;
+  float: right;
+  min-height: 105vh; }
+  .registration-form-3 h1 {
+    text-align: center;
+    font-size: 25px;
+    padding: 30px 0px;
+    color: #666; }
+  .registration-form-3 input[type="text"] {
+    margin: 20px 0px 0px; }
+  .registration-form-3 button {
+    font-weight: 500;
+    padding: 5px 15px; }
+  .registration-form-3 input[type="password"] {
+    margin: 20px 0px 0px; }
+  .registration-form-3 .btns-login button.btn {
+    color: #fff;
+    font-weight: 500; }
+  .registration-form-3 .btn-google {
+    background: #da573b;
+    border: solid 1px #be5238; }
+    .registration-form-3 .btn-google:hover {
+      background: #be5238;
+      border: solid 1px #9b4631; }
+  .registration-form-3 .btn-twitter {
+    background: #1daee3;
+    border: solid 1px #3997ba; }
+    .registration-form-3 .btn-twitter:hover {
+      background: #3997ba;
+      border: solid 1px #347b95; }
+  .registration-form-3 .btn-facebook {
+    background: #4c699e;
+    border: solid 1px #47618d; }
+    .registration-form-3 .btn-facebook:hover {
+      background: #47618d;
+      border: solid 1px #3c5173; }
+  .registration-form-3 .btn-linkdin {
+    background: #4875B4;
+    border: solid 1px #466b99; }
+    .registration-form-3 .btn-linkdin:hover {
+      background: #466b99;
+      border: solid 1px #3b5a7c; }

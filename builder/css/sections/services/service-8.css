@@ -1,0 +1,24 @@
+.c2a6 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300; }
+
+.c2a6 h1,
+.c2a6 h2,
+.c2a6 h3,
+.c2a6 h4,
+.c2a6 h5,
+.c2a6 h6 {
+  color: #3e4555; }
+
+.c2a6 .btn-danger {
+  background: #ff4d7e;
+  border: 1px solid #ff4d7e; }
+
+.c2a6 .subtitle {
+  color: #8d97ad;
+  line-height: 24px; }
+
+.c2a6 .btn-md {
+  padding: 15px 45px;
+  font-size: 16px; }
