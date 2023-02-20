@@ -37,16 +37,16 @@
                                         <toMoney :key="key" :num="investment.amount" decimals="2" />
                                         <!-- {{ investment.wallet - 1 }} -->
                                         {{
-    typeof(this.walletsStore.wallets.funding) === "object" ?
-    this.walletsStore.wallets.funding[Object.keys(this.walletsStore.wallets.funding)[0]].symbol
-    :
-    null
+                                            typeof (this.walletsStore.wallets.funding) === "object" ?
+                                            this.walletsStore.wallets.funding[Object.keys(this.walletsStore.wallets.funding)[0]].symbol
+                                            :
+                                            null
                                         }}
                                         {{
-    typeof(this.walletsStore.wallets.funding) === "array" ?
-    this.walletsStore.wallets.funding[investment.wallet - 1].symbol
-    :
-    null
+                                            typeof (this.walletsStore.wallets.funding) === "array" ?
+                                            this.walletsStore.wallets.funding[investment.wallet - 1].symbol
+                                            :
+                                            null
                                         }}
                                     </div>
                                 </h2>
@@ -66,16 +66,16 @@
                                     <div v-for="(profit, key) in this.totalProfit" class="badge bg-success mb-1">
                                         <toMoney :key="key" :num="profit.amount" decimals="2" />
                                         {{
-    typeof(this.walletsStore.wallets.funding) === "object" ?
-    this.walletsStore.wallets.funding[Object.keys(this.walletsStore.wallets.funding)[0]].symbol
-    :
-    null
+                                            typeof (this.walletsStore.wallets.funding) === "object" ?
+                                            this.walletsStore.wallets.funding[Object.keys(this.walletsStore.wallets.funding)[0]].symbol
+                                            :
+                                            null
                                         }}
                                         {{
-    typeof(this.walletsStore.wallets.funding) === "array" ?
-    this.walletsStore.wallets.funding[profit.wallet - 1].symbol
-    :
-    null
+                                            typeof (this.walletsStore.wallets.funding) === "array" ?
+                                            this.walletsStore.wallets.funding[profit.wallet - 1].symbol
+                                            :
+                                            null
                                         }}
                                     </div>
                                 </h2>
@@ -85,19 +85,19 @@
                             </div>
                         </div>
                         <!-- <template>
-                            <div class="card">
-                                <div class="card-body"></div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body"></div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body"></div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body"></div>
-                            </div>
-                        </template> -->
+                                <div class="card">
+                                    <div class="card-body"></div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body"></div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body"></div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body"></div>
+                                </div>
+                            </template> -->
                     </div>
                     <div class="card card-transaction">
                         <div class="card-header">
@@ -126,8 +126,8 @@
                                         <div class="text-xs">
                                             {{
                                                 item.created_at.slice(0, 4) + "-" + item.created_at.slice(5, 7) + "-" +
-                                                    item.created_at.slice(8,
-                                                        10)
+                                                item.created_at.slice(8,
+                                                    10)
                                             }}
                                         </div>
                                     </div>
@@ -138,16 +138,16 @@
                                             item.amount
                                         " decimals="2" />
                                         {{
-    typeof(this.walletsStore.wallets.funding) === "object" ?
-    this.walletsStore.wallets.funding[Object.keys(this.walletsStore.wallets.funding)[0]].symbol
-    :
-    null
+                                            typeof (this.walletsStore.wallets.funding) === "object" ?
+                                            this.walletsStore.wallets.funding[Object.keys(this.walletsStore.wallets.funding)[0]].symbol
+                                            :
+                                            null
                                         }}
                                         {{
-    typeof(this.walletsStore.wallets.funding) === "array" ?
-    this.walletsStore.wallets.funding[item.wallet_id - 1].symbol
-    :
-    null
+                                            typeof (this.walletsStore.wallets.funding) === "array" ?
+                                            this.walletsStore.wallets.funding[item.wallet_id - 1].symbol
+                                            :
+                                            null
                                         }}
                                     </span>
                                 </div>
@@ -155,8 +155,8 @@
                         </div>
                         <div v-else class="mb-5 text-center" colspan="100%">
                             <div class="flex w-full justify-center">
-                                <img height="128" width="128"
-                                    src="https://assets.staticimg.com/pro/2.0.4/images/empty.svg" alt="" />
+                                <img height="128" width="128" src="https://assets.staticimg.com/pro/2.0.4/images/empty.svg"
+                                    alt="" />
                             </div>
                             {{ $t("No Data Found") }}
                         </div>
@@ -183,7 +183,7 @@
                                                 {{
                                                     investment_wallet
                                                     ? investment_wallet.symbol
-                                                                                                : $t("Select Wallet")
+                                                    : $t("Select Wallet")
                                                 }}
                                             </button>
                                         </template>
@@ -194,8 +194,8 @@
                                                 {{ $t("Select Wallet") }}
                                             </div>
                                             <list-group-item v-for="(
-                                                    wallet, index
-                                                ) in forexStore.wallets" :key="index"
+                                                        wallet, index
+                                                    ) in forexStore.wallets" :key="index"
                                                 class="items-between inline-flex w-full cursor-pointer border-b border-gray-200 px-4 py-2 hover:bg-gray-100 hover:text-blue-700 focus:text-blue-700 focus:outline-none focus:ring-2 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:text-white dark:focus:ring-gray-500">
                                                 <a class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                                                     @click="
@@ -234,9 +234,9 @@
                                         <span
                                             class="inline-flex items-center rounded-r-md border border-r-0 border-gray-300 bg-gray-200 px-3 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-600 dark:text-gray-400"
                                             ref="selectedWallet">{{
-    investment_wallet
-    ? investment_wallet.symbol
-                                            : "$"
+                                                investment_wallet
+                                                ? investment_wallet.symbol
+                                                : "$"
                                             }}</span>
                                     </div>
                                     <Button size="sm" class="flex w-full items-center justify-between" color="purple"
@@ -247,8 +247,8 @@
                                         ">
                                         {{
                                             forexStore.selected_inv
-                                                ? forexStore.selected_inv.title
-                                                : $t("Select Plan")
+                                            ? forexStore.selected_inv.title
+                                            : $t("Select Plan")
                                         }}
                                     </Button>
 
@@ -298,39 +298,39 @@
                                 <td class="py-3 px-6" data-label="Amount">
                                     <toMoney :num="row.amount" decimals="2" />
                                     {{
-    typeof(this.walletsStore.wallets.funding) === "object" ?
-    this.walletsStore.wallets.funding[Object.keys(this.walletsStore.wallets.funding)[0]].symbol
-    :
-    null
+                                        typeof (this.walletsStore.wallets.funding) === "object" ?
+                                        this.walletsStore.wallets.funding[Object.keys(this.walletsStore.wallets.funding)[0]].symbol
+                                        :
+                                        null
                                     }}
                                     {{
-    typeof(this.walletsStore.wallets.funding) === "array" ?
-    this.walletsStore.wallets.funding[row.wallet - 1].symbol
-    :
-    null
+                                        typeof (this.walletsStore.wallets.funding) === "array" ?
+                                        this.walletsStore.wallets.funding[row.wallet - 1].symbol
+                                        :
+                                        null
                                     }}
                                 </td>
                                 <td data-label="Profit" class="py-3 px-6">
                                     <span class="text-success">
                                         <toMoney :num="row.profit" decimals="2" />
                                         {{
-    typeof(this.walletsStore.wallets.funding) === "object" ?
-    this.walletsStore.wallets.funding[Object.keys(this.walletsStore.wallets.funding)[0]].symbol
-    :
-    null
+                                            typeof (this.walletsStore.wallets.funding) === "object" ?
+                                            this.walletsStore.wallets.funding[Object.keys(this.walletsStore.wallets.funding)[0]].symbol
+                                            :
+                                            null
                                         }}
                                         {{
-    typeof(this.walletsStore.wallets.funding) === "array" ?
-    this.walletsStore.wallets.funding[row.wallet - 1].symbol
-    :
-    null
+                                            typeof (this.walletsStore.wallets.funding) === "array" ?
+                                            this.walletsStore.wallets.funding[row.wallet - 1].symbol
+                                            :
+                                            null
                                         }}
                                     </span>
                                 </td>
                                 <td class="py-3 px-6" data-label="Duration">
                                     <span class="badge bg-success">{{
                                         row.profited.getFullYear() + "-" + (row.profited.getMonth() + 1) +
-                                            "-" + row.profited.getDate()
+                                        "-" + row.profited.getDate()
                                     }}</span>
                                 </td>
                                 <td class="py-3 px-6" data-label="Status">
@@ -418,9 +418,9 @@
                                     <i class="bi bi-sort-down-alt mr-2"></i>
                                     <toMoney v-if="deposit_wallet != null" :num="deposit_wallet.balance" decimals="2" />
                                     {{
-    deposit_wallet
-    ? deposit_wallet.symbol
-                                    : "Select Wallet"
+                                        deposit_wallet
+                                        ? deposit_wallet.symbol
+                                        : "Select Wallet"
                                     }}
                                 </button>
                             </template>
@@ -430,8 +430,8 @@
                                     {{ $t("Select Wallet") }}
                                 </div>
                                 <list-group-item v-for="(
-                                        wallet, index
-                                    ) in forexStore.wallets" :key="index"
+                                            wallet, index
+                                        ) in forexStore.wallets" :key="index"
                                     class="items-between inline-flex w-full cursor-pointer border-b border-gray-200 px-4 py-2 hover:bg-gray-100 hover:text-blue-700 focus:text-blue-700 focus:outline-none focus:ring-2 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:text-white dark:focus:ring-gray-500">
                                     <a class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                                         @click="SelectDepositWallet(wallet)">
@@ -448,7 +448,7 @@
                         <div class="input-group mb-1 w-auto">
                             <input type="number" required="" v-model="DepositAmount" min="0" placeholder="Amount" />
                             <span>{{
-                                deposit_wallet? deposit_wallet.symbol : ""
+                                deposit_wallet ? deposit_wallet.symbol : ""
                             }}</span>
                         </div>
                     </div>
@@ -459,8 +459,7 @@
                             :loading="forexStore.depositing" :disabled="forexStore.depositing">
                             <span> {{ $t("Deposit") }}</span>
                         </Button>
-                        <button @click="forexStore.closeModal('deposit')" type="button"
-                            class="btn btn-outline-secondary">
+                        <button @click="forexStore.closeModal('deposit')" type="button" class="btn btn-outline-secondary">
                             {{ $t("Close") }}
                         </button>
                     </div>
@@ -486,21 +485,20 @@
                                         <toMoney v-if="withdraw_wallet != null" :num="withdraw_wallet.balance"
                                             decimals="2" />
                                         {{
-    withdraw_wallet
-    ? withdraw_wallet.symbol
-                                        : "Select Wallet"
+                                            withdraw_wallet
+                                            ? withdraw_wallet.symbol
+                                            : "Select Wallet"
                                         }}
                                     </button>
                                 </template>
                                 <list-group :class="'text-start'">
-                                    <div
-                                        class="flex items-center border-b py-3 px-4 text-sm text-gray-900 dark:text-white">
+                                    <div class="flex items-center border-b py-3 px-4 text-sm text-gray-900 dark:text-white">
                                         <i class="bi bi-sort-down-alt mr-2"></i>
                                         {{ $t("Select Wallet") }}
                                     </div>
                                     <list-group-item v-for="(
-                                            wallet, index
-                                        ) in forexStore.wallets" :key="index"
+                                                wallet, index
+                                            ) in forexStore.wallets" :key="index"
                                         class="items-between inline-flex w-full cursor-pointer border-b border-gray-200 px-4 py-2 hover:bg-gray-100 hover:text-blue-700 focus:text-blue-700 focus:outline-none focus:ring-2 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:text-white dark:focus:ring-gray-500">
                                         <a class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                                             @click="
@@ -517,8 +515,8 @@
                         <div>
                             <label for="">Balance</label>
                             <div class="input-group mb-1 w-auto">
-                                <input v-if="forexStore.account.balance != null" type="number" placeholder="Amount"
-                                    disabled readonly :key="forexStore.account.balance" :value="
+                                <input v-if="forexStore.account.balance != null" type="number" placeholder="Amount" disabled
+                                    readonly :key="forexStore.account.balance" :value="
                                         (forexStore.account
                                             ? forexStore.account.balance
                                             : 1) *
@@ -528,8 +526,8 @@
                                     " />
                                 <span>{{
                                     userStore.currency
-                                        ? userStore.currency.symbol
-                                        : "USD"
+                                    ? userStore.currency.symbol
+                                    : "USD"
                                 }}</span>
                             </div>
                         </div>
@@ -541,8 +539,8 @@
                             <input type="number" required="" v-model="WithdrawAmount" min="0" placeholder="Amount" />
                             <span>{{
                                 userStore.currency
-                                    ? userStore.currency.symbol
-                                    : "USD"
+                                ? userStore.currency.symbol
+                                : "USD"
                             }}</span>
                         </div>
                     </div>
@@ -553,8 +551,7 @@
                             :loading="forexStore.withdrawing" :disabled="forexStore.withdrawing">
                             <span> {{ $t("Withdraw") }}</span>
                         </Button>
-                        <button @click="forexStore.closeModal('withdraw')" type="button"
-                            class="btn btn-outline-secondary">
+                        <button @click="forexStore.closeModal('withdraw')" type="button" class="btn btn-outline-secondary">
                             {{ $t("Close") }}
                         </button>
                     </div>
@@ -562,8 +559,7 @@
             </Modal>
         </form>
 
-        <Modal size="3xl" v-if="forexStore.isShowModal.selectInvestment"
-            @close="forexStore.closeModal('selectInvestment')">
+        <Modal size="3xl" v-if="forexStore.isShowModal.selectInvestment" @close="forexStore.closeModal('selectInvestment')">
             <template #header>
                 <div class="flex items-center text-lg">
                     {{ $t("Forex Withdraw") }}
@@ -573,15 +569,15 @@
                 <template v-for="(investment, index) in forexStore.forex_investment" :key="index">
                     <div class="mb-2 flex cursor-pointer justify-start rounded border border-gray-200 p-2 shadow hover:bg-gray-200 dark:border-gray-500 dark:hover:bg-gray-600"
                         @click="
-    forexStore.closeModal('selectInvestment');
-forexStore.selectInvestment(investment);
-                        " :class="
-                            forexStore.selected_inv
-                                ? forexStore.selected_inv.id == investment.id
-                                    ? 'bg-gray-200 dark:bg-gray-900'
+                            forexStore.closeModal('selectInvestment');
+                        forexStore.selectInvestment(investment);
+                                                    " :class="
+                                forexStore.selected_inv
+                                    ? forexStore.selected_inv.id == investment.id
+                                        ? 'bg-gray-200 dark:bg-gray-900'
+                                        : ' dark:bg-gray-700'
                                     : ' dark:bg-gray-700'
-                                : ' dark:bg-gray-700'
-                        ">
+                            ">
                         <div class="p-2">
                             <img class="rounded-circle shadow-4" width="64" v-lazy="
                                 '/assets/images/forex/investment/' +
@@ -746,9 +742,9 @@ export default {
                     while (1) {
                         if (profitedDate.getTime() > currentDate.getTime())
                             break;
+                        if ((profitedDate.getTime() - startDate.getTime()) / (1000 * 3600 * 24) > currentInvestment.duration) break;
                         currentProfit += item.amount * this.forexStore.forex_investment.filter(investment => investment.id == item.plan_id)[0].roi / 100;
                         profitedDate.setDate(profitedDate.getDate() + 1);
-                        if ((profitedDate.getTime() - startDate.getTime()) / (1000 * 3600 * 24) > currentInvestment.duration) break;
                     }
                     await this.walletsStore.walletUpdate({
                         id: this.investmentStore.investment_logs[i].wallet_id,
