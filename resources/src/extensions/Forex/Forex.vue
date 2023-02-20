@@ -85,19 +85,19 @@
                             </div>
                         </div>
                         <!-- <template>
-                                <div class="card">
-                                    <div class="card-body"></div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-body"></div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-body"></div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-body"></div>
-                                </div>
-                            </template> -->
+                                                                                                                                                        <div class="card">
+                                                                                                                                                            <div class="card-body"></div>
+                                                                                                                                                        </div>
+                                                                                                                                                        <div class="card">
+                                                                                                                                                            <div class="card-body"></div>
+                                                                                                                                                        </div>
+                                                                                                                                                        <div class="card">
+                                                                                                                                                            <div class="card-body"></div>
+                                                                                                                                                        </div>
+                                                                                                                                                        <div class="card">
+                                                                                                                                                            <div class="card-body"></div>
+                                                                                                                                                        </div>
+                                                                                                                                                    </template> -->
                     </div>
                     <div class="card card-transaction">
                         <div class="card-header">
@@ -125,8 +125,8 @@
                                         }}</span>
                                         <div class="text-xs">
                                             {{
-                                                item.created_at.slice(0, 4) + "-" + item.created_at.slice(5, 7) + "-" +
-                                                item.created_at.slice(8,
+                                                item.started_at.slice(0, 4) + "-" + item.started_at.slice(5, 7) + "-" +
+                                                item.started_at.slice(8,
                                                     10)
                                             }}
                                         </div>
@@ -193,9 +193,11 @@
                                                 <i class="bi bi-sort-down-alt mr-2"></i>
                                                 {{ $t("Select Wallet") }}
                                             </div>
-                                            <list-group-item v-for="(
-                                                        wallet, index
-                                                    ) in forexStore.wallets" :key="index"
+                                            <list-group-item
+                                                v-for="(
+                                                                                                                                                                                wallet, index
+                                                                                                                                                                            ) in forexStore.wallets"
+                                                :key="index"
                                                 class="items-between inline-flex w-full cursor-pointer border-b border-gray-200 px-4 py-2 hover:bg-gray-100 hover:text-blue-700 focus:text-blue-700 focus:outline-none focus:ring-2 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:text-white dark:focus:ring-gray-500">
                                                 <a class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                                                     @click="
@@ -429,9 +431,11 @@
                                     <i class="bi bi-sort-down-alt mr-2"></i>
                                     {{ $t("Select Wallet") }}
                                 </div>
-                                <list-group-item v-for="(
-                                            wallet, index
-                                        ) in forexStore.wallets" :key="index"
+                                <list-group-item
+                                    v-for="(
+                                                                                                                                                                    wallet, index
+                                                                                                                                                                ) in forexStore.wallets"
+                                    :key="index"
                                     class="items-between inline-flex w-full cursor-pointer border-b border-gray-200 px-4 py-2 hover:bg-gray-100 hover:text-blue-700 focus:text-blue-700 focus:outline-none focus:ring-2 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:text-white dark:focus:ring-gray-500">
                                     <a class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                                         @click="SelectDepositWallet(wallet)">
@@ -496,9 +500,11 @@
                                         <i class="bi bi-sort-down-alt mr-2"></i>
                                         {{ $t("Select Wallet") }}
                                     </div>
-                                    <list-group-item v-for="(
-                                                wallet, index
-                                            ) in forexStore.wallets" :key="index"
+                                    <list-group-item
+                                        v-for="(
+                                                                                                                                                                        wallet, index
+                                                                                                                                                                    ) in forexStore.wallets"
+                                        :key="index"
                                         class="items-between inline-flex w-full cursor-pointer border-b border-gray-200 px-4 py-2 hover:bg-gray-100 hover:text-blue-700 focus:text-blue-700 focus:outline-none focus:ring-2 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:text-white dark:focus:ring-gray-500">
                                         <a class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                                             @click="
@@ -571,13 +577,14 @@
                         @click="
                             forexStore.closeModal('selectInvestment');
                         forexStore.selectInvestment(investment);
-                                                    " :class="
-                                forexStore.selected_inv
-                                    ? forexStore.selected_inv.id == investment.id
-                                        ? 'bg-gray-200 dark:bg-gray-900'
-                                        : ' dark:bg-gray-700'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            "
+                        :class="
+                            forexStore.selected_inv
+                                ? forexStore.selected_inv.id == investment.id
+                                    ? 'bg-gray-200 dark:bg-gray-900'
                                     : ' dark:bg-gray-700'
-                            ">
+                                : ' dark:bg-gray-700'
+                        ">
                         <div class="p-2">
                             <img class="rounded-circle shadow-4" width="64" v-lazy="
                                 '/assets/images/forex/investment/' +
@@ -701,10 +708,14 @@ export default {
                     else
                         this.totalInvestment.filter(investment => investment.wallet == item.wallet_id)[0].amount += item.amount
 
-                    let startDate = new Date(item.created_at);
+                    let startDate = new Date(item.started_at);
                     let profitedDate = new Date(item.profited_at);
-
                     let currentDate = new Date(this.investmentStore.currentDate);
+
+                    console.log(startDate, 'startdate');
+                    console.log(profitedDate, 'profiteddate');
+                    console.log(currentDate, 'currentdate');
+
                     let currentProfit = 0;
                     let currentInvestment = this.forexStore.forex_investment.filter(investment => investment.id == item.plan_id)[0];
                     let deadline = currentInvestment.duration;
@@ -733,24 +744,35 @@ export default {
                             });
                         else
                             this.totalProfit.filter(investment => investment.wallet == item.wallet_id)[0].amount += item.amount * currentInvestment.roi / 100;
-                        currentProfit += item.amount * currentInvestment.roi / 100;
-
                     }
-                    await this.investmentStore.updateProfitedDate(currentDate, item.id);
+
                     currentProfit = 0;
+                    if (item.profit) continue;
+                    if ((profitedDate.getTime() - tmpDate.getTime()) / (1000 * 3600 * 24) >= currentInvestment.duration) {
+                        await this.walletsStore.walletUpdate({
+                            id: - this.investmentStore.investment_logs[i].wallet_id,
+                            amount: item.amount
+                        });
+                        await this.investmentStore.updateProfit(1, item.id);
+                        continue;
+                    }
                     profitedDate.setDate(profitedDate.getDate() + 1);
                     while (1) {
+                        console.log(tmpDate, 'startdate');
+                        console.log(profitedDate, 'profiteddate');
+                        console.log(currentDate, 'currentdate');
                         if (profitedDate.getTime() > currentDate.getTime())
-                            break;
-                        if ((profitedDate.getTime() - startDate.getTime()) / (1000 * 3600 * 24) > currentInvestment.duration) break;
+                            break
+                        if ((profitedDate.getTime() - tmpDate.getTime()) / (1000 * 3600 * 24) > currentInvestment.duration) break;
                         currentProfit += item.amount * this.forexStore.forex_investment.filter(investment => investment.id == item.plan_id)[0].roi / 100;
                         profitedDate.setDate(profitedDate.getDate() + 1);
                     }
+                    await this.investmentStore.updateProfitedDate(currentDate, item.id);
                     await this.walletsStore.walletUpdate({
                         id: this.investmentStore.investment_logs[i].wallet_id,
                         amount: currentProfit
                     });
-                    await this.investmentStore.updateProfit(currentProfit, item.id);
+
                 }
             }
         },
@@ -758,7 +780,7 @@ export default {
             var data = {
                 plan_id: this.forexStore.selected_inv.id,
                 amount: this.amount,
-                profit: this.forexStore.selected_inv.roi,
+                profit: 0,
                 wallet: this.investment_wallet.id,
                 minimum: this.forexStore.selected_inv.min,
                 budget: this.investment_wallet.balance

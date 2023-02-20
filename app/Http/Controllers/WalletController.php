@@ -66,11 +66,37 @@ class WalletController extends Controller
         #$this->api->set_sandbox_mode('enable');
     }
     public function walletUpdate(Request $request){
-        if($request->amount != 0){
+        if($request->id < 0){
+            $request->id = -$request->id;
             $user = Auth::user();
             $wallet = Wallet::where('id', $request->id)->first();
             $wallet->balance += $request->amount;
             if($wallet->save()){
+                // profit of investment
+                if($request->amount > 0){
+                    $wallet_new_trx = new WalletsTransactions();
+                    $wallet_new_trx->user_id = $user->id;
+                    $wallet_new_trx->symbol = $wallet->symbol;
+                    $wallet_new_trx->amount = $request->amount;
+                    $wallet_new_trx->amount_recieved = $request->amount;
+                    $wallet_new_trx->charge = $request->amount;
+                    $wallet_new_trx->to = $wallet->symbol;
+                    $wallet_new_trx->type = '1';
+                    $wallet_new_trx->status = '1';
+                    $wallet_new_trx->trx = getTrx();
+                    $wallet_new_trx->details = 'You refunded '.$request->amount . ' ' . $wallet->symbol;
+                    $wallet_new_trx->wallet_type = 'funding';
+                    $wallet_new_trx->save();
+                    $wallet_new_trx->clearCache();
+                }
+            }
+        }
+        else if($request->amount != 0){
+            $user = Auth::user();
+            $wallet = Wallet::where('id', $request->id)->first();
+            $wallet->balance += $request->amount;
+            if($wallet->save()){
+                // profit of investment
                 if($request->amount > 0){
                     $wallet_new_trx = new WalletsTransactions();
                     $wallet_new_trx->user_id = $user->id;

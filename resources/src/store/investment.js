@@ -18,9 +18,9 @@ export const useInvestmentStore = defineStore("investment", {
                 (this.account = response.account),
                     (this.investment_logs = response.investment_logs),
                     (this.investment = response.investment),
-                    (this.withdraw_logs = response.withdraw_logs);
+                    (this.withdraw_logs = response.withdraw_logs),
+                    (this.currentDate = response.currentDate);
             });
-            this.currentDate = new Date();
         },
         async start(data) {
             console.log(data);

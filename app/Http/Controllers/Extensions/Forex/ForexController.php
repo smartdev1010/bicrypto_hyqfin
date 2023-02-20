@@ -32,6 +32,7 @@ class ForexController extends Controller
             'investment_logs' => $investment_logs,
             'investment' => Investment::where('user_id', $user->id)->get(),
             'withdraw_logs' => WithdrawLogs::get(),
+            'currentDate' => date("Y-m-d H:i:s")
         ]);
     }
     
@@ -99,8 +100,8 @@ class ForexController extends Controller
         $investment->amount = $request->amount;
         $investment->profit = $request->profit;
         $investment->wallet_id = $request->wallet;
-        $investment->created_at = date("Y-m-d H:i:s");;
-        $investment->profited_at = date("Y-m-d H:i:s");;
+        $investment->started_at = date("Y-m-d H:i:s");
+        $investment->profited_at = date("Y-m-d H:i:s");
 
         if($investment->save()){
             $forex_log = new ForexLogs();
@@ -146,16 +147,6 @@ class ForexController extends Controller
         $user = Auth::user();
         $investment = InvestmentLogs::findOrFail($request->id);
         $investment->profit = $request->profit;
-
-        $investment->save();
-        return true;
-    }
-    public function investment_date_update1(Request $request){
-        $user = Auth::user();
-        $investment = InvestmentLogs::findOrFail($request->id);
-        $now = date("Y-m-d H:i:s");
-        $profited = date($investment->profited_at);
-        $investment->profited_at = $profited.setDate($profited.getDate() + 1);
 
         $investment->save();
         return true;
