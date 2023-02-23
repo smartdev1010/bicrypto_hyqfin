@@ -29,6 +29,9 @@ class PlatformController extends Controller
             'unilevel_upline5_percentage' => 'numeric',
             'unilevel_upline6_percentage' => 'numeric',
             'unilevel_upline7_percentage' => 'numeric',
+            'unilevel_upline8_percentage' => 'numeric',
+            'unilevel_upline9_percentage' => 'numeric',
+            'unilevel_upline10_percentage' => 'numeric',
             'community_line_percentage' => 'numeric'
         ]);
 
@@ -129,12 +132,18 @@ class PlatformController extends Controller
                 'unilevel_upline5_percentage' => $request->unilevel_upline5_percentage,
                 'unilevel_upline6_percentage' => $request->unilevel_upline6_percentage,
                 'unilevel_upline7_percentage' => $request->unilevel_upline7_percentage,
+                'unilevel_upline8_percentage' => $request->unilevel_upline8_percentage,
+                'unilevel_upline9_percentage' => $request->unilevel_upline9_percentage,
+                'unilevel_upline10_percentage' => $request->unilevel_upline10_percentage,
                 'unilevel_upline2_status' => $request->unilevel_upline2_status ?? 0,
                 'unilevel_upline3_status' => $request->unilevel_upline3_status ?? 0,
                 'unilevel_upline4_status' => $request->unilevel_upline4_status ?? 0,
                 'unilevel_upline5_status' => $request->unilevel_upline5_status ?? 0,
                 'unilevel_upline6_status' => $request->unilevel_upline6_status ?? 0,
                 'unilevel_upline7_status' => $request->unilevel_upline7_status ?? 0,
+                'unilevel_upline8_status' => $request->unilevel_upline8_status ?? 0,
+                'unilevel_upline9_status' => $request->unilevel_upline9_status ?? 0,
+                'unilevel_upline10_status' => $request->unilevel_upline10_status ?? 0,
                 'community_line_status' => $request->community_line_status ?? 0,
                 'community_line_clients' => $request->community_line_clients,
                 'membership_status' => $request->membership_status ?? 0,

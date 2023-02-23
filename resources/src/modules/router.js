@@ -143,10 +143,22 @@ if (ext.ico == 1) {
 }
 if (ext.mlm == 1) {
     const Referral = () => import("../extensions/mlm/Referral.vue");
+    const Report = () => import("../components/Refer.vue");
+    const Forex = () => import("../Pages/Network.vue");
+    // routes.push({
+    //     path: "/referral",
+    //     component: Referral,
+    //     meta: { title: "My Referrals" },
+    // });
     routes.push({
-        path: "/referral",
+        path: "/referral/subPage",
         component: Referral,
-        meta: { title: "My Referrals" },
+        meta: { title: "Sub Page" },
+    });
+    routes.push({
+        path: "/referral/levelReport",
+        component: Forex,
+        meta: { title: "Level Report" },
     });
 }
 if (ext.forex == 1) {

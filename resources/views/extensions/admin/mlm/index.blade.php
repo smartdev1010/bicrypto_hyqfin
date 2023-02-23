@@ -1,5 +1,4 @@
 @extends('layouts.admin')
-
 @section('content')
-    <livewire:ext.mlm.ranks-table />
+<livewire:ext.mlm.ranks-table />
 @endsection

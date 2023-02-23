@@ -15,34 +15,16 @@
                         )
                     }}
                 </p>
-                <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#referEarnModal"
-                >
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#referEarnModal">
                     {{ $t("Invite") }}
                 </button>
             </div>
         </div>
-        <div
-            class="modal fade"
-            id="referEarnModal"
-            tabindex="-1"
-            aria-labelledby="referEarnTitle"
-            aria-hidden="true"
-        >
-            <div
-                class="modal-dialog modal-dialog-centered modal-lg modal-refer-earn"
-            >
+        <div class="modal fade" id="referEarnModal" tabindex="-1" aria-labelledby="referEarnTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-refer-earn">
                 <div class="modal-content">
                     <div class="modal-header bg-transparent">
-                        <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                        ></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body pb-5 px-sm-0">
                         <div class="px-sm-4 mx-50">
@@ -67,15 +49,10 @@
 
                             <div class="row mb-4">
                                 <div class="col-12 col-lg-4">
-                                    <div
-                                        class="d-flex justify-content-center mb-1"
-                                    >
+                                    <div class="d-flex justify-content-center mb-1">
                                         <div
-                                            class="modal-refer-earn-step d-flex width-100 height-100 rounded-circle justify-content-center align-items-center bg-light-primary"
-                                        >
-                                            <i
-                                                class="bi bi-chat-left display-4 text-warning"
-                                            ></i>
+                                            class="modal-refer-earn-step d-flex width-100 height-100 rounded-circle justify-content-center align-items-center bg-light-primary">
+                                            <i class="bi bi-chat-left display-4 text-warning"></i>
                                         </div>
                                     </div>
                                     <div class="text-center">
@@ -92,15 +69,10 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-4">
-                                    <div
-                                        class="d-flex justify-content-center mb-1"
-                                    >
+                                    <div class="d-flex justify-content-center mb-1">
                                         <div
-                                            class="modal-refer-earn-step d-flex width-100 height-100 rounded-circle justify-content-center align-items-center bg-light-primary"
-                                        >
-                                            <i
-                                                class="bi bi-card-checklist display-4 text-info"
-                                            ></i>
+                                            class="modal-refer-earn-step d-flex width-100 height-100 rounded-circle justify-content-center align-items-center bg-light-primary">
+                                            <i class="bi bi-card-checklist display-4 text-info"></i>
                                         </div>
                                     </div>
                                     <div class="text-center">
@@ -117,15 +89,10 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-4">
-                                    <div
-                                        class="d-flex justify-content-center mb-1"
-                                    >
+                                    <div class="d-flex justify-content-center mb-1">
                                         <div
-                                            class="modal-refer-earn-step d-flex width-100 height-100 rounded-circle justify-content-center align-items-center bg-light-primary"
-                                        >
-                                            <i
-                                                class="bi bi-award display-4 text-success"
-                                            ></i>
+                                            class="modal-refer-earn-step d-flex width-100 height-100 rounded-circle justify-content-center align-items-center bg-light-primary">
+                                            <i class="bi bi-award display-4 text-success"></i>
                                         </div>
                                     </div>
                                     <div class="text-center">
@@ -162,82 +129,48 @@
                                         🥳
                                     </label>
                                     <div class="input-group input-group-merge">
-                                        <input
-                                            type="text"
-                                            class="form-control"
-                                            :value="
-                                                pathname +
-                                                '/register/' +
-                                                user.username
-                                            "
-                                            id="referralURL"
-                                            readonly
-                                        />
-                                        <a
-                                            class="input-group-text btn btn-outline-primary"
-                                            @click="Copy()"
-                                            id="copyBoard"
-                                            >{{ $t("Copy link") }}</a
-                                        >
+                                        <input type="text" class="form-control" :value="
+                                            pathname +
+                                            '/register/' +
+                                            user.username
+                                        " id="referralURL" readonly />
+                                        <a class="input-group-text btn btn-outline-primary" @click="Copy()"
+                                            id="copyBoard">{{ $t("Copy link") }}</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 d-flex align-items-end">
                                     <div class="social-btns">
-                                        <a
-                                            :href="
-                                                'https://www.facebook.com/sharer/sharer.php?u=' +
-                                                pathname +
-                                                '/register/' +
-                                                user.username
-                                            "
-                                            type="button"
-                                            class="btn btn-icon btn-facebook me-50"
-                                        >
-                                            <i
-                                                class="bi bi-facebook font-medium-2"
-                                            ></i>
+                                        <a :href="
+                                            'https://www.facebook.com/sharer/sharer.php?u=' +
+                                            pathname +
+                                            '/register/' +
+                                            user.username
+                                        " type="button" class="btn btn-icon btn-facebook me-50">
+                                            <i class="bi bi-facebook font-medium-2"></i>
                                         </a>
-                                        <a
-                                            :href="
-                                                'https://twitter.com/intent/tweet?url=' +
-                                                pathname +
-                                                '/register/' +
-                                                user.username
-                                            "
-                                            type="button"
-                                            class="btn btn-icon btn-twitter me-50"
-                                        >
-                                            <i
-                                                class="bi bi-twitter font-medium-2"
-                                            ></i>
+                                        <a :href="
+                                            'https://twitter.com/intent/tweet?url=' +
+                                            pathname +
+                                            '/register/' +
+                                            user.username
+                                        " type="button" class="btn btn-icon btn-twitter me-50">
+                                            <i class="bi bi-twitter font-medium-2"></i>
                                         </a>
-                                        <a
-                                            :href="
-                                                'https://www.linkedin.com/shareArticle?mini=true&url=' +
-                                                pathname +
-                                                '/register/' +
-                                                user.username
-                                            "
-                                            type="button"
-                                            class="btn btn-icon btn-linkedin me-50"
-                                        >
-                                            <i
-                                                class="bi bi-linkedin font-medium-2"
-                                            ></i>
+                                        <a :href="
+                                            'https://www.linkedin.com/shareArticle?mini=true&url=' +
+                                            pathname +
+                                            '/register/' +
+                                            user.username
+                                        " type="button" class="btn btn-icon btn-linkedin me-50">
+                                            <i class="bi bi-linkedin font-medium-2"></i>
                                         </a>
-                                        <a
-                                            :href="
-                                                'https://pinterest.com/pin/create/button/?url=' +
-                                                pathname +
-                                                '/register/' +
-                                                user.username
-                                            "
-                                            type="button"
-                                            class="btn btn-icon btn-pinterest"
-                                        >
-                                            <i
-                                                class="bi bi-pinterest font-medium-2"
-                                            ></i>
+                                        <a :href="
+                                            'https://pinterest.com/pin/create/button/?url=' +
+                                            pathname +
+                                            '/register/' +
+                                            user.username
+                                        " type="button" class="btn btn-icon btn-pinterest">
+                                            <i class="bi bi-pinterest font-medium-2"></i>
                                         </a>
                                     </div>
                                 </div>
@@ -279,12 +212,12 @@ export default {
     },
 
     // on component created
-    created() {},
+    created() { },
 
     // on component mounted
-    mounted() {},
+    mounted() { },
 
     // on component destroyed
-    destroyed() {},
+    destroyed() { },
 };
 </script>

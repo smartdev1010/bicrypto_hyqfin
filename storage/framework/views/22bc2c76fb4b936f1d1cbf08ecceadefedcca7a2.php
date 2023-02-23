@@ -890,6 +890,81 @@
                                             <small
                                                 class="text-warning"><?php echo e(__('Seventh Upline Commission Percentage')); ?></small>
                                         </div>
+                                        <div class="border rounded dark:border-gray-600 shadow p-2">
+                                            <div class="flex items-center justify-between">
+                                                <div class="flex items-center mb-2">
+                                                    <label class="inline-flex relative items-center cursor-pointer mr-3">
+                                                        <input type="checkbox"
+                                                            value="<?php echo e($platform->mlm->unilevel_upline8_status); ?>"
+                                                            class="sr-only peer" data-on="Cover" data-off="Minimal"
+                                                            name="unilevel_upline8_status" id="unilevel_upline8_status"
+                                                            <?php if($platform->mlm->unilevel_upline8_status == 1): ?> checked <?php endif; ?>>
+                                                        <div class="toggle peer"
+                                                            onclick="$('#unilevel_upline8_status').val($('#unilevel_upline8_status').val() != 1 ? 1 : 0)">
+                                                        </div>
+                                                    </label>
+                                                    <span
+                                                        class="text-sm font-medium text-gray-900 dark:text-gray-300"><?php echo e(__('8nd Upline')); ?></span>
+                                                </div>
+                                                <div class="input-group">
+                                                    <input type="text" name="unilevel_upline8_percentage"
+                                                        value="<?php echo e($platform->mlm->unilevel_upline8_percentage ?? ''); ?>">
+                                                    <span>%</span>
+                                                </div>
+                                            </div>
+                                            <small
+                                                class="text-warning"><?php echo e(__('Eighth Upline Commission Percentage')); ?></small>
+                                        </div>
+                                        <div class="border rounded dark:border-gray-600 shadow p-2">
+                                            <div class="flex items-center justify-between">
+                                                <div class="flex items-center mb-2">
+                                                    <label class="inline-flex relative items-center cursor-pointer mr-3">
+                                                        <input type="checkbox"
+                                                            value="<?php echo e($platform->mlm->unilevel_upline9_status); ?>"
+                                                            class="sr-only peer" data-on="Cover" data-off="Minimal"
+                                                            name="unilevel_upline9_status" id="unilevel_upline9_status"
+                                                            <?php if($platform->mlm->unilevel_upline9_status == 1): ?> checked <?php endif; ?>>
+                                                        <div class="toggle peer"
+                                                            onclick="$('#unilevel_upline9_status').val($('#unilevel_upline9_status').val() != 1 ? 1 : 0)">
+                                                        </div>
+                                                    </label>
+                                                    <span
+                                                        class="text-sm font-medium text-gray-900 dark:text-gray-300"><?php echo e(__('9nd Upline')); ?></span>
+                                                </div>
+                                                <div class="input-group">
+                                                    <input type="text" name="unilevel_upline9_percentage"
+                                                        value="<?php echo e($platform->mlm->unilevel_upline9_percentage ?? ''); ?>">
+                                                    <span>%</span>
+                                                </div>
+                                            </div>
+                                            <small
+                                                class="text-warning"><?php echo e(__('Ninth Upline Commission Percentage')); ?></small>
+                                        </div>
+                                        <div class="border rounded dark:border-gray-600 shadow p-2">
+                                            <div class="flex items-center justify-between">
+                                                <div class="flex items-center mb-2">
+                                                    <label class="inline-flex relative items-center cursor-pointer mr-3">
+                                                        <input type="checkbox"
+                                                            value="<?php echo e($platform->mlm->unilevel_upline10_status); ?>"
+                                                            class="sr-only peer" data-on="Cover" data-off="Minimal"
+                                                            name="unilevel_upline10_status" id="unilevel_upline10_status"
+                                                            <?php if($platform->mlm->unilevel_upline10_status == 1): ?> checked <?php endif; ?>>
+                                                        <div class="toggle peer"
+                                                            onclick="$('#unilevel_upline10_status').val($('#unilevel_upline10_status').val() != 1 ? 1 : 0)">
+                                                        </div>
+                                                    </label>
+                                                    <span
+                                                        class="text-sm font-medium text-gray-900 dark:text-gray-300"><?php echo e(__('10nd Upline')); ?></span>
+                                                </div>
+                                                <div class="input-group">
+                                                    <input type="text" name="unilevel_upline10_percentage"
+                                                        value="<?php echo e($platform->mlm->unilevel_upline10_percentage ?? ''); ?>">
+                                                    <span>%</span>
+                                                </div>
+                                            </div>
+                                            <small
+                                                class="text-warning"><?php echo e(__('Tenth Upline Commission Percentage')); ?></small>
+                                        </div>
                                     </div>
                                 <?php endif; ?>
                             </div>

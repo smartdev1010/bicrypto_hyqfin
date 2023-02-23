@@ -59,7 +59,7 @@
         {
             "name": "Bots Manager",
             "icon": "robot",
-            "status": 1,
+            "status": 0,
             "addon": 1,
             "permission": "bot_access",
             "submenu": [
@@ -644,8 +644,21 @@
             "url": "/referral",
             "name": "Referrals",
             "icon": "diagram-3",
-            "addon": 3,
-            "status": 1
+            "status": 1,
+            "submenu": [
+                {
+                    "name": "Sub Page",
+                    "icon": "chevron-right",
+                    "url": "/referral/subPage",
+                    "status": 1
+                },
+                {
+                    "name": "Level Report",
+                    "icon": "chevron-right",
+                    "url": "/referral/levelReport",
+                    "status": 1
+                }
+            ]
         },
         {
             "name": "Transactions",

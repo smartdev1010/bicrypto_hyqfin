@@ -4,15 +4,15 @@
     <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('components.charts.area', ['element' => 'total_users','route' => 'admin.users.all','title' => 'Users','tooltip' => 'Total Users','color' => '#9061F9','icon' => '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" /></svg>'])->html();
-} elseif ($_instance->childHasBeenRendered('fs2FHYL')) {
-    $componentId = $_instance->getRenderedChildComponentId('fs2FHYL');
-    $componentTag = $_instance->getRenderedChildComponentTagName('fs2FHYL');
+} elseif ($_instance->childHasBeenRendered('pwFbHe3')) {
+    $componentId = $_instance->getRenderedChildComponentId('pwFbHe3');
+    $componentTag = $_instance->getRenderedChildComponentTagName('pwFbHe3');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('fs2FHYL');
+    $_instance->preserveRenderedChild('pwFbHe3');
 } else {
     $response = \Livewire\Livewire::mount('components.charts.area', ['element' => 'total_users','route' => 'admin.users.all','title' => 'Users','tooltip' => 'Total Users','color' => '#9061F9','icon' => '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" /></svg>']);
     $html = $response->html();
-    $_instance->logRenderedChild('fs2FHYL', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('pwFbHe3', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -21,17 +21,17 @@ if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('components.charts.area', ['element' => 'verified_users','route' => 'admin.users.all','title' => 'Verified Users','tooltip' => 'Verified Users','color' => '#55DD92','icon' => '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
               </svg>'])->html();
-} elseif ($_instance->childHasBeenRendered('BBaz5ki')) {
-    $componentId = $_instance->getRenderedChildComponentId('BBaz5ki');
-    $componentTag = $_instance->getRenderedChildComponentTagName('BBaz5ki');
+} elseif ($_instance->childHasBeenRendered('2bpXszI')) {
+    $componentId = $_instance->getRenderedChildComponentId('2bpXszI');
+    $componentTag = $_instance->getRenderedChildComponentTagName('2bpXszI');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('BBaz5ki');
+    $_instance->preserveRenderedChild('2bpXszI');
 } else {
     $response = \Livewire\Livewire::mount('components.charts.area', ['element' => 'verified_users','route' => 'admin.users.all','title' => 'Verified Users','tooltip' => 'Verified Users','color' => '#55DD92','icon' => '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
               </svg>']);
     $html = $response->html();
-    $_instance->logRenderedChild('BBaz5ki', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('2bpXszI', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -40,17 +40,17 @@ if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('components.charts.area', ['element' => 'unverified_users','route' => 'admin.users.all','title' => 'Unverified Users','tooltip' => 'Unverified Users','color' => '#F05252','icon' => '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
               </svg>'])->html();
-} elseif ($_instance->childHasBeenRendered('eV36v1V')) {
-    $componentId = $_instance->getRenderedChildComponentId('eV36v1V');
-    $componentTag = $_instance->getRenderedChildComponentTagName('eV36v1V');
+} elseif ($_instance->childHasBeenRendered('eyy1kzC')) {
+    $componentId = $_instance->getRenderedChildComponentId('eyy1kzC');
+    $componentTag = $_instance->getRenderedChildComponentTagName('eyy1kzC');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('eV36v1V');
+    $_instance->preserveRenderedChild('eyy1kzC');
 } else {
     $response = \Livewire\Livewire::mount('components.charts.area', ['element' => 'unverified_users','route' => 'admin.users.all','title' => 'Unverified Users','tooltip' => 'Unverified Users','color' => '#F05252','icon' => '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
               </svg>']);
     $html = $response->html();
-    $_instance->logRenderedChild('eV36v1V', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('eyy1kzC', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -63,17 +63,17 @@ if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('components.charts.transactions', ['element' => 'trades_report','route' => 'admin.users.all','title' => 'Trades Report','tooltip' => 'Trades','color' => '#4467EF','icon' => '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
               </svg>'])->html();
-} elseif ($_instance->childHasBeenRendered('Pf8ykar')) {
-    $componentId = $_instance->getRenderedChildComponentId('Pf8ykar');
-    $componentTag = $_instance->getRenderedChildComponentTagName('Pf8ykar');
+} elseif ($_instance->childHasBeenRendered('3RfmcDB')) {
+    $componentId = $_instance->getRenderedChildComponentId('3RfmcDB');
+    $componentTag = $_instance->getRenderedChildComponentTagName('3RfmcDB');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('Pf8ykar');
+    $_instance->preserveRenderedChild('3RfmcDB');
 } else {
     $response = \Livewire\Livewire::mount('components.charts.transactions', ['element' => 'trades_report','route' => 'admin.users.all','title' => 'Trades Report','tooltip' => 'Trades','color' => '#4467EF','icon' => '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
               </svg>']);
     $html = $response->html();
-    $_instance->logRenderedChild('Pf8ykar', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('3RfmcDB', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -83,15 +83,15 @@ echo $html;
     <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('components.charts.monthly', ['element' => 'binary_trades','route' => 'admin.users.all','title' => 'Binary Trades Report','tooltip' => ['Wins', 'Loses'],'colors' => ['#22c55e', '#ef4444'],'icon' => '<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" /><path stroke-linecap="round" stroke-linejoin="round" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" /></svg>'])->html();
-} elseif ($_instance->childHasBeenRendered('LCiO1C7')) {
-    $componentId = $_instance->getRenderedChildComponentId('LCiO1C7');
-    $componentTag = $_instance->getRenderedChildComponentTagName('LCiO1C7');
+} elseif ($_instance->childHasBeenRendered('TATFPJs')) {
+    $componentId = $_instance->getRenderedChildComponentId('TATFPJs');
+    $componentTag = $_instance->getRenderedChildComponentTagName('TATFPJs');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('LCiO1C7');
+    $_instance->preserveRenderedChild('TATFPJs');
 } else {
     $response = \Livewire\Livewire::mount('components.charts.monthly', ['element' => 'binary_trades','route' => 'admin.users.all','title' => 'Binary Trades Report','tooltip' => ['Wins', 'Loses'],'colors' => ['#22c55e', '#ef4444'],'icon' => '<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" /><path stroke-linecap="round" stroke-linejoin="round" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" /></svg>']);
     $html = $response->html();
-    $_instance->logRenderedChild('LCiO1C7', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('TATFPJs', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -105,15 +105,15 @@ echo $html;
     <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('components.charts.monthly-transactions', ['element' => 'deposits','route' => 'admin.users.all','title' => 'Deposits','tooltip' => ['Total', 'Fees', 'Completed', 'Pending'],'colors' => ['#9061F9', '#E74694', '#0E9F6E', '#E3A008'],'icon' => '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6L9 12.75l4.286-4.286a11.948 11.948 0 014.306 6.43l.776 2.898m0 0l3.182-5.511m-3.182 5.51l-5.511-3.181" /></svg>'])->html();
-} elseif ($_instance->childHasBeenRendered('Unn5dZj')) {
-    $componentId = $_instance->getRenderedChildComponentId('Unn5dZj');
-    $componentTag = $_instance->getRenderedChildComponentTagName('Unn5dZj');
+} elseif ($_instance->childHasBeenRendered('1ax9pre')) {
+    $componentId = $_instance->getRenderedChildComponentId('1ax9pre');
+    $componentTag = $_instance->getRenderedChildComponentTagName('1ax9pre');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('Unn5dZj');
+    $_instance->preserveRenderedChild('1ax9pre');
 } else {
     $response = \Livewire\Livewire::mount('components.charts.monthly-transactions', ['element' => 'deposits','route' => 'admin.users.all','title' => 'Deposits','tooltip' => ['Total', 'Fees', 'Completed', 'Pending'],'colors' => ['#9061F9', '#E74694', '#0E9F6E', '#E3A008'],'icon' => '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6L9 12.75l4.286-4.286a11.948 11.948 0 014.306 6.43l.776 2.898m0 0l3.182-5.511m-3.182 5.51l-5.511-3.181" /></svg>']);
     $html = $response->html();
-    $_instance->logRenderedChild('Unn5dZj', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('1ax9pre', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -122,15 +122,15 @@ echo $html;
     <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('components.charts.monthly-transactions', ['element' => 'withdrawals','route' => 'admin.users.all','title' => 'Withdrawals','tooltip' => ['Total', 'Fees', 'Completed', 'Pending'],'colors' => ['#9061F9', '#E74694', '#0E9F6E', '#E3A008'],'icon' => '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" /></svg>'])->html();
-} elseif ($_instance->childHasBeenRendered('vwP3ex2')) {
-    $componentId = $_instance->getRenderedChildComponentId('vwP3ex2');
-    $componentTag = $_instance->getRenderedChildComponentTagName('vwP3ex2');
+} elseif ($_instance->childHasBeenRendered('CIHmUGk')) {
+    $componentId = $_instance->getRenderedChildComponentId('CIHmUGk');
+    $componentTag = $_instance->getRenderedChildComponentTagName('CIHmUGk');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('vwP3ex2');
+    $_instance->preserveRenderedChild('CIHmUGk');
 } else {
     $response = \Livewire\Livewire::mount('components.charts.monthly-transactions', ['element' => 'withdrawals','route' => 'admin.users.all','title' => 'Withdrawals','tooltip' => ['Total', 'Fees', 'Completed', 'Pending'],'colors' => ['#9061F9', '#E74694', '#0E9F6E', '#E3A008'],'icon' => '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" /></svg>']);
     $html = $response->html();
-    $_instance->logRenderedChild('vwP3ex2', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('CIHmUGk', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
