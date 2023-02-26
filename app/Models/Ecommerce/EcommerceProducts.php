@@ -14,4 +14,9 @@ class EcommerceProducts extends Model
     {
         return $this->belongsTo(EcommerceCategory::class, 'category_id', 'id');
     }
+
+    public function wishlist($id)
+    {
+        return EcommerceWishlist::where('product_id', $this->id)->where('user_id', $id)->first();;
+    }
 }

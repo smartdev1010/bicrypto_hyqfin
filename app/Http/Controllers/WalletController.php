@@ -12,6 +12,7 @@ use App\Models\Transaction;
 use App\Models\User;
 use App\Models\Wallet;
 use App\Models\WalletsTransactions;
+use App\Models\Platform;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Throwable;
@@ -180,7 +181,14 @@ class WalletController extends Controller
             ]);
         }
     }
-
+    public function getWallet(Request $request){
+        $wallet = Wallet::get();
+        $platform = getPlatforms();
+        return response()->json([
+            'wallet' => $wallet,
+            'platforms' => $platform
+        ]);
+    }
 
     public function fetch_wallet($type, $symbol, $address)
     {
@@ -575,19 +583,32 @@ class WalletController extends Controller
             'amount' => 'required|numeric',
             'recieving_address' => 'required',
         ]);
+
         $user = Auth::user();
-        $wallet = Wallet::where('user_id', $user->id)->where('provider', $this->provider)->where('type', 'trading')->where('symbol', $request->symbol)->first();
-        $fee = getGen()->provider_withdraw_fee / 100;
-        if (($request->amount * (1 + $fee)) >= $wallet->balance) {
-            return response()->json(
-                [
-                    'success' => true,
-                    'type' => 'error',
-                    'message' => 'Your Withdraw Amount is higher than your balance!'
-                ]
-            );
+        $wallet = Wallet::where('user_id', $user->id)
+            ->where('provider', $this->provider)
+            ->where('type', 'trading')
+            ->where('symbol', $request->symbol)
+            ->first();
+
+        if (!$wallet || !$request->amount || !$request->recieving_address) {
+            return response()->json([
+                'success' => true,
+                'type' => 'error',
+                'message' => 'Invalid input',
+            ]);
         }
 
+        $fee = getGen()->provider_withdraw_fee / 100;
+        $withdrawAmount = $request->amount * (1 + $fee);
+
+        if ($withdrawAmount >= $wallet->balance) {
+            return response()->json([
+                'success' => true,
+                'type' => 'error',
+                'message' => 'Your withdraw amount is higher than your balance',
+            ]);
+        }
         $wallet->balance -= $request->amount + ($request->amount * $fee);
 
         $withdraw = new ThirdpartyTransactions();
@@ -595,121 +616,51 @@ class WalletController extends Controller
         $withdraw->symbol = $request->symbol;
         $withdraw->recieving_address = $request->recieving_address;
         $withdraw->amount = $request->amount;
-        if ($this->provider == 'coinbasepro') {
-            try {
-                $provider_withdraw = $this->api->withdraw($request->symbol, $request->amount, $request->recieving_address);
-            } catch (\Throwable $th) {
-                $adminNotification = new AdminNotification();
-                $adminNotification->user_id = $user->id;
-                $adminNotification->title = $request->amount . ' ' . $request->symbol . ' Withdraw Failed, add balance to ' . $this->provider . ' please.';
-                $adminNotification->click_url = '#';
-                $adminNotification->save();
-                $adminNotification->clearCache();
-                return response()->json(
-                    [
-                        'success' => true,
-                        'type' => 'error',
-                        'wal_trx' => WalletsTransactions::where('user_id', $user->id)->where('symbol', $request->symbol)->latest()->get(),
-                        'wal' => $wallet,
-                        'message' => 'Internal error, please try again after 12h'
-                    ]
-                );
-            }
-            $withdraw->fee = $provider_withdraw['info']['fee'];
-            $withdraw->trx_id = $provider_withdraw['info']['id'];
-        } else if ($this->provider == 'binance') {
-            try {
-                $provider_withdraw = $this->api->withdraw($request->symbol, $request->amount, $request->recieving_address, $request->memo, ['network' => $request->chain]);
-            } catch (\Throwable $th) {
-                $adminNotification = new AdminNotification();
-                $adminNotification->user_id = $user->id;
-                $adminNotification->title = $request->amount . ' ' . $request->symbol . ' Withdraw Failed, add balance to ' . $this->provider . ' please.';
-                $adminNotification->click_url = '#';
-                $adminNotification->save();
-                $adminNotification->clearCache();
-                return response()->json(
-                    [
-                        'success' => true,
-                        'type' => 'error',
-                        'wal_trx' => WalletsTransactions::where('user_id', $user->id)->where('symbol', $request->symbol)->latest()->get(),
-                        'wal' => $wallet,
-                        'message' => 'Internal error, please try again after 12h'
-                    ]
-                );
-            }
-            $withdraw->trx_id = $provider_withdraw['info']['id'];
-        } else {
-            $withdraw->memo = $request->memo;
-            $withdraw->chain = $request->chain;
-            try {
-                $transfer_process = $this->api->transfer($request->symbol, $request->amount, 'trade', 'main');
-            } catch (\Throwable $th) {
-                $adminNotification = new AdminNotification();
-                $adminNotification->user_id = $user->id;
-                $adminNotification->title = $request->amount . ' ' . $request->symbol . ' Withdraw Failed, add balance to ' . $this->provider . ' please.';
-                $adminNotification->click_url = '#';
-                $adminNotification->save();
-                $adminNotification->clearCache();
-                return response()->json(
-                    [
-                        'success' => true,
-                        'type' => 'error',
-                        'wal_trx' => WalletsTransactions::where('user_id', $user->id)->where('symbol', $request->symbol)->latest()->get(),
-                        'wal' => $wallet,
-                        'message' => 'Internal error, please try again after 12h'
-                    ]
-                );
-            }
-            if (isset($transfer_process['info'])) {
-                if (isset($transfer_process['info']['orderId'])) {
+        switch ($this->provider) {
+            case 'coinbasepro':
+                try {
+                    $provider_withdraw = $this->api->withdraw($request->symbol, $request->amount, $request->recieving_address);
+                } catch (\Throwable $th) {
+                    return $this->handleWithdrawalError($user, $request, $wallet, 'Internal error, please try again after 12h');
+                }
+                $withdraw->fee = $provider_withdraw['info']['fee'];
+                $withdraw->trx_id = $provider_withdraw['info']['id'];
+                break;
+            case 'binance':
+                try {
+                    $provider_withdraw = $this->api->withdraw($request->symbol, $request->amount, $request->recieving_address, $request->memo, ['network' => $request->chain]);
+                } catch (\Throwable $th) {
+                    return $this->handleWithdrawalError($user, $request, $wallet, 'Internal error, please try again after 12h');
+                }
+                $withdraw->trx_id = $provider_withdraw['info']['id'];
+                break;
+            default:
+                $withdraw->memo = $request->memo;
+                $withdraw->chain = $request->chain;
+                try {
+                    $transfer_process = $this->api->transfer($request->symbol, $request->amount, 'trade', 'main');
+                } catch (\Throwable $th) {
+                    return $this->handleWithdrawalError($user, $request, $wallet, 'Internal error, please try again after 12h');
+                }
+                if (isset($transfer_process['id'])) {
                     try {
                         $provider_withdraw = $this->api->withdraw($request->symbol, $request->amount, $request->recieving_address, $request->memo, ['network' => $request->chain]);
                     } catch (\Throwable $th) {
-                        return response()->json(
-                            [
-                                'success' => true,
-                                'type' => 'error',
-                                'wal_trx' => WalletsTransactions::where('user_id', $user->id)->where('symbol', $request->symbol)->latest()->get(),
-                                'wal' => $wallet,
-                                'message' => 'Internal error, please try again after 12h'
-                            ]
-                        );
+                        return $this->handleWithdrawalError($user, $request, $wallet, 'Internal error, please try again after 12h');
                     }
-                    if (isset($provider_withdraw['info']['withdrawalId'])) {
-                        $withdraw_id = collect($this->api->fetch_withdrawals())->where('id', $provider_withdraw['info']['withdrawalId'])->first();
-                        $withdraw->trx_id = $provider_withdraw['info']['withdrawalId'];
-                        $withdraw->fee = ($request->amount * $fee) + $withdraw_id['fee']['cost'];
-                    } else {
-                        $withdraw_id = collect($this->api->fetch_withdrawals())->where('id', $provider_withdraw['id'])->first();
-                        $withdraw->trx_id = $provider_withdraw['id'];
-                        $withdraw->fee = ($request->amount * $fee) + $withdraw_id['fee']['cost'];
-                    }
-                } else if (isset($transfer_process['info']['data']['orderId'])) {
-                    try {
-                        $provider_withdraw = $this->api->withdraw($request->symbol, $request->amount, $request->recieving_address, $request->memo, ['network' => $request->chain]);
-                    } catch (\Throwable $th) {
-                        return response()->json(
-                            [
-                                'success' => true,
-                                'type' => 'error',
-                                'wal_trx' => WalletsTransactions::where('user_id', $user->id)->where('symbol', $request->symbol)->latest()->get(),
-                                'wal' => $wallet,
-                                'message' => 'Internal error, please try again after 12h'
-                            ]
-                        );
-                    }
-                    if (isset($provider_withdraw['info']['data']['withdrawalId'])) {
-                        $withdraw_id = collect($this->api->fetch_withdrawals())->where('id', $provider_withdraw['info']['data']['withdrawalId'])->first();
-                        $withdraw->trx_id = $provider_withdraw['info']['data']['withdrawalId'];
-                        $withdraw->fee = ($request->amount * $fee) + $withdraw_id['fee']['cost'];
-                    } else {
-                        $withdraw_id = collect($this->api->fetch_withdrawals())->where('id', $provider_withdraw['id'])->first();
-                        $withdraw->trx_id = $provider_withdraw['id'];
-                        $withdraw->fee = ($request->amount * $fee) + $withdraw_id['fee']['cost'];
+                    if (isset($provider_withdraw['id'])) {
+                        try {
+                            $withdraw_id = collect($this->api->fetch_withdrawals())->where('id', $provider_withdraw['id'])->first();
+                            $withdraw->trx_id = $provider_withdraw['id'];
+                            $withdraw->fee = ($request->amount * $fee) + $withdraw_id['fee']['cost'];
+                        } catch (\Throwable $th) {
+                            $withdraw->fee = $fee;
+                        }
                     }
                 }
-            }
+                break;
         }
+
         $withdraw->type = '2';
         $withdraw->status = '0';
         $withdraw->save();
@@ -790,6 +741,24 @@ class WalletController extends Controller
         );
     }
 
+    private function handleWithdrawalError($user, $request, $wallet, $message)
+    {
+        $adminNotification = new AdminNotification();
+        $adminNotification->user_id = $user->id;
+        $adminNotification->title = $request->amount . ' ' . $request->symbol . ' Withdraw Failed, add balance to ' . $this->provider . ' please.';
+        $adminNotification->click_url = '#';
+        $adminNotification->save();
+        $adminNotification->clearCache();
+        return response()->json(
+            [
+                'success' => true,
+                'type' => 'error',
+                'wal_trx' => WalletsTransactions::where('user_id', $user->id)->where('symbol', $request->symbol)->latest()->get(),
+                'wal' => $wallet,
+                'message' => $message
+            ]
+        );
+    }
     public function transfer_from_trading(Request $request)
     {
         $request->validate([

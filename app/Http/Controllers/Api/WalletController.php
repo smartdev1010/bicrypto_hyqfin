@@ -9,12 +9,14 @@ use App\Models\CoinbaseCurrencies;
 use App\Models\GatewayCurrency;
 use App\Models\Kucoin\KucoinCurrencies;
 use App\Models\ThirdpartyTransactions;
+use App\Models\Tokens;
 use App\Models\Transaction;
 use App\Models\User;
 use App\Models\Wallet;
 use App\Models\WalletsTransactions;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Validation\Rule;
 use Throwable;
 
 class WalletController extends Controller
@@ -89,139 +91,93 @@ class WalletController extends Controller
         }
     }
 
-    public function fetch_wallets()
+    public function wallets(Request $request)
     {
-        $user = Auth::user();
-        if ($this->provider != 'funding') {
-            if (Wallet::where('provider', '!=', 'local')->where('user_id', $user->id)->exists()) {
-                $all_wallets = (new Wallet)->getCached($user->id);
-                $wallets['trading'] = $all_wallets->where('provider', $this->provider);
-                $wallets['funding'] = $all_wallets->where('provider', 'funding');
-            } else {
-                $wallets['trading'] = null;
-                $wallets['funding'] = null;
-            }
-            if ($this->provider == 'coinbasepro') {
-                $currencies = (new CoinbaseCurrencies)->getEnabled();
-            } else if ($this->provider == 'kucoin') {
-                $currencies = (new KucoinCurrencies)->getEnabled();
-            } else if ($this->provider == 'binance') {
-                $currencies = (new BinanceCurrencies)->getEnabled();
-            } else {
-                $currencies = null;
-            }
-            return response()->json([
-                'user' => $user,
-                'wallets' => $wallets,
-                'api' => 1,
-                'currencies' => $currencies,
-            ]);
+        $request->validate([
+            'token' => 'required|string|exists:tokens',
+            'page' => 'nullable|integer|min:1',
+            'per_page' => 'nullable|integer|min:1|max:100',
+        ]);
+
+        $token = Tokens::where('token', $request->token)->firstOrFail();
+
+        if (!strpos($token->abilities, 'withdraw')) {
+            return [
+                'result' => 'error',
+                'message' => "API doesn't have withdraw permission"
+            ];
+        }
+
+        $user = User::where('id', $token->user_id)->first();
+
+        $wallets = Wallet::when($this->provider != 'funding', function ($query) use ($user) {
+            return $query->where('provider', $this->provider)->where('user_id', $user->id);
+        })
+            ->select(['symbol', 'balance', 'addresses'])
+            ->paginate($request->get('per_page', 10))
+            ->map(function ($wallet) {
+                $wallet->addresses = json_decode($wallet->addresses, true);
+                return $wallet;
+            });
+
+        if ($wallets->isEmpty()) {
+            return [
+                'result' => 'error',
+                'message' => 'No wallets found.'
+            ];
         } else {
-            if (Wallet::where('provider', 'funding')->where('user_id', $user->id)->exists()) {
-                $wallets['funding'] = (new Wallet)->getCached($user->id)->where('provider', 'funding');
-            } else {
-                $wallets['funding'] = null;
-            }
-            $currencies = (new KucoinCurrencies)->getEnabled();
-            return response()->json([
-                'user' => $user,
-                'wallets' => $wallets,
-                'api' => 0,
-                'currencies' => $currencies,
-            ]);
+            return [
+                'result' => 'success',
+                'data' => $wallets->items(),
+                'meta' => [
+                    'current_page' => $wallets->currentPage(),
+                    'per_page' => $wallets->perPage(),
+                    'total_pages' => $wallets->lastPage(),
+                    'total' => $wallets->total(),
+                ],
+            ];
         }
     }
 
 
-    public function fetch_wallet($type, $symbol, $address)
+    public function wallet_transactions(Request $request)
     {
-        $user = Auth::user();
-        $wal = Wallet::where('user_id', $user->id)->where('address', $address)->where('symbol', $symbol)->where('type', $type)->first();
-        $wal_trx = WalletsTransactions::where('user_id', $user->id)->where('symbol', $symbol)->latest()->get();
-        session()->put('Track', $wal);
-        if ($this->provider != 'funding') {
-            $chains = [];
-            if ($this->provider == 'coinbasepro') {
-                $currencies = (new CoinbaseCurrencies)->getEnabled();
-                $curr = CoinbaseCurrencies::where('symbol', $wal->symbol)->first();
-                $addresses = null;
-                $chains = null;
-            } else if ($this->provider == 'binance') {
-                $currencies = (new BinanceCurrencies)->getEnabled();
-                $curr = BinanceCurrencies::where('symbol', $wal->symbol)->first();
-                $addresses = json_decode($wal->addresses);
-                $chainss = json_decode($curr->networks, True);
-                foreach ($chainss as $chain) {
-                    if ($chain['withdrawEnable'] == true) {
-                        $chains[$chain['network']] = $chain;
-                    }
-                }
-                if ($addresses != null) {
-                    foreach ($addresses as $key => $value) {
-                        $value->chain = $chains[$key];
-                        $value->network = $chains[$key]['network'];
-                    }
-                }
-            } else if ($this->provider == 'kucoin') {
-                $addressesData = json_decode($wal->addresses);
-                $response = $this->api->public_get_currencies_currency(array('currency' => $symbol));
-                $currency = $this->api->safe_value($response, 'data');
-                if ($currency) {
-                    $chainss = collect($this->api->safe_value($currency, 'chains'));
-                    foreach ($chainss->where('isWithdrawEnabled', true)->where('isDepositEnabled', true) as $chain) {
-                        $chains[$chain['chainName']] = $chain;
-                    }
-                }
-                if ($addressesData != null) {
-                    foreach ($addressesData as $key => $value) {
-                        if (isset($chains[$key])) {
-                            $adr = $value;
-                            $adr->chain = $chains[$key];
-                            $adr->network = $chains[$key]['chainName'];
-                            $addresses[$key] = $adr;
-                        }
-                    }
-                }
-                $currencies = (new KucoinCurrencies)->getEnabled();
-                $curr = KucoinCurrencies::where('symbol', $wal->symbol)->first();
-            } else {
-                $currencies = null;
-                $curr = null;
-            }
-            if (GatewayCurrency::whereHas('method', function ($gate) {
-                $gate->where('status', 1);
-            })->with('method')->exists()) {
-                $dp = 1;
-            }
-            return response()->json([
-                'wal' => $wal,
-                'wal_trx' => $wal_trx,
-                'addresses' => $addresses ?? null,
-                'currencies' => $currencies,
-                'curr' => $curr,
-                'currency' => getCurrency(),
-                'api' => 1,
-                'dp' => $dp ?? 0,
-            ]);
+        $request->validate([
+            'token' => 'required|string|exists:tokens',
+            'currency' => 'required|string',
+            'page' => 'nullable|integer|min:1',
+            'per_page' => 'nullable|integer|min:1|max:100',
+        ]);
+
+        $user = Tokens::where('token', $request->token)
+            ->firstOrFail()
+            ->user;
+
+        $transactions = WalletsTransactions::where('user_id', $user->id)
+            ->where('symbol', $request->currency)
+            ->latest()
+            ->select(['symbol', 'amount', 'amount_recieved', 'charge', 'fees', 'to', 'type', 'chain', 'status', 'trx', 'wallet_type', 'details', 'created_at'])
+            ->paginate($request->get('per_page', 10));
+
+        if ($transactions->isEmpty()) {
+            return [
+                'result' => 'error',
+                'message' => 'No transactions found for the requested currency.'
+            ];
         } else {
-            if (GatewayCurrency::whereHas('method', function ($gate) {
-                $gate->where('status', 1);
-            })->with('method')->exists()) {
-                $dp = 1;
-            }
-            return response()->json([
-                'wal' => $wal,
-                'wal_trx' => $wal_trx,
-                'addresses' => null,
-                'currencies' => null,
-                'curr' => null,
-                'currency' => getCurrency(),
-                'chains' => null,
-                'api' => 0,
-                'dp' => $dp ?? 0,
-            ]);
+            return [
+                'result' => 'success',
+                'data' => $transactions->items(),
+                'meta' => [
+                    'current_page' => $transactions->currentPage(),
+                    'per_page' => $transactions->perPage(),
+                    'total_pages' => $transactions->lastPage(),
+                    'total' => $transactions->total(),
+                ],
+            ];
         }
     }
+
 
     public function fetch_wallet_balance(Request $request)
     {
@@ -467,57 +423,58 @@ class WalletController extends Controller
 
     public function deposit(Request $request)
     {
-        $user = Auth::user();
-        if (ThirdpartyTransactions::where('address', $request->address)->exists()) {
-            return response()->json(
-                [
-                    'success' => false,
-                    'type' => 'error',
-                    'message' => 'Transaction Hash Already Used'
-                ]
-            );
-        } else {
 
-            $deposit = new ThirdpartyTransactions();
-            $deposit->user_id = $user->id;
-            $deposit->symbol = $request->symbol;
-            $deposit->recieving_address = $request->recieving_address;
-            $deposit->address = $request->address;
-            $deposit->chain = $request->chain;
-            $deposit->type = '1';
-            $deposit->status = '0';
-            $deposit->save();
-            $deposit->clearCache();
+        $request->validate([
+            'token' => 'required|string|exists:tokens',
+            'symbol' => 'required|string',
+            'recieving_address' => 'required|string',
+            'transaction_hash' => [
+                'required',
+                'string',
+                Rule::unique('thirdparty_transactions')->where(function ($query) use ($request) {
+                    return $query->where('symbol', $request->symbol);
+                }),
+            ],
+            'chain' => 'required|string',
+        ]);
+        $user = Tokens::where('token', $request->token)
+            ->firstOrFail()
+            ->user;
 
-            $wallet_new_trx = new WalletsTransactions();
-            $wallet_new_trx->symbol = $request->symbol;
-            $wallet_new_trx->user_id = $user->id;
-            $wallet_new_trx->address = $request->address;
-            $wallet_new_trx->to = $request->recieving_address;
-            $wallet_new_trx->chain = $request->chain;
-            $wallet_new_trx->type = '1';
-            $wallet_new_trx->status = '2';
-            $wallet_new_trx->details = 'Deposited To ' . $request->symbol . ' Wallet ';
-            $wallet_new_trx->wallet_type = 'trading';
-            $wallet_new_trx->save();
-            $wallet_new_trx->clearCache();
+        $deposit = new ThirdpartyTransactions();
+        $deposit->user_id = $user->id;
+        $deposit->symbol = $request->symbol;
+        $deposit->recieving_address = $request->recieving_address;
+        $deposit->address = $request->transaction_hash;
+        $deposit->chain = $request->chain;
+        $deposit->type = '1';
+        $deposit->status = '0';
+        $deposit->save();
 
-            $adminNotification = new AdminNotification();
-            $adminNotification->user_id = $user->id;
-            $adminNotification->title = 'New Deposit From ' . $user->username;
-            $adminNotification->click_url = route('admin.report.wallet');
-            $adminNotification->save();
-            $adminNotification->clearCache();
+        $wallet_new_trx = new WalletsTransactions();
+        $wallet_new_trx->symbol = $request->symbol;
+        $wallet_new_trx->user_id = $user->id;
+        $wallet_new_trx->address = $request->transaction_hash;
+        $wallet_new_trx->to = $request->recieving_address;
+        $wallet_new_trx->chain = $request->chain;
+        $wallet_new_trx->type = '1';
+        $wallet_new_trx->status = '2';
+        $wallet_new_trx->details = 'Deposited To ' . $request->symbol . ' Wallet ';
+        $wallet_new_trx->wallet_type = 'trading';
+        $wallet_new_trx->save();
 
-            return response()->json(
-                [
-                    'success' => true,
-                    'type' => 'success',
-                    'wal_trx' => WalletsTransactions::where('user_id', $user->id)->where('symbol', $request->symbol)->latest()->get(),
-                    'message' => 'Deposit order placed successfully'
-                ]
-            );
-        }
+        $adminNotification = new AdminNotification();
+        $adminNotification->user_id = $user->id;
+        $adminNotification->title = 'New Deposit From ' . $user->username;
+        $adminNotification->click_url = route('admin.report.wallet');
+        $adminNotification->save();
+
+        return response()->json(
+            [
+                'result' => 'success',
+                'message' => 'Deposit order placed successfully'
+            ]
+        );
     }
 
     public function withdraw(Request $request)

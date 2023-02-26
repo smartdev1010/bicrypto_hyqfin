@@ -8,12 +8,14 @@ export const useUserStore = defineStore("user", {
         currency: null,
         toggledMenu: null,
         page: null,
+        users: [],
     }),
 
     actions: {
         async fetch() {
             await axios.post("/user/fetch/data").then((response) => {
                 (this.user = response.data.user),
+                    (this.users = response.data.users),
                     (this.kyc = response.data.kyc),
                     (this.popups = response.data.popups),
                     (this.currency = response.data.currency);

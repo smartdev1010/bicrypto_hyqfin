@@ -5,6 +5,7 @@ namespace App\Models;
 use App\Models\Forex\ForexAccounts;
 use App\Models\MLM\MLM;
 use App\Models\MLM\MLMBV;
+use App\Models\MLM\MLMDaily;
 use App\Models\P2P\P2PAds;
 use App\Traits\CacheKeyTrait;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -202,12 +203,13 @@ class User extends Authenticatable implements MustVerifyEmail
 
     public function mlm_daily_bv()
     {
-        return $this->hasMany(MLMDaily::class)->sum('amount');
+        return $this->hasMany(MLMDaily::class);
     }
 
     public function unilevel_downlines()
     {
         return Cache::remember($this->cacheKey($this) . ':unilevel_downlines', now()->addHours(4), function () {
+            // echo $this->id;
             $downlines = $this->where('ref_by', $this->id)
                 ->with('mlm')
                 ->select('id', 'firstname', 'lastname', 'username')
@@ -219,11 +221,14 @@ class User extends Authenticatable implements MustVerifyEmail
 
     private function getAllDownlines(&$downlines)
     {
+
         foreach ($downlines as &$downline) {
-            $sub_downlines = $downline->where('ref_by', $downline->id)
+            // echo $downline->id;
+            $sub_downlines = $this->where('ref_by', $downline->id)
                 ->with('mlm')
                 ->select('id', 'firstname', 'lastname', 'username')
                 ->get();
+            // echo $sub_downlines;
             $downline->downlines = $sub_downlines;
             if (!$sub_downlines->isEmpty()) {
                 $this->getAllDownlines($sub_downlines);

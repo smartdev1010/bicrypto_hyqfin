@@ -156,7 +156,7 @@ class KycController extends Controller
 
         $collection = collect($request->extra_field);
         $reqField = [];
-        if ($options['extra_field'] != null) {
+        if (isset($options['extra_field']) && count($options['extra_field']) > 0) {
             foreach ($collection as $k => $v) {
                 foreach ($options['extra_field'] as $inKey => $inVal) {
                     if ($k != $inKey) {
@@ -185,8 +185,6 @@ class KycController extends Controller
                 }
             }
             $kyc_submit->extra_field = $reqField;
-        } else {
-            $kyc_submit->extra_field = null;
         }
         if ($request->hasFile('document_one')) {
             try {

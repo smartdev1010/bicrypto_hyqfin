@@ -15,7 +15,7 @@ class SupportTicketsTable extends DataTableComponent
 {
     public function builder(): Builder
     {
-        return SupportTicket::query()->where('user_id', '!=', 1);
+        return SupportTicket::query();
     }
     public function configure(): void
     {

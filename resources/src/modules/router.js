@@ -143,13 +143,7 @@ if (ext.ico == 1) {
 }
 if (ext.mlm == 1) {
     const Referral = () => import("../extensions/mlm/Referral.vue");
-    const Report = () => import("../components/Refer.vue");
-    const Forex = () => import("../Pages/Network.vue");
-    // routes.push({
-    //     path: "/referral",
-    //     component: Referral,
-    //     meta: { title: "My Referrals" },
-    // });
+    const Report = () => import("../extensions/mlm/Report.vue");
     routes.push({
         path: "/referral/subPage",
         component: Referral,
@@ -157,7 +151,7 @@ if (ext.mlm == 1) {
     });
     routes.push({
         path: "/referral/levelReport",
-        component: Forex,
+        component: Report,
         meta: { title: "Level Report" },
     });
 }

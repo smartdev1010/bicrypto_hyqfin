@@ -690,6 +690,7 @@ export default {
     // custom methods
     methods: {
         async fetchData() {
+            await this.walletsStore.fetch();
             if (
                 this.forexStore.investment_logs.length == 0 &&
                 this.forexStore.account.length == 0

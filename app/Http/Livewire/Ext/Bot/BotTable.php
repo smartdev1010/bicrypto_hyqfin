@@ -42,8 +42,8 @@ class BotTable extends DataTableComponent
                 ->html(),
             Column::make("Annual Profit Rate", "perc")
                 ->hideIf(true),
-            // Column::make("Uses", "uses")
-                // ->hideIf(true),
+            Column::make("Uses", "uses")
+                ->hideIf(true),
             Column::make("Min Profit", "min_profit")
                 ->searchable()
                 ->collapseOnMobile()

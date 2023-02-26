@@ -16,6 +16,8 @@ export const useWalletsStore = defineStore("wallet", {
         loading: false,
         timer: [],
         mianLogs: [],
+        wallet: null,
+        platforms: null,
     }),
 
     actions: {
@@ -24,6 +26,12 @@ export const useWalletsStore = defineStore("wallet", {
                 (this.wallets = response.wallets),
                     (this.api = response.api),
                     (this.currencies = response.currencies);
+            });
+        },
+        async fetch_wallet(id) {
+            await axios.post("/user/fetch/wallet").then((response) => {
+                (this.wallet = response.wallet),
+                    (this.platforms = response.platforms);
             });
         },
         async walletUpdate(data) {

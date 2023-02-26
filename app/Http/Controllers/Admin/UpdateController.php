@@ -90,7 +90,7 @@ class UpdateController extends Controller
         $this->api_key = 'CF30BB9297634F7075F6';
         $this->api_language = 'english';
         $this->verify_type = 'envato';
-        $this->current_version = '2.2.5';
+        $this->current_version = '2.2.6';
         $this->verification_period = 3;
         $this->current_path = realpath(__DIR__);
         $this->root_path = realpath($this->current_path . '/../../../..');

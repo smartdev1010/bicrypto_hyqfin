@@ -7,6 +7,7 @@ export const useInvestmentStore = defineStore("investment", {
         withdraw_logs: [],
         currentDate: null,
         loading: false,
+        investment_logs_tmp: [],
     }),
 
     actions: {
@@ -81,6 +82,13 @@ export const useInvestmentStore = defineStore("investment", {
                 .catch((error) => {
                     // $toast.error(error.response.data.message);
                     return false;
+                });
+        },
+        async getInvestment(id) {
+            await axios
+                .post("/user/fetch/investment/tmp", { id })
+                .then((response) => {
+                    this.investment_logs_tmp = response.investment_logs;
                 });
         },
     },

@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Models\Ecommerce;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class EcommerceCoupon extends Model
+class LevelReport extends Model
 {
     use HasFactory;
-    protected $guarded = [];
 }

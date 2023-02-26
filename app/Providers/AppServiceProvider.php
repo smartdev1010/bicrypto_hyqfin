@@ -6,6 +6,7 @@ use App\Models\Frontend;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\URL;
 use Laravel\Fortify\Fortify;
+use Jenssegers\Agent\Agent;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -41,6 +42,7 @@ class AppServiceProvider extends ServiceProvider
         $viewShare['general'] = $general;
         $viewShare['notification'] = $notification;
         $viewShare['siteName'] = $title;
+        $viewShare['agent'] = new Agent();
         view()->share($viewShare);
 
         view()->composer('partials.seo', function ($view) {

@@ -163,6 +163,73 @@
                 </div>
               </div>
             </div>
+            <div class="mb-5 grid gap-5 xs:grid-cols-1 md:grid-cols-2" :key="mlmStore.bvWithdrawable">
+              <div class="card text-center">
+                <div class="card-body">
+                  <div class="avatar bg-light-primary p-50 mb-1">
+                    <div class="avatar-content">
+                      <i class="bi bi-briefcase font-medium"></i>
+                    </div>
+                  </div>
+                  <h2 class="font-medium">
+                    <div v-if="totalInvestment.length > 0">
+                      <div v-for="investment in totalInvestment ">
+                        {{ investment.amount }}
+                        {{ investment.wallet }}
+                      </div>
+                    </div>
+                  </h2>
+                  <p v-if="totalInvestment.length > 0" class="card-text">
+                    {{ $t("Total Investment") }}
+                  </p>
+                  <p v-else="totalInvestment.length > 0" class="card-text">
+                    {{ $t("There are no investments.") }}
+                  </p>
+                </div>
+              </div>
+              <div class="card text-center" v-if="plat.mlm.commission_type == 'direct'">
+                <div class="card-body">
+                  <div class="avatar bg-light-warning p-50 mb-1">
+                    <div class="avatar-content">
+                      <i class="bi bi-diagram-3 font-medium"></i>
+                    </div>
+                  </div>
+                  <h2 class="font-medium">
+                    {{
+                      mlmStore.planA != null &&
+                      mlmStore.planA.trade_commission
+                    }}
+                    BV
+                  </h2>
+                  <p class="card-text">
+                    {{ $t("Trade Commission") }}
+                  </p>
+                </div>
+              </div>
+              <div class="card text-center" v-else-if="plat.mlm.commission_type == 'daily'">
+                <div class="card-body">
+                  <div class="avatar bg-light-primary p-50 mb-1">
+                    <div class="avatar-content">
+                      <i class="bi bi-briefcase font-medium"></i>
+                    </div>
+                  </div>
+                  <h2 class="font-medium">
+                    <div v-if="dailyIncome.length > 0">
+                      <div v-for="income in dailyIncome ">
+                        {{ income.amount }}
+                        {{ income.wallet }}
+                      </div>
+                    </div>
+                  </h2>
+                  <p v-if="dailyIncome.length > 0" class="card-text">
+                    {{ $t("Daily Income") }}
+                  </p>
+                  <p v-else="totalInvestment.length > 0" class="card-text">
+                    {{ $t("There are no daily Income.") }}
+                  </p>
+                </div>
+              </div>
+            </div>
             <div class="card">
               <div class="card-header">
                 <h4 class="card-title">
@@ -172,10 +239,7 @@
               <div v-if="mlmStore.planA != null" style="overflow-y: auto; max-height: 280px">
                 <Method title="Deposit Commission" icon="cash" class="border-b dark:border-gray-600" :commission="
                   mlmStore.planA.deposit_commission
-                " v-if="
-  mlmStore.planA.deposit_commission !=
-  null
-" />
+                " v-if="mlmStore.planA.deposit_commission != null" />
                 <Method v-if="
                   plat.mlm.type == 'binary' &&
                   mlmStore.planA.ref_commission != null
@@ -238,43 +302,66 @@
                 <div class="border-b dark:border-gray-600" v-for="(bvLog, index) in mlmStore.bvLogs" :key="index">
                   <div class="flex items-center justify-between p-2 font-medium">
                     <div class="flex items-center">
-                      <span v-if="bvLog.type == 1" class="text-success bg-dark mr-2 rounded px-2 py-1 shadow"><i style="
-                                                                    margin-right: 0 !important;
-                                                                " class="bi bi-cash"></i></span>
+                      <span v-if="bvLog.type == 1" class="text-success bg-dark mr-2 rounded px-2 py-1 shadow"><i
+                          style="
+                                                                                                                                                                                                                                                                                                                                                                                                                      margin-right: 0 !important;
+                                                                                                                                                                                                                                                                                                                                                                                                                  "
+                          class="bi bi-cash"></i></span>
                       <span v-else-if="bvLog.type == 2" class="text-success bg-dark mr-2 rounded px-2 py-1 shadow"><i
                           style="
-                                                                    margin-right: 0 !important;
-                                                                " class="bi bi-node-plus"></i></span>
-                      <span v-if="bvLog.type == 3" class="text-success bg-dark mr-2 rounded px-2 py-1 shadow"><i style="
-                                                                    margin-right: 0 !important;
-                                                                " class="bi bi-award"></i></span>
-                      <span v-if="bvLog.type == 4" class="text-success bg-dark mr-2 rounded px-2 py-1 shadow"><i style="
-                                                                    margin-right: 0 !important;
-                                                                " class="bi bi-currency-exchange"></i></span>
-                      <span v-if="bvLog.type == 5" class="text-success bg-dark mr-2 rounded px-2 py-1 shadow"><i style="
-                                                                    margin-right: 0 !important;
-                                                                " class="bi bi-robot"></i></span>
-                      <span v-if="bvLog.type == 6" class="text-success bg-dark mr-2 rounded px-2 py-1 shadow"><i style="
-                                                                    margin-right: 0 !important;
-                                                                " class="bi bi-coin"></i></span>
-                      <span v-if="bvLog.type == 7" class="text-success bg-dark mr-2 rounded px-2 py-1 shadow"><i style="
-                                                                    margin-right: 0 !important;
-                                                                " class="bi bi-bar-chart"></i></span>
-                      <span v-if="bvLog.type == 8" class="text-success bg-dark mr-2 rounded px-2 py-1 shadow"><i style="
-                                                                    margin-right: 0 !important;
-                                                                " class="bi bi-bar-chart"></i></span>
-                      <span v-if="bvLog.type == 9" class="text-success bg-dark mr-2 rounded px-2 py-1 shadow"><i style="
-                                                                    margin-right: 0 !important;
-                                                                " class="bi bi-layers"></i></span>
-                      <span v-if="bvLog.type == 10" class="text-success bg-dark mr-2 rounded px-2 py-1 shadow"><i style="
-                                                                    margin-right: 0 !important;
-                                                                " class="bi bi-person-lines-fill"></i></span>
-                      <span v-if="bvLog.type == 11" class="text-success bg-dark mr-2 rounded px-2 py-1 shadow"><i style="
-                                                                    margin-right: 0 !important;
-                                                                " class="bi bi-download"></i></span>
-                      <span v-if="bvLog.type == 12" class="text-success bg-dark mr-2 rounded px-2 py-1 shadow"><i style="
-                                                                    margin-right: 0 !important;
-                                                                " class="bi bi-upload"></i></span>
+                                                                                                                                                                                                                                                                                                                                                                                                                      margin-right: 0 !important;
+                                                                                                                                                                                                                                                                                                                                                                                                                  "
+                          class="bi bi-node-plus"></i></span>
+                      <span v-if="bvLog.type == 3" class="text-success bg-dark mr-2 rounded px-2 py-1 shadow"><i
+                          style="
+                                                                                                                                                                                                                                                                                                                                                                                                                      margin-right: 0 !important;
+                                                                                                                                                                                                                                                                                                                                                                                                                  "
+                          class="bi bi-award"></i></span>
+                      <span v-if="bvLog.type == 4" class="text-success bg-dark mr-2 rounded px-2 py-1 shadow"><i
+                          style="
+                                                                                                                                                                                                                                                                                                                                                                                                                      margin-right: 0 !important;
+                                                                                                                                                                                                                                                                                                                                                                                                                  "
+                          class="bi bi-currency-exchange"></i></span>
+                      <span v-if="bvLog.type == 5" class="text-success bg-dark mr-2 rounded px-2 py-1 shadow"><i
+                          style="
+                                                                                                                                                                                                                                                                                                                                                                                                                      margin-right: 0 !important;
+                                                                                                                                                                                                                                                                                                                                                                                                                  "
+                          class="bi bi-robot"></i></span>
+                      <span v-if="bvLog.type == 6" class="text-success bg-dark mr-2 rounded px-2 py-1 shadow"><i
+                          style="
+                                                                                                                                                                                                                                                                                                                                                                                                                      margin-right: 0 !important;
+                                                                                                                                                                                                                                                                                                                                                                                                                  "
+                          class="bi bi-coin"></i></span>
+                      <span v-if="bvLog.type == 7" class="text-success bg-dark mr-2 rounded px-2 py-1 shadow"><i
+                          style="
+                                                                                                                                                                                                                                                                                                                                                                                                                      margin-right: 0 !important;
+                                                                                                                                                                                                                                                                                                                                                                                                                  "
+                          class="bi bi-bar-chart"></i></span>
+                      <span v-if="bvLog.type == 8" class="text-success bg-dark mr-2 rounded px-2 py-1 shadow"><i
+                          style="
+                                                                                                                                                                                                                                                                                                                                                                                                                      margin-right: 0 !important;
+                                                                                                                                                                                                                                                                                                                                                                                                                  "
+                          class="bi bi-bar-chart"></i></span>
+                      <span v-if="bvLog.type == 9" class="text-success bg-dark mr-2 rounded px-2 py-1 shadow"><i
+                          style="
+                                                                                                                                                                                                                                                                                                                                                                                                                      margin-right: 0 !important;
+                                                                                                                                                                                                                                                                                                                                                                                                                  "
+                          class="bi bi-layers"></i></span>
+                      <span v-if="bvLog.type == 10" class="text-success bg-dark mr-2 rounded px-2 py-1 shadow"><i
+                          style="
+                                                                                                                                                                                                                                                                                                                                                                                                                      margin-right: 0 !important;
+                                                                                                                                                                                                                                                                                                                                                                                                                  "
+                          class="bi bi-person-lines-fill"></i></span>
+                      <span v-if="bvLog.type == 11" class="text-success bg-dark mr-2 rounded px-2 py-1 shadow"><i
+                          style="
+                                                                                                                                                                                                                                                                                                                                                                                                                      margin-right: 0 !important;
+                                                                                                                                                                                                                                                                                                                                                                                                                  "
+                          class="bi bi-download"></i></span>
+                      <span v-if="bvLog.type == 12" class="text-success bg-dark mr-2 rounded px-2 py-1 shadow"><i
+                          style="
+                                                                                                                                                                                                                                                                                                                                                                                                                      margin-right: 0 !important;
+                                                                                                                                                                                                                                                                                                                                                                                                                  "
+                          class="bi bi-upload"></i></span>
                       <div>
                         <span v-if="bvLog.type == 1" class="text-success font-medium">{{
                           $t(
@@ -399,7 +486,7 @@
                         ? 'text-dark'
                         : 'text-success border-success'
                   ">{{ userStore.user.username }}</span>
-                  {{ mlmStore }}
+
                   <ul v-if="
                     mlmStore.mlm != null &&
                     mlmStore.mlm.downlines != null &&
@@ -615,13 +702,14 @@
       <template #footer>
         <div class="flex justify-end space-x-3">
           <button v-if="ext.eco == 1 && mlmStore.canDirect == true" :key="mlmStore.canDirect" type="submit"
-            class="btn btn-outline-warning" @click="
+            class="btn btn-outline-warning"
+            @click="
               fetchWallet(
                 plat.mlm.membership_deposit_currency,
                 plat.mlm.membership_deposit_currency_network
               );
             showModal('depositEco');
-                                                                                                            ">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ">
             {{ $t("Direct Deposit") }}
           </button>
           <button type="submit" class="btn btn-outline-success" @click="showModal('depositWallet')">
@@ -781,13 +869,17 @@ import UnilevelTree from "./UnilevelTree.vue";
 import Refer from "../../partials/Refer.vue";
 import { useMlmStore } from "../../store/mlm";
 import { useUserStore } from "../../store/user";
+import { useWalletsStore } from "../../store/wallets";
+import { useInvestmentStore } from "../../store/investment";
 import { Progress } from "flowbite-vue";
 import toDate from "../../partials/toDate.vue";
 export default {
   setup() {
     const userStore = useUserStore();
     const mlmStore = useMlmStore();
-    return { userStore, mlmStore };
+    const walletsStore = useWalletsStore();
+    const investmentStore = useInvestmentStore();
+    return { userStore, mlmStore, walletsStore, investmentStore };
   },
   // component list
   components: {
@@ -816,6 +908,8 @@ export default {
         depositWallet: false,
         withdraw: false,
       },
+      totalInvestment: [],
+      dailyIncome: []
     };
   },
 
@@ -843,9 +937,56 @@ export default {
         this.isShowModal.withdraw = true;
       }
     },
+    async calculateTotalInvestment(downlines, depth) {
+      // console.log(depth);
+      let percentage;
+      if (depth == 1) percentage = this.walletsStore.platforms.mlm.unilevel_upline1_percentage;
+      if (depth == 2) percentage = this.walletsStore.platforms.mlm.unilevel_upline2_percentage;
+      if (depth == 3) percentage = this.walletsStore.platforms.mlm.unilevel_upline3_percentage;
+      if (depth == 4) percentage = this.walletsStore.platforms.mlm.unilevel_upline4_percentage;
+      if (depth == 5) percentage = this.walletsStore.platforms.mlm.unilevel_upline5_percentage;
+      if (depth == 6) percentage = this.walletsStore.platforms.mlm.unilevel_upline6_percentage;
+      if (depth == 7) percentage = this.walletsStore.platforms.mlm.unilevel_upline7_percentage;
+      if (depth == 8) percentage = this.walletsStore.platforms.mlm.unilevel_upline8_percentage;
+      if (depth == 9) percentage = this.walletsStore.platforms.mlm.unilevel_upline9_percentage;
+      if (depth == 10) percentage = this.walletsStore.platforms.mlm.unilevel_upline10_percentage;
+      percentage /= 100;
+      if (depth > 10) return;
+      for (let i = 0; i < downlines.length; i++) {
+        await this.investmentStore.getInvestment(downlines[i].id);
+        if (this.investmentStore.investment_logs_tmp.length > 0) {
+          for (let j = 0; j < this.investmentStore.investment_logs_tmp.length; j++) {
+            let item = this.investmentStore.investment_logs_tmp[j];
+            let walletSymbol = this.walletsStore.wallet[item.wallet_id - 1].symbol;
+            if (this.totalInvestment.filter(investment => investment.wallet == walletSymbol).length == 0)
+              this.totalInvestment.push({
+                wallet: walletSymbol,
+                amount: item.amount
+              });
+            else
+              this.totalInvestment.filter(investment => investment.wallet == walletSymbol)[0].amount += item.amount
+            if (!item.profit) {
+              if (this.dailyIncome.filter(investment => investment.wallet == walletSymbol).length == 0)
+                this.dailyIncome.push({
+                  wallet: walletSymbol,
+                  amount: item.amount * percentage
+                });
+              else
+                this.dailyIncome.filter(investment => investment.wallet == walletSymbol)[0].amount += item.amount * percentage;
+            }
+          }
+        }
+        await this.calculateTotalInvestment(downlines[i].downlines, depth + 1);
+      }
+    },
     async fetchData() {
+      await this.walletsStore.fetch();
+      await this.walletsStore.fetch_wallet();
+      if (this.investmentStore.investment.length == 0)
+        await this.investmentStore.fetch();
       if (this.mlmStore.mlm == null) {
         await this.mlmStore.fetch();
+        this.calculateTotalInvestment(this.mlmStore.mlm.downlines, 1);
       }
     },
     async fetchWallet(coin, chain) {
@@ -871,7 +1012,9 @@ export default {
   },
 
   // on component mounted
-  mounted() { },
+  mounted() {
+    this.mlmStore.updateReport();
+  },
 
   // on component destroyed
   destroyed() { },

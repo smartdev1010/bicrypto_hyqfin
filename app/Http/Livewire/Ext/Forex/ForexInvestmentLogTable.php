@@ -4,7 +4,6 @@ namespace App\Http\Livewire\Ext\Forex;
 
 use App\Exports\ForexLogExport;
 use App\Models\Forex\ForexLogs;
-use App\Models\Wallet;
 use Illuminate\Database\Eloquent\Builder;
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;
@@ -54,24 +53,19 @@ class ForexInvestmentLogTable extends DataTableComponent
                 ->collapseOnTablet()
                 ->sortable()
                 ->format(
-                    fn ($value, $row, Column $column) => $value
+                    fn ($value, $row, Column $column) => getamount($row->amount)
                 )
                 ->html(),
-            
-            Column::make("Daily Profit", "investment_id")
+            Column::make("Profit", "profit")
+                ->hideIf(true),
+            Column::make("Result", "result")
+                ->view('extensions.admin.forex.investment.investment_log_profit_view'),
+            Column::make("Status", "status")
                 ->searchable()
-                ->collapseOnTablet()
                 ->sortable()
+                ->collapseOnMobile()
                 ->format(
-                    fn ($value, $row, Column $column) => $row->investment->roi * $row->amount / 100
-                )
-                ->html(),
-            Column::make("Wallet", "wallet_symbol")
-                ->searchable()
-                ->collapseOnTablet()
-                ->sortable()
-                ->format(
-                    fn ($value, $row, Column $column) => $value
+                    fn ($value, $row, Column $column) => '<span class="badge bg-' . ($row->status == 1 ? 'success' : ($row->status == 2 ? 'primary' : 'warning')) . '">' . ($row->status == 1 ? 'Completed' : ($row->status == 2 ? 'Adjusted' : 'Running')) . '</span>'
                 )
                 ->html(),
             Column::make("Start Date", "start_date")
@@ -90,6 +84,8 @@ class ForexInvestmentLogTable extends DataTableComponent
                     fn ($value, $row, Column $column) => showDateTime($row->end_date, 'd M, Y h:i:s')
                 )
                 ->html(),
+            Column::make("Actions", 'id')
+                ->view('extensions.admin.forex.investment.logs_actions_view'),
         ];
     }
 
@@ -142,8 +138,8 @@ class ForexInvestmentLogTable extends DataTableComponent
             'header' => 'Alert!',
             'message' =>  'Logs Exported Successfully'
         ]);
-        return Excel::download(new ForexLogExport($logs), 'forex_investment_log.xlsx');
+
         $this->clearSelected();
-        
+        return Excel::download(new ForexLogExport($logs), 'forex_investment_log.xlsx');
     }
 }

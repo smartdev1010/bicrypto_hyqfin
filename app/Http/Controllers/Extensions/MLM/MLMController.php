@@ -22,7 +22,6 @@ use Illuminate\Http\Request;
 
 class MLMController extends Controller
 {
-
     public function dash()
     {
         $page_title = '';
@@ -116,13 +115,12 @@ class MLMController extends Controller
         }
         return view('user.mlm.dash', compact('page_title','bvWithdrawable','ref_by','mlm','planA','planB','bvLogs','bvTotal','mlm1A','mlm1B','mlm1AA','mlm1AB','mlm1BA','mlm1BB','mlm1AAA','mlm1AAB','mlm1ABA','mlm1ABB','mlm1BAA','mlm1BAB','mlm1BBA','mlm1BBB'));
     }
-    
     public function fetch_network()
     {
         $user = Auth::user();
         $mlm = MLM::where('username', $user->username)->first();
         $plat_mlm = getPlatform('mlm');
-        
+
         if ($plat_mlm->type == 'binary') {
             $mlm = $mlm->binary_downlines();
         } elseif ($plat_mlm->type == 'unilevel') {
@@ -143,7 +141,6 @@ class MLMController extends Controller
         $tokens = [];
         if (getExt(10) == 1) {
             $currencies = (new EcoTokens)->getCachedCurrencies();
-            // return $currencies;
             foreach ($currencies as $cur) {
                 $tokens[$cur->symbol] = $cur;
             }
@@ -161,7 +158,7 @@ class MLMController extends Controller
             'ref_by' => $user->direct_downlines(),
             'mlm' => $mlm,
             'bvWithdrawable' => $user->mlm_withdrawable() ?? 0,
-            'daily_bv' => $plat_mlm->commission_type == 'daily' ? $user->mlm_daily_bv : 0,
+            'daily_bv' => $plat_mlm->commission_type == 'daily' ? $user->mlm_daily_bv->sum('amount') : 0,
             'bvLogs' => MLMBV::where('user_id', $user->id)->latest()->limit(30)->get(),
             'bv_total' => MLMBV::where('user_id', $user->id)->sum('amount'),
             'directs' => User::where('ref_by', $user->id)->count(),

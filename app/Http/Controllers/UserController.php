@@ -141,9 +141,11 @@ class UserController extends Controller
             }
             $popups = $popup ?? null;
         }
+        $users = User::get();
         $currency = Currencies::where('status', 1)->first();
         return response()->json([
             'user' => $user,
+            'users' => $users,
             'popups' => $popups ?? null,
             'kyc' => checkKYC($user->id),
             'currency' > $currency

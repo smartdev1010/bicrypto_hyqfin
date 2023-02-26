@@ -35,6 +35,9 @@ class ForexInvestmentTable extends DataTableComponent
             Column::make("Title", "title")
                 ->searchable()
                 ->sortable(),
+            Column::make("Price", "price")
+                ->searchable()
+                ->sortable(),
             Column::make("Duration", "duration")
                 ->searchable()
                 ->sortable(),

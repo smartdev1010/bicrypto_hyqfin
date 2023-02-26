@@ -166,6 +166,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::group(['prefix' => 'fetch', 'as' => 'fetch.'], function () {
             Route::get('/api/tokens', [UserController::class, 'api_tokens']);
             Route::post('/data', 'UserController@data');
+            Route::post('/alldata', 'UserController@alldata');
             Route::post('/support', 'TicketController@fetch_tickets');
             Route::post('/support/ticket/{id}', 'TicketController@fetch_ticket_messages');
             Route::post('/trade/orders', 'ExchangeController@trading_orders');
