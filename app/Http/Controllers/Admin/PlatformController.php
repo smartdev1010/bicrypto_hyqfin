@@ -32,6 +32,8 @@ class PlatformController extends Controller
             'unilevel_upline8_percentage' => 'numeric',
             'unilevel_upline9_percentage' => 'numeric',
             'unilevel_upline10_percentage' => 'numeric',
+            'unilevel_upline11_percentage' => 'numeric',
+            'unilevel_upline12_percentage' => 'numeric',
             'community_line_percentage' => 'numeric'
         ]);
 
@@ -135,6 +137,8 @@ class PlatformController extends Controller
                 'unilevel_upline8_percentage' => $request->unilevel_upline8_percentage,
                 'unilevel_upline9_percentage' => $request->unilevel_upline9_percentage,
                 'unilevel_upline10_percentage' => $request->unilevel_upline10_percentage,
+                'unilevel_upline11_percentage' => $request->unilevel_upline10_percentage,
+                'unilevel_upline12_percentage' => $request->unilevel_upline10_percentage,
                 'unilevel_upline2_status' => $request->unilevel_upline2_status ?? 0,
                 'unilevel_upline3_status' => $request->unilevel_upline3_status ?? 0,
                 'unilevel_upline4_status' => $request->unilevel_upline4_status ?? 0,
@@ -144,6 +148,8 @@ class PlatformController extends Controller
                 'unilevel_upline8_status' => $request->unilevel_upline8_status ?? 0,
                 'unilevel_upline9_status' => $request->unilevel_upline9_status ?? 0,
                 'unilevel_upline10_status' => $request->unilevel_upline10_status ?? 0,
+                'unilevel_upline11_status' => $request->unilevel_upline10_status ?? 0,
+                'unilevel_upline12_status' => $request->unilevel_upline10_status ?? 0,
                 'community_line_status' => $request->community_line_status ?? 0,
                 'community_line_clients' => $request->community_line_clients,
                 'membership_status' => $request->membership_status ?? 0,

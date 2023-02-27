@@ -59,7 +59,7 @@
         {
             "name": "Bots Manager",
             "icon": "robot",
-            "status": 0,
+            "status": 1,
             "addon": 1,
             "permission": "bot_access",
             "submenu": [
