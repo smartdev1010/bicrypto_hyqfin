@@ -24,6 +24,7 @@ use App\Models\Forex\ForexLogs;
 use App\Models\Ico\IcoLogs;
 use App\Models\MLM\MLMBV;
 use App\Models\Withdrawal;
+use App\Models\Membership;
 use App\Models\TradeLog;
 use App\Models\PracticeLog;
 use App\Models\Staking\StakingLog;
@@ -34,12 +35,12 @@ use Illuminate\Support\Facades\File;
 use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Support\Facades\Gate;
 
-class UserTable extends DataTableComponent
+class MembershipTable extends DataTableComponent
 {
 
     public function builder(): Builder
     {
-        return User::query()->where('role_id', '!=', 1);
+        return Membership::query();
     }
 
     public function configure(): void
@@ -56,58 +57,28 @@ class UserTable extends DataTableComponent
         return [
             Column::make("Id", "id")
                 ->sortable(),
-            Column::make('Avatar', "profile_photo_path")
-                ->collapseOnTablet()
-                ->format(
-                    fn ($value, $row, Column $column) => '<img style="max-width:32px;" src="' . getImage(imagePath()['profileImage']['path'] . '/' . $row->profile_photo_path, imagePath()['profileImage']['size']) . '">'
-                )
-                ->html(),
-            Column::make("Username", "username")
+            Column::make("Username", "user_id")
                 ->searchable()
                 ->sortable()
                 ->format(
-                    fn ($value, $row, Column $column) => '<a class="badge bg-primary">' . $row->username . '</a>'
+                    fn ($value, $row, Column $column) => '<a class="badge bg-primary">' . User::where('id', $row->user_id)->first()->username . '</a>'
                 )
                 ->html(),
-            Column::make("Email", "email")
-                ->searchable()
-                ->collapseOnTablet()
-                ->sortable(),
-            Column::make("Verification", "email_verified_at")
+            
+            Column::make("Status", "status")
                 ->searchable()
                 ->sortable()
-                ->collapseOnMobile()
                 ->format(
-                    fn ($value, $row, Column $column) => '<span class="badge bg-' . ($row->email_verified_at != null ? 'success' : 'danger') . '">' . ($row->email_verified_at != null ? 'Verified' : 'Unverified') . '</span>'
+                    fn ($value, $row, Column $column) => '<a class="badge bg-primary">' . ($row->status == 0 ? 'Not Allowed' : 'Allowed') . '</a>'
                 )
                 ->html(),
-            BooleanColumn::make('Status')
-                ->collapseOnMobile()
-                ->sortable(),
-            ButtonGroupColumn::make('Actions')
-                ->attributes(function ($row) {
-                    return [
-                        'class' => 'space-x-2',
-                    ];
-                })
-                ->buttons([
-                    LinkColumn::make('View')
-                        ->title(fn ($row) => 'View')
-                        ->location(fn ($row) => route('admin.users.detail', $row->id))
-                        ->attributes(function ($row) {
-                            return [
-                                'class' => 'btn btn-outline-success btn-sm',
-                            ];
-                        }),
-                    LinkColumn::make('Contact')
-                        ->title(fn ($row) => 'Contact')
-                        ->location(fn ($row) => route('admin.users.email.single', $row->id))
-                        ->attributes(function ($row) {
-                            return [
-                                'class' => 'btn btn-outline-warning btn-sm',
-                            ];
-                        }),
-                ]),
+            Column::make("Action", "status")
+                ->searchable()
+                ->sortable()
+                ->format(
+                    fn ($value, $row, Column $column) => ($row->status == 0 ? '<form action="/admin/membership" method="post">'.csrf_field().'<input type="text" style="display:none" name="member" value="'.$row->user_id.'"/><input type="submit" class="bg bg-danger submit-btn" value="Allow"/></form>' : '<span class="bg bg-success submit-btn">Allowed</span>')
+                )
+                ->html(),
         ];
     }
 

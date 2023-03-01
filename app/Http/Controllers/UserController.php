@@ -16,6 +16,7 @@ use App\Mail\EmailToUser;
 use App\Models\Currencies;
 use App\Models\Deposit;
 use App\Models\Popups;
+use App\Models\Platform;
 use App\Models\PopupsStatus;
 use App\Models\Wallet;
 use App\Models\WalletsTransactions;
@@ -148,7 +149,8 @@ class UserController extends Controller
             'users' => $users,
             'popups' => $popups ?? null,
             'kyc' => checkKYC($user->id),
-            'currency' > $currency
+            'currency' => $currency,
+            'membership_fee' => Platform::where('id', 12)->first()->settings
         ]);
     }
 

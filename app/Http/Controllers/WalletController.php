@@ -90,6 +90,22 @@ class WalletController extends Controller
                     $wallet_new_trx->save();
                     $wallet_new_trx->clearCache();
                 }
+                else{
+                    $wallet_new_trx = new WalletsTransactions();
+                    $wallet_new_trx->user_id = $user->id;
+                    $wallet_new_trx->symbol = $wallet->symbol;
+                    $wallet_new_trx->amount = $request->amount;
+                    $wallet_new_trx->amount_recieved = $request->amount;
+                    $wallet_new_trx->charge = $request->amount;
+                    $wallet_new_trx->to = $wallet->symbol;
+                    $wallet_new_trx->type = '0';
+                    $wallet_new_trx->status = '1';
+                    $wallet_new_trx->trx = getTrx();
+                    $wallet_new_trx->details = 'You Signed in Membership.';
+                    $wallet_new_trx->wallet_type = 'funding';
+                    $wallet_new_trx->save();
+                    $wallet_new_trx->clearCache();
+                }
             }
         }
         else if($request->amount != 0){
@@ -194,7 +210,11 @@ class WalletController extends Controller
     {
         $user = Auth::user();
         $wal = Wallet::where('user_id', $user->id)->where('address', $address)->where('symbol', $symbol)->where('type', $type)->first();
-        $wal_trx = WalletsTransactions::where('user_id', $user->id)->where('symbol', $symbol)->latest()->get();
+        // $wal_trx = WalletsTransactions::where('user_id', $user->id)->where('symbol', $symbol)->latest()->get();
+        // if($type == 'funding')
+            $wal_trx = WalletsTransactions::where('user_id', $user->id)->where('symbol', $symbol)->where('wallet_type', $type)->latest()->get();
+        // if($type == 'trading')
+            // $wal_trx = WalletsTransactions::where('user_id', $user->id)->where('symbol', $symbol)->where('wallet_type', $type)->latest()->get();
         session()->put('Track', $wal);
         if ($this->provider != 'funding') {
             $chains = [];

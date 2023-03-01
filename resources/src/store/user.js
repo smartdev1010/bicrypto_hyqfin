@@ -9,6 +9,7 @@ export const useUserStore = defineStore("user", {
         toggledMenu: null,
         page: null,
         users: [],
+        membership_fee: 0,
     }),
 
     actions: {
@@ -18,6 +19,7 @@ export const useUserStore = defineStore("user", {
                     (this.users = response.data.users),
                     (this.kyc = response.data.kyc),
                     (this.popups = response.data.popups),
+                    (this.membership_fee = response.data.membership_fee),
                     (this.currency = response.data.currency);
             });
         },

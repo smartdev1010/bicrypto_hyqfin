@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\ReportController;
 use App\Http\Controllers\Admin\UpdateController;
 use App\Http\Controllers\CronController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MembershipController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\MarketController;
 use App\Http\Controllers\QrCodeController;
@@ -286,6 +287,13 @@ Route::group(['middleware' => 'auth'], function () {
         });
     });
 
+    Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'as' => 'admin.'], function () {
+        Route::get('membership', [MembershipController::class, 'dashboard'])->name('dashboard');
+        Route::post('membership', [MembershipController::class, 'update'])->name('dashboard');
+        Route::post('membership/list', [MembershipController::class, 'getList'])->name('dashboard');
+        Route::post('membership/fee', [MembershipController::class, 'changeFee'])->name('dashboard');
+        Route::post('membership/add', [MembershipController::class, 'add'])->name('dashboard');
+    });
     // Admin
     Route::group(['middleware' => 'role:admin,demo', 'prefix' => 'admin', 'namespace' => 'Admin', 'as' => 'admin.'], function () {
         Route::get('dashboard', 'AdminController@dashboard')->name('dashboard');

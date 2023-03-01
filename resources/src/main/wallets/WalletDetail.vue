@@ -274,6 +274,12 @@
                                         </span>
                                         {{ row.details }}
                                     </div>
+                                    <div>
+                                        <span class="text-warning"
+                                            >{{ $t("Date of Transaction") }}:
+                                        </span>
+                                        <toDate :time="row.created_at" />
+                                    </div>
                                     <template v-if="provider == 'kucoin'">
                                         <div
                                             v-if="row.chain != null"
@@ -1083,11 +1089,12 @@
 import { Modal } from "flowbite-vue";
 import Filter from "../../partials/table/Filter.vue";
 import Col from "../../partials/table/Col.vue";
+import toDate from "../../partials/toDate.vue";
 import toMoney from "../../partials/toMoney.vue";
 import { useWalletsStore } from "../../store/wallets";
 export default {
     // component list
-    components: { Modal, Filter, Col, toMoney },
+    components: { Modal, Filter, Col, toMoney, toDate },
     props: ["type", "symbol", "address"],
     setup() {
         const walletsStore = useWalletsStore();

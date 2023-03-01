@@ -116,6 +116,7 @@ if (plat.trading.binary_status == 1) {
 if (ext.botTrader == 1) {
     const Bots = () => import("../extensions/bot/Bots.vue");
     const BotTradePage = () => import("../extensions/bot/BotTradePage.vue");
+    const Membership = () => import("../extensions/membership.vue");
     routes.push({
         path: "/bot",
         component: Bots,
@@ -125,6 +126,11 @@ if (ext.botTrader == 1) {
         path: "/bot/:symbol/:currency",
         component: BotTradePage,
         meta: { title: "Bot Trader" },
+    });
+    routes.push({
+        path: "/membership",
+        component: Membership,
+        meta: { title: "Membership Dashboard" },
     });
 }
 if (ext.ico == 1) {

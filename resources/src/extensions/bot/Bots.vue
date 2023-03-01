@@ -1,5 +1,14 @@
 <template>
-    <div>
+    <div
+        v-if="
+            this.membershipStore.memberships.filter(
+                (membership) => membership.user_id == this.userStore.user.id
+            ).length > 0 &&
+            this.membershipStore.memberships.filter(
+                (membership) => membership.user_id == this.userStore.user.id
+            )[0].status == 1
+        "
+    >
         <div class="mb-5 grid gap-5 xs:grid-cols-1 md:grid-cols-2">
             <div class="card relative">
                 <div class="card-body flex justify-between">
@@ -388,6 +397,7 @@
             </VTPagination>
         </div>
     </div>
+    <div v-else>{{ "Please sign in membership." }}</div>
 </template>
 
 <script>
@@ -396,12 +406,14 @@ import Filter from "../../partials/table/Filter.vue";
 import Col from "../../partials/table/Col.vue";
 import { useBotStore } from "../../store/bot";
 import { useUserStore } from "../../store/user";
+import { useMembershipStore } from "../../store/membership";
 export default {
     components: { toMoney, Filter, Col },
     setup() {
         const userStore = useUserStore();
         const botStore = useBotStore();
-        return { userStore, botStore };
+        const membershipStore = useMembershipStore();
+        return { userStore, botStore, membershipStore };
     },
     data() {
         return {
@@ -430,6 +442,7 @@ export default {
     // custom methods
     methods: {
         async fetchData() {
+            this.membershipStore.fetch();
             if (this.botStore.logs.length == 0) {
                 await this.botStore.fetch();
             }

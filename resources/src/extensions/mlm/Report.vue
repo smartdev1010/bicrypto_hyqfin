@@ -201,8 +201,18 @@
                             >
                                 <Col text="UserName" />
                             </VTh>
+                            <VTh sortKey="plan" scope="col" class="py-3 px-6">
+                                <Col text="Plan" />
+                            </VTh>
                             <VTh sortKey="date" scope="col" class="py-3 px-6">
                                 <Col text="Date of Investment" />
+                            </VTh>
+                            <VTh
+                                sortKey="endDate"
+                                scope="col"
+                                class="py-3 px-6"
+                            >
+                                <Col text="End Date of Investment" />
                             </VTh>
                             <VTh sortKey="amount" scope="col" class="py-3 px-6">
                                 <Col text="Investment Amount" />
@@ -231,11 +241,22 @@
                                 <td data-label="Percentage" class="py-3 px-6">
                                     {{ row.name }}
                                 </td>
+                                <td data-label="Percentage" class="py-3 px-6">
+                                    {{ row.plan }}
+                                </td>
                                 <td class="py-3 px-6" data-label="balance">
                                     <!-- {{ row.date }} -->
                                     <toDate
                                         v-if="row.date != ''"
                                         :time="row.date"
+                                    />
+                                    <span v-else>N/A</span>
+                                </td>
+                                <td class="py-3 px-6" data-label="balance">
+                                    <!-- {{ row.endDate }} -->
+                                    <toDate
+                                        v-if="row.endDate != ''"
+                                        :time="row.endDate"
                                     />
                                     <span v-else>N/A</span>
                                 </td>
@@ -375,6 +396,10 @@ export default {
     },
     // custom methods
     methods: {
+        addDays(date, days) {
+            date.setDate(date.getDate() + days);
+            return date;
+        },
         selectLevel(level) {
             this.curLevel = level;
             this.currentData = [];
@@ -393,12 +418,22 @@ export default {
                         if (depth == this.curLevel) {
                             let item =
                                 this.investmentStore.investment_logs_tmp[j];
+
                             let data = {
                                 no: this.currentData.length + 1,
                                 userid: item.user_id,
                                 name: this.userStore.users[item.user_id - 1]
                                     .username,
+                                plan: this.investmentStore.investment[
+                                    item.plan_id - 1
+                                ].title,
                                 date: item.created_at,
+                                endDate: this.addDays(
+                                    new Date(item.created_at),
+                                    this.investmentStore.investment[
+                                        item.plan_id - 1
+                                    ].duration
+                                ),
                                 amount: item.amount,
                             };
                             this.currentData.push(data);
@@ -414,8 +449,10 @@ export default {
                             no: this.currentData.length + 1,
                             userid: downlines[i].id,
                             name: downlines[i].username,
+                            plan: "N/A",
                             //            name: this.userStore.users[item.user_id - 1].username,
                             date: "",
+                            endDate: "",
                             amount: 0,
                         };
                         this.currentData.push(data);

@@ -30,7 +30,7 @@ class ForexController extends Controller
             'user' => $user,
             'account' => ForexAccounts::where('user_id', $user->id)->first(),
             'investment_logs' => $investment_logs,
-            'investment' => Investment::where('user_id', $user->id)->get(),
+            'investment' => ForexInvestments::get(),
             'withdraw_logs' => WithdrawLogs::get(),
             'currentDate' => date("Y-m-d H:i:s")
         ]);

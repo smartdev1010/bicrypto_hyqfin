@@ -1,5 +1,14 @@
 <template>
-    <div>
+    <div
+        v-if="
+            this.membershipStore.memberships.filter(
+                (membership) => membership.user_id == this.userStore.user.id
+            ).length > 0 &&
+            this.membershipStore.memberships.filter(
+                (membership) => membership.user_id == this.userStore.user.id
+            )[0].status == 1
+        "
+    >
         <div
             class="card mb-5 bg-black"
             style="
@@ -556,6 +565,7 @@
             @Staked="fetchData()"
         /> -->
     </div>
+    <div v-else>{{ "Please sign in membership." }}</div>
 </template>
 <script>
 import toMoney from "../../partials/toMoney.vue";
@@ -563,13 +573,15 @@ import toDate from "../../partials/toDate.vue";
 import Filter from "../../partials/table/Filter.vue";
 import Col from "../../partials/table/Col.vue";
 import { useStakingStore } from "../../store/staking";
+import { useMembershipStore } from "../../store/membership";
 import { useUserStore } from "../../store/user";
 import { Modal } from "flowbite-vue";
 export default {
     setup() {
         const userStore = useUserStore();
         const stakingStore = useStakingStore();
-        return { userStore, stakingStore };
+        const membershipStore = useMembershipStore();
+        return { userStore, stakingStore, membershipStore };
     },
     components: {
         toDate,
@@ -596,6 +608,7 @@ export default {
     // custom methods
     methods: {
         async fetchData() {
+            await this.membershipStore.fetch();
             if (this.stakingStore.coins.length == 0) {
                 await this.stakingStore.fetch();
             }

@@ -4,6 +4,7 @@ namespace App\Http\Livewire\Ext\Forex;
 
 use App\Exports\ForexLogExport;
 use App\Models\Forex\ForexLogs;
+use App\Models\Forex\ForexInvestments;
 use Illuminate\Database\Eloquent\Builder;
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;
@@ -30,6 +31,7 @@ class ForexInvestmentLogTable extends DataTableComponent
 
     public function columns(): array
     {
+        // $investments = ForexInvestments::get();
         return [
             Column::make("Id", "id")
                 ->sortable(),
@@ -58,15 +60,21 @@ class ForexInvestmentLogTable extends DataTableComponent
                 ->html(),
             Column::make("Profit", "profit")
                 ->hideIf(true),
-            Column::make("Result", "result")
-                ->view('extensions.admin.forex.investment.investment_log_profit_view'),
+            Column::make("Profit", "result")
+                ->searchable()
+                ->sortable()
+                ->collapseOnMobile()
+                    ->format(
+                        fn ($value, $row, Column $column) => ForexInvestments::where('id', $row->investment_id)->first()->roi * $row->amount / 100 * ForexInvestments::where('id', $row->investment_id)->first()->duration
+                    )
+                ->html(),
             Column::make("Status", "status")
                 ->searchable()
                 ->sortable()
                 ->collapseOnMobile()
-                ->format(
-                    fn ($value, $row, Column $column) => '<span class="badge bg-' . ($row->status == 1 ? 'success' : ($row->status == 2 ? 'primary' : 'warning')) . '">' . ($row->status == 1 ? 'Completed' : ($row->status == 2 ? 'Adjusted' : 'Running')) . '</span>'
-                )
+                    ->format(
+                        fn ($value, $row, Column $column) => '<span class="badge bg-warning>' . (date_diff(date_create($row->end_date), date_create($row->start_date))->format('%a') >= ForexInvestments::where('id', $row->investment_id)->first()->duration) ? 'Completed' : 'Running' . '</span>'
+                    )
                 ->html(),
             Column::make("Start Date", "start_date")
                 ->searchable()

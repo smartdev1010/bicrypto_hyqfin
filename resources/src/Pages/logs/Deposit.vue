@@ -22,7 +22,7 @@
                             :currentPage.sync="currentPage"
                             :pageSize="10"
                             @totalPagesChanged="totalPages = $event"
-                            class="table table-hover"
+                            class="table-hover table"
                         >
                             <thead slot="head">
                                 <tr>

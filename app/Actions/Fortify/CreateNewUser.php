@@ -28,6 +28,7 @@ class CreateNewUser implements CreatesNewUsers
             'lastname' => ['required', 'string', 'max:60'],
             'username' => ['required', 'string', 'alpha_num', 'unique:users', 'min:6'],
             'password' => $this->passwordRules(),
+            'phone' => ['required', 'string', 'unique:users'],
             'terms' => Jetstream::hasTermsAndPrivacyPolicyFeature() ? ['required', 'accepted'] : '',
         ])->validate();
 
@@ -39,7 +40,7 @@ class CreateNewUser implements CreatesNewUsers
         }
 
         if (isset($input['phone'])) {
-            $phone = $input['country_code'] . $input['phone'];
+            $phone = $input['phone'];
         } else {
             $phone = null;
         }

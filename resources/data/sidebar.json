@@ -8,6 +8,13 @@
             "permission": "user_management_access"
         },
         {
+            "name": "Membership",
+            "url": "/admin/membership",
+            "icon": "house",
+            "status": 1,
+            "permission": "user_management_access"
+        },
+        {
             "name": "Manage Users",
             "icon": "people",
             "status": 1,
@@ -647,7 +654,7 @@
             "status": 1,
             "submenu": [
                 {
-                    "name": "Sub Page",
+                    "name": "My Income",
                     "icon": "chevron-right",
                     "url": "/referral/subPage",
                     "status": 1
@@ -656,6 +663,12 @@
                     "name": "Level Report",
                     "icon": "chevron-right",
                     "url": "/referral/levelReport",
+                    "status": 1
+                },
+                {
+                    "url": "/membership",
+                    "name": "Membership",
+                    "icon": "chevron-right",
                     "status": 1
                 }
             ]
