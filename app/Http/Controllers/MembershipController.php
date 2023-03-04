@@ -38,7 +38,7 @@ class MembershipController extends Controller
       if(count(Membership::where('user_id', $user->id)->get()) == 0){
         $membership = new Membership();
         $membership->user_id = $user->id;
-        $membership->status = 0;
+        $membership->status = 1;
         $membership->save();
       }
       return $this->getList();

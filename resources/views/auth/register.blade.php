@@ -54,15 +54,21 @@
               <x-jet-input id="password_confirmation" class="block mt-1 w-full" type="password"
                 name="password_confirmation" required autocomplete="new-password" />
             </div>
+            <div class="grid gap-6 sm:grid-cols-1">
+              <label for="countries" class="block text-sm font-medium text-gray-900 dark:text-gray-400">Phone
+                Number</label>
+              <input id="phone" type="tel" name="phone1" class="block mt-1 w-full"
+                style="border-radius: 10px; border-color: gray" onchange="changed()" required />
+              <input name="phone" class="form-group" style="border: 1px solid black; display:none" id="phone1" />
+            </div>
+            <div class="grid gap-6 sm:grid-cols-1">
+              <label for="countries" class="block text-sm font-medium text-gray-900 dark:text-gray-400">
+                Referred By :</label>
+              <input id="input" name="referred" class="block mt-1 w-full form-control" placeholder="Admin"
+                value="{{$request->route('reference')}}" disabled />
+            </div>
+          </div>
 
-          </div>
-          <div class="grid gap-6 sm:grid-cols-1">
-            <label for="countries" class="block text-sm font-medium text-gray-900 dark:text-gray-400">Phone
-              Number</label>
-            <input id="phone" type="tel" name="phone1" class="block mt-1 w-full"
-              style="border-radius: 10px; border-color: gray" onchange="changed()" required />
-            <input name="phone" class="form-group" style="border: 1px solid black; display:none" id="phone1" />
-          </div>
 
           {{-- <div class="flex items-center">
                         <div class="w-full h-0.5 bg-gray-200 dark:bg-gray-700"></div>

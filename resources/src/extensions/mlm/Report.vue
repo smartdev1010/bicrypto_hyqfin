@@ -423,7 +423,7 @@ export default {
                                 no: this.currentData.length + 1,
                                 userid: item.user_id,
                                 name: this.userStore.users[item.user_id - 1]
-                                    .username,
+                                    .username,`
                                 plan: this.investmentStore.investment[
                                     item.plan_id - 1
                                 ].title,

@@ -29,7 +29,14 @@
                                             wallet.user_id ==
                                                 this.userStore.user.id &&
                                             wallet.symbol == 'USDT'
-                                    )[0].balance
+                                    )[0] == undefined
+                                        ? 0
+                                        : this.forexStore.wallets.filter(
+                                              (wallet) =>
+                                                  wallet.user_id ==
+                                                      this.userStore.user.id &&
+                                                  wallet.symbol == 'USDT'
+                                          )[0].balance
                                 "
                                 decimals="2"
                             />
@@ -43,13 +50,9 @@
                                     (membership) =>
                                         membership.user_id ==
                                         this.userStore.user.id
-                                ).length > 0
+                                ).length == 0
                             "
-                            disabled
                         >
-                            {{ $t("Start Membership") }}
-                        </button>
-                        <button class="mybtn" @click="this.func()" v-else>
                             {{ $t("Start Membership") }}
                         </button>
                         <div style="font-size: 20px">
@@ -190,14 +193,15 @@ export default {
     methods: {
         async func() {
             if (confirm("Are you sure to pay for this?")) {
-                console.log(
+                if (
                     this.forexStore.wallets.filter(
                         (wallet) =>
                             wallet.user_id == this.userStore.user.id &&
                             wallet.symbol == "USDT"
-                    )[0].balance
-                );
-                if (
+                    )[0] == undefined
+                )
+                    this.error = "You don't have USDT wallet!";
+                else if (
                     this.forexStore.wallets.filter(
                         (wallet) =>
                             wallet.user_id == this.userStore.user.id &&
