@@ -13,6 +13,7 @@ use App\Models\MLMBV;
 use App\Models\MLMPlan;
 use App\Models\Transaction;
 use App\Models\User;
+use App\Models\CommissionInvestment;
 use App\Models\Membership;
 use App\Models\Wallet;
 use App\Models\Platform;
@@ -32,6 +33,11 @@ class MembershipController extends Controller
         'membership',
         'membership_fee'
       ));
+    }
+    public function commission(){
+      $page_title = 'Commission Settings';
+      $commissions = CommissionInvestment::get();
+      return view('admin.commission', compact('commissions'));
     }
     public function add(){
       $user = Auth::user();
@@ -70,5 +76,63 @@ class MembershipController extends Controller
       $membership_fee->settings = $request->fee;
       $membership_fee->save();
       return $this->dashboard();
+    }
+    public function updateCommission(Request $request)
+    {
+        $request->validate([
+            'unilevel_upline1_percentage' => 'numeric',
+            'unilevel_upline2_percentage' => 'numeric',
+            'unilevel_upline3_percentage' => 'numeric',
+            'unilevel_upline4_percentage' => 'numeric',
+            'unilevel_upline5_percentage' => 'numeric',
+            'unilevel_upline6_percentage' => 'numeric',
+            'unilevel_upline7_percentage' => 'numeric',
+            'unilevel_upline8_percentage' => 'numeric',
+            'unilevel_upline9_percentage' => 'numeric',
+            'unilevel_upline10_percentage' => 'numeric',
+            'unilevel_upline11_percentage' => 'numeric',
+            'unilevel_upline12_percentage' => 'numeric',
+            'community_line_percentage' => 'numeric'
+        ]);
+        $commission = CommissionInvestment::where('id', 1)->first();
+        $commission->commission = floatval($request->unilevel_upline1_percentage);
+        $commission->save();
+        $commission = CommissionInvestment::where('id', 2)->first();
+        $commission->commission = floatval($request->unilevel_upline2_percentage);
+        $commission->save();
+        $commission = CommissionInvestment::where('id', 3)->first();
+        $commission->commission = floatval($request->unilevel_upline3_percentage);
+        $commission->save();
+        $commission = CommissionInvestment::where('id', 4)->first();
+        $commission->commission = floatval($request->unilevel_upline4_percentage);
+        $commission->save();
+        $commission = CommissionInvestment::where('id', 5)->first();
+        $commission->commission = floatval($request->unilevel_upline5_percentage);
+        $commission->save();
+        $commission = CommissionInvestment::where('id', 6)->first();
+        $commission->commission = floatval($request->unilevel_upline6_percentage);
+        $commission->save();
+        $commission = CommissionInvestment::where('id', 7)->first();
+        $commission->commission = floatval($request->unilevel_upline7_percentage);
+        $commission->save();
+        $commission = CommissionInvestment::where('id', 8)->first();
+        $commission->commission = floatval($request->unilevel_upline8_percentage);
+        $commission->save();
+        $commission = CommissionInvestment::where('id', 9)->first();
+        $commission->commission = floatval($request->unilevel_upline9_percentage);
+        $commission->save();
+        $commission = CommissionInvestment::where('id', 10)->first();
+        $commission->commission = floatval($request->unilevel_upline10_percentage);
+        $commission->save();
+        $commission = CommissionInvestment::where('id', 11)->first();
+        $commission->commission = floatval($request->unilevel_upline11_percentage);
+        $commission->save();
+        $commission = CommissionInvestment::where('id', 12)->first();
+        $commission->commission = floatval($request->unilevel_upline12_percentage);
+        $commission->save();
+
+        \Illuminate\Support\Facades\Artisan::call('optimize:clear');
+        $notify[] = ['success', 'Commission has been updated.'];
+        return back()->withNotify($notify);
     }
 }

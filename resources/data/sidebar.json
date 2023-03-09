@@ -15,6 +15,13 @@
             "permission": "user_management_access"
         },
         {
+            "name": "Commissions",
+            "url": "/admin/commissions",
+            "icon": "house",
+            "status": 1,
+            "permission": "user_management_access"
+        },
+        {
             "name": "Manage Users",
             "icon": "people",
             "status": 1,

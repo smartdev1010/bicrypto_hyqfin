@@ -414,7 +414,7 @@
                                         mlmStore.planA.forex_commission != null
                                     "
                                 />
-                                
+
                                 <Method
                                     title="Staking Commission"
                                     icon="layers"
@@ -1392,8 +1392,16 @@ export default {
                 percentage =
                     this.walletsStore.platforms.mlm
                         .unilevel_upline10_percentage;
+            if (depth == 11)
+                percentage =
+                    this.walletsStore.platforms.mlm
+                        .unilevel_upline11_percentage;
+            if (depth == 12)
+                percentage =
+                    this.walletsStore.platforms.mlm
+                        .unilevel_upline12_percentage;
             percentage /= 100;
-            if (depth > 10) return;
+            if (depth > 12) return;
             for (let i = 0; i < downlines.length; i++) {
                 await this.investmentStore.getInvestment(downlines[i].id);
                 if (this.investmentStore.investment_logs_tmp.length > 0) {

@@ -36,7 +36,7 @@ class LevelReportController extends Controller
         ]);
     }
     public function updateReportTable($id, $level){
-        if($level > 10) return;
+        if($level > 12) return;
         $user = Auth::user();
         $platform = getPlatforms();
         if($level == 1) $percentage = $platform->mlm->unilevel_upline1_percentage;
@@ -49,6 +49,8 @@ class LevelReportController extends Controller
         if($level == 8) $percentage = $platform->mlm->unilevel_upline8_percentage;
         if($level == 9) $percentage = $platform->mlm->unilevel_upline9_percentage;
         if($level == 10) $percentage = $platform->mlm->unilevel_upline10_percentage;
+        if($level == 11) $percentage = $platform->mlm->unilevel_upline11_percentage;
+        if($level == 12) $percentage = $platform->mlm->unilevel_upline12_percentage;
         
         $arr_users = User::where('ref_by', $id)->get();
         foreach ($arr_users as $each_user) {
@@ -142,6 +144,7 @@ class LevelReportController extends Controller
     }
     public function updateReport(){
       $user = Auth::user();
+      $platform = getPlatforms();
       $this->updateReportTable($user->id, 1);
     }
 }

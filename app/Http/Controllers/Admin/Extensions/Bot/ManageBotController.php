@@ -146,10 +146,10 @@ class ManageBotController extends Controller
             'min_bot_amount' => $request->min_bot_amount,
             'max_bot_amount' => $request->max_bot_amount,
         ]);
-
+        
         $bot->status = $request->status ?? 0;
         $bot->is_new = $request->is_new ?? 0;
-
+        
         $path = imagePath()['bot']['path'];
         $size = imagePath()['bot']['size'];
         if (isset($request->image)) {
@@ -164,11 +164,12 @@ class ManageBotController extends Controller
             }
             $bot->image = $filename;
         }
-        $bot->save();
-        $bot->clearCache();
+        echo $bot;
+        // $bot->save();
+        // $bot->clearCache();
 
-        $notify[] = ['success', 'Bot has been Updated'];
-        return back()->withNotify($notify);
+        // $notify[] = ['success', 'Bot has been Updated'];
+        // return back()->withNotify($notify);
     }
     public function set(Request $request)
     {

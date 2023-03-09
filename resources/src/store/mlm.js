@@ -49,7 +49,7 @@ export const useMlmStore = defineStore("mlm", {
         },
         async updateReport() {
             await axios.post("/user/mlm/updateReport").then((response) => {
-                console.log("updateReport");
+                console.log(response, "updateReport");
             });
         },
         async fetchWallet(coin, chain) {

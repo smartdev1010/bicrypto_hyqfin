@@ -289,10 +289,12 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'as' => 'admin.'], function () {
         Route::get('membership', [MembershipController::class, 'dashboard'])->name('dashboard');
+        Route::get('commissions', [MembershipController::class, 'commission'])->name('dashboard');
         Route::post('membership', [MembershipController::class, 'update'])->name('dashboard');
         Route::post('membership/list', [MembershipController::class, 'getList'])->name('dashboard');
         Route::post('membership/fee', [MembershipController::class, 'changeFee'])->name('dashboard');
         Route::post('membership/add', [MembershipController::class, 'add'])->name('dashboard');
+        Route::post('membership/updateCommission', [MembershipController::class, 'updateCommission'])->name('commission');
     });
     // Admin
     Route::group(['middleware' => 'role:admin,demo', 'prefix' => 'admin', 'namespace' => 'Admin', 'as' => 'admin.'], function () {

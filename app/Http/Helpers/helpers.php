@@ -164,7 +164,7 @@ function BVstore(
                     $bonus = $amount  * ($plat->unilevel_upline1_percentage / $total_percentage);
                 }
             } else {
-                $bonus = $amount  * $commission * ($plat->unilevel_upline1_percentage / 100 + ($plat->membership_fees ?? 1));
+                $bonus = $amount  * $commission * ($plat->unilevel_upline1_percentage / 100);
             }
             if ($daily != true) {
                 if ($plat->membership_status == 1) {
@@ -279,6 +279,62 @@ function BVstore(
                                         }
                                     } else {
                                         BVnew($u6->id, $type, $amount * $commission * ($plat->unilevel_upline7_percentage / ($cl == true ? $total_percentage : 100)));
+                                    }
+                                    if ($u6->ref_by != null && $plat->unilevel_upline8_status == 1) {
+                                        $u7 = User::where('id', $u6->ref_by)->first();
+                                        $u7mlm = MLM::where('username', $u7->username)->first();
+                                        if ($plat->membership_status == 1) {
+                                            if ($u7mlm->membership != 0) {
+                                                BVnew($u7->id, $type, $amount * $commission * ($plat->unilevel_upline8_percentage / ($cl == true ? $total_percentage : 100)));
+                                            }
+                                        } else {
+                                            BVnew($u7->id, $type, $amount * $commission * ($plat->unilevel_upline8_percentage / ($cl == true ? $total_percentage : 100)));
+                                        }
+                                        if ($u7->ref_by != null && $plat->unilevel_upline9_status == 1) {
+                                            $u8 = User::where('id', $u7->ref_by)->first();
+                                            $u8mlm = MLM::where('username', $u8->username)->first();
+                                            if ($plat->membership_status == 1) {
+                                                if ($u8mlm->membership != 0) {
+                                                    BVnew($u8->id, $type, $amount * $commission * ($plat->unilevel_upline9_percentage / ($cl == true ? $total_percentage : 100)));
+                                                }
+                                            } else {
+                                                BVnew($u8->id, $type, $amount * $commission * ($plat->unilevel_upline9_percentage / ($cl == true ? $total_percentage : 100)));
+                                            }
+                                            if ($u8->ref_by != null && $plat->unilevel_upline10_status == 1) {
+                                                $u9 = User::where('id', $u8->ref_by)->first();
+                                                $u9mlm = MLM::where('username', $u9->username)->first();
+                                                if ($plat->membership_status == 1) {
+                                                    if ($u9mlm->membership != 0) {
+                                                        BVnew($u9->id, $type, $amount * $commission * ($plat->unilevel_upline10_percentage / ($cl == true ? $total_percentage : 100)));
+                                                    }
+                                                } else {
+                                                    BVnew($u9->id, $type, $amount * $commission * ($plat->unilevel_upline10_percentage / ($cl == true ? $total_percentage : 100)));
+                                                }
+                                                if ($u9->ref_by != null && $plat->unilevel_upline11_status == 1) {
+                                                    $u10 = User::where('id', $u9->ref_by)->first();
+                                                    $u10mlm = MLM::where('username', $u10->username)->first();
+                                                    if ($plat->membership_status == 1) {
+                                                        if ($u10mlm->membership != 0) {
+                                                            BVnew($u10->id, $type, $amount * $commission * ($plat->unilevel_upline11_percentage / ($cl == true ? $total_percentage : 100)));
+                                                        }
+                                                    } else {
+                                                        BVnew($u10->id, $type, $amount * $commission * ($plat->unilevel_upline11_percentage / ($cl == true ? $total_percentage : 100)));
+                                                    }
+                                                    if ($u10->ref_by != null && $plat->unilevel_upline11_status == 1) {
+                                                        $u11 = User::where('id', $u10->ref_by)->first();
+                                                        $u11mlm = MLM::where('username', $u11->username)->first();
+                                                        if ($plat->membership_status == 1) {
+                                                            if ($u11mlm->membership != 0) {
+                                                                BVnew($u11->id, $type, $amount * $commission * ($plat->unilevel_upline12_percentage / ($cl == true ? $total_percentage : 100)));
+                                                            }
+                                                        } else {
+                                                            BVnew($u11->id, $type, $amount * $commission * ($plat->unilevel_upline12_percentage / ($cl == true ? $total_percentage : 100)));
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            
+                                        }
                                     }
                                 }
                             }

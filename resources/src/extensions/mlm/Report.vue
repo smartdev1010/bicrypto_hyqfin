@@ -422,17 +422,18 @@ export default {
                             let data = {
                                 no: this.currentData.length + 1,
                                 userid: item.user_id,
-                                name: this.userStore.users[item.user_id - 1]
-                                    .username,`
-                                plan: this.investmentStore.investment[
-                                    item.plan_id - 1
-                                ].title,
+                                name: this.userStore.users.filter(
+                                    (user) => user.id == item.user_id
+                                )[0].username,
+                                plan: this.investmentStore.investment.filter(
+                                    (id) => item.plan_id
+                                )[0].title,
                                 date: item.created_at,
                                 endDate: this.addDays(
                                     new Date(item.created_at),
-                                    this.investmentStore.investment[
-                                        item.plan_id - 1
-                                    ].duration
+                                    this.investmentStore.investment.filter(
+                                        (id) => item.plan_id
+                                    )[0].duration
                                 ),
                                 amount: item.amount,
                             };

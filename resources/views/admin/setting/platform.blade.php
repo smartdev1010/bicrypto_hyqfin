@@ -948,7 +948,48 @@
           </div>
           <small class="text-warning">{{ __('Tenth Upline Commission Percentage') }}</small>
         </div>
-
+        <div class="border rounded dark:border-gray-600 shadow p-2">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center mb-2">
+              <label class="inline-flex relative items-center cursor-pointer mr-3">
+                <input type="checkbox" value="{{ $platform->mlm->unilevel_upline11_status }}" class="sr-only peer"
+                  data-on="Cover" data-off="Minimal" name="unilevel_upline11_status" id="unilevel_upline11_status" @if
+                  ($platform->mlm->unilevel_upline11_status == 1) checked @endif>
+                <div class="toggle peer"
+                  onclick="$('#unilevel_upline11_status').val($('#unilevel_upline11_status').val() != 1 ? 1 : 0)">
+                </div>
+              </label>
+              <span class="text-sm font-medium text-gray-900 dark:text-gray-300">{{ __('11nd Upline') }}</span>
+            </div>
+            <div class="input-group">
+              <input type="text" name="unilevel_upline11_percentage"
+                value="{{ $platform->mlm->unilevel_upline11_percentage ?? '' }}">
+              <span>%</span>
+            </div>
+          </div>
+          <small class="text-warning">{{ __('Eleventh Upline Commission Percentage') }}</small>
+        </div>
+        <div class="border rounded dark:border-gray-600 shadow p-2">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center mb-2">
+              <label class="inline-flex relative items-center cursor-pointer mr-3">
+                <input type="checkbox" value="{{ $platform->mlm->unilevel_upline12_status }}" class="sr-only peer"
+                  data-on="Cover" data-off="Minimal" name="unilevel_upline12_status" id="unilevel_upline12_status" @if
+                  ($platform->mlm->unilevel_upline12_status == 1) checked @endif>
+                <div class="toggle peer"
+                  onclick="$('#unilevel_upline12_status').val($('#unilevel_upline12_status').val() != 1 ? 1 : 0)">
+                </div>
+              </label>
+              <span class="text-sm font-medium text-gray-900 dark:text-gray-300">{{ __('12nd Upline') }}</span>
+            </div>
+            <div class="input-group">
+              <input type="text" name="unilevel_upline12_percentage"
+                value="{{ $platform->mlm->unilevel_upline12_percentage ?? '' }}">
+              <span>%</span>
+            </div>
+          </div>
+          <small class="text-warning">{{ __('Twelfth Upline Commission Percentage') }}</small>
+        </div>
       </div>
       @endif
     </div>
