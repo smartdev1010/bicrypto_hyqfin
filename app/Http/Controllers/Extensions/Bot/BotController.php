@@ -11,6 +11,7 @@ use App\Models\Extension;
 use App\Models\GeneralSetting;
 use App\Models\ThirdpartyProvider;
 use App\Models\Transaction;
+use App\Models\WalletsTransactions;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -113,6 +114,21 @@ class BotController extends Controller
         }
         $wallet->balance -= $request->amount;
         $wallet->save();
+
+        $wallet_new_trx = new WalletsTransactions();
+        $wallet_new_trx->user_id = $user->id;
+        $wallet_new_trx->symbol = $wallet->symbol;
+        $wallet_new_trx->amount = $request->amount;
+        $wallet_new_trx->amount_recieved = $request->amount;
+        $wallet_new_trx->charge = $request->amount;
+        $wallet_new_trx->to = $wallet->symbol;
+        $wallet_new_trx->type = '0';
+        $wallet_new_trx->status = '1';
+        $wallet_new_trx->trx = getTrx();
+        $wallet_new_trx->details = 'You started Bot.';
+        $wallet_new_trx->wallet_type = 'funding';
+        $wallet_new_trx->save();
+        $wallet_new_trx->clearCache();
 
         $bot_contract = new BotContract();
         $bot_contract->user_id = $user->id;

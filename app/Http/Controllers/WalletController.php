@@ -10,6 +10,7 @@ use App\Models\Kucoin\KucoinCurrencies;
 use App\Models\ThirdpartyTransactions;
 use App\Models\Transaction;
 use App\Models\User;
+use App\Models\CommissionInvestment;
 use App\Models\Wallet;
 use App\Models\WalletsTransactions;
 use App\Models\Platform;
@@ -199,7 +200,7 @@ class WalletController extends Controller
     }
     public function getWallet(Request $request){
         $wallet = Wallet::get();
-        $platform = getPlatforms();
+        $platform = CommissionInvestment::get();
         return response()->json([
             'wallet' => $wallet,
             'platforms' => $platform

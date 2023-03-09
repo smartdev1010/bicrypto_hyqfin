@@ -88,14 +88,14 @@ class UsersController extends Controller
             $notify[] = ['error', 'Email already exists.'];
             return back()->withNotify($notify);
         }
-        if ($request->mobile != $user->mobile && User::where('mobile', $request->mobile)->whereId('!=', $user->id)->count() > 0) {
+        if ($request->mobile != $user->phone && User::where('phone', $request->phone)->whereId('!=', $user->id)->count() > 0) {
             $notify[] = ['error', 'Phone number already exists.'];
             return back()->withNotify($notify);
         }
         $request->merge(['status' => isset($request->status) ? 1 : 0]);
         $request->merge(['email_verified_at' => isset($request->email_verified_at) ? 1 : 0]);
 
-        $user->mobile = $request->mobile;
+        $user->phone = $request->mobile;
         $user->firstname = $request->firstname;
         $user->lastname = $request->lastname;
         $user->email = $request->email;

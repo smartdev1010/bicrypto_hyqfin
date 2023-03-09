@@ -24,7 +24,96 @@ class MLMController extends Controller
 {
     public function dash()
     {
-        // return view('user.mlm.dash', compact('page_title','bvWithdrawable','ref_by','mlm','planA','planB','bvLogs','bvTotal','mlm1A','mlm1B','mlm1AA','mlm1AB','mlm1BA','mlm1BB','mlm1AAA','mlm1AAB','mlm1ABA','mlm1ABB','mlm1BAA','mlm1BAB','mlm1BBA','mlm1BBB'));
+        $page_title = '';
+        $user = Auth::user();
+        $ref_by = User::where('ref_by',$user->id)->get();
+        $mlm = MLM::where('username',$user->username)->first();
+        $mlmB = $mlm->rank + 1;
+        $bvTotal = MLMBV::where('user_id', $user->id)->sum('amount');
+        if( MLMBV::where('user_id', $user->id)->exists()){
+            if($mlm->last_withdraw != null){
+                $bvWithdrawable = MLMBV::where('user_id', $user->id)->where('created_at','>',$mlm->last_withdraw)->sum('amount');
+            } else {
+                $bvWithdrawable = MLMBV::where('user_id', $user->id)->sum('amount');
+            }
+        } else {
+            $bvWithdrawable = '0';
+        }
+        $bvLogs = MLMBV::where('user_id', $user->id)->latest()->limit(10)->get();
+        $planA = MLMPlan::where('status',1)->where('rank',$mlm->rank)->first();
+        $planB = MLMPlan::where('status',1)->where('rank',$mlmB)->first();
+        if($mlm->left != null){
+            $mlm1A = MLM::where('username',$mlm->left)->first();
+            if($mlm1A->left != null){
+                $mlm1AA = MLM::where('username',$mlm1A->left)->first();
+                if($mlm1AA->left != null){
+                    $mlm1AAA = MLM::where('username',$mlm1AA->left)->first();
+                } else {
+                    $mlm1AAA = null;
+                }
+                if($mlm1AA->right != null){
+                    $mlm1AAB = MLM::where('username',$mlm1AA->right)->first();
+                } else {
+                    $mlm1AAB = null;
+                }
+            } else {
+                $mlm1AA = null;$mlm1AAA = null;$mlm1AAB = null;
+            }
+            if($mlm1A->right != null){
+                $mlm1AB = MLM::where('username',$mlm1A->right)->first();
+                if($mlm1AB->left != null){
+                    $mlm1ABA = MLM::where('username',$mlm1AB->left)->first();
+                } else {
+                    $mlm1ABA = null;
+                }
+                if($mlm1AB->right != null){
+                    $mlm1ABB = MLM::where('username',$mlm1AB->right)->first();
+                } else {
+                    $mlm1ABB = null;
+                }
+            } else {
+                $mlm1AB = null;$mlm1ABA = null;$mlm1ABB = null;
+            }
+        } else {
+            $mlm1A = null;$mlm1AA = null;$mlm1AB = null;$mlm1AAA = null;$mlm1AAB = null;$mlm1ABA = null;$mlm1ABB = null;
+        }
+
+        if($mlm->right != null){
+            $mlm1B = MLM::where('username',$mlm->right)->first();
+            if($mlm1B->left != null){
+                $mlm1BA = MLM::where('username',$mlm1B->left)->first();
+                if($mlm1BA->left != null){
+                    $mlm1BAA = MLM::where('username',$mlm1BA->left)->first();
+                } else {
+                    $mlm1BAA = null;
+                }
+                if($mlm1BA->right != null){
+                    $mlm1BAB = MLM::where('username',$mlm1BA->right)->first();
+                } else {
+                    $mlm1BAB = null;
+                }
+            } else {
+                $mlm1BA = null;$mlm1BAA = null;$mlm1BAB = null;
+            }
+            if($mlm1B->left != null){
+                $mlm1BB = MLM::where('username',$mlm1B->right)->first();
+                if($mlm1BB->left != null){
+                    $mlm1BBA = MLM::where('username',$mlm1BB->left)->first();
+                } else {
+                    $mlm1BBA = null;
+                }
+                if($mlm1BB->right != null){
+                    $mlm1BBB = MLM::where('username',$mlm1BB->right)->first();
+                } else {
+                    $mlm1BBB = null;
+                }
+            } else {
+                $mlm1BB = null;$mlm1BBA = null;$mlm1BBB = null;
+            }
+        } else {
+            $mlm1B = null;$mlm1BA = null;$mlm1BB = null;$mlm1BAA = null;$mlm1BAB = null;$mlm1BBA = null;$mlm1BBB = null;
+        }
+        return view('user.mlm.dash', compact('page_title','bvWithdrawable','ref_by','mlm','planA','planB','bvLogs','bvTotal','mlm1A','mlm1B','mlm1AA','mlm1AB','mlm1BA','mlm1BB','mlm1AAA','mlm1AAB','mlm1ABA','mlm1ABB','mlm1BAA','mlm1BAB','mlm1BBA','mlm1BBB'));
     }
     public function fetch_network()
     {

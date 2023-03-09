@@ -4,7 +4,7 @@
     <div class="card">
         <div class="card-header flex justify-between items-center">
             <h4 class="card-title">{{ $locale->title }} {{ __('Editor') }}</h4>
-            
+
         </div>
 
         <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -84,7 +84,7 @@
                 method: "PUT",
                 data: {
                     key: key,
-                    value: $('#' + key).val()
+                    value: document.getElementById(key).value
                 },
                 success: function(response) {
                     notify(response.type, response.message)

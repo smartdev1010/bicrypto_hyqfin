@@ -320,7 +320,11 @@
                                     <h2 class="font-medium">
                                         <div v-if="dailyIncome.length > 0">
                                             <div v-for="income in dailyIncome">
-                                                {{ income.amount }}
+                                                <toMoney
+                                            :key="key"
+                                            :num="income.amount"
+                                            decimals="2"
+                                        />
                                                 {{ income.wallet }}
                                             </div>
                                         </div>
@@ -414,7 +418,7 @@
                                         mlmStore.planA.forex_commission != null
                                     "
                                 />
-
+                                
                                 <Method
                                     title="Staking Commission"
                                     icon="layers"
@@ -1284,10 +1288,12 @@
 
 <script>
 import { Modal } from "flowbite-vue";
+
 import Method from "./Method.vue";
 import BinaryTree from "./BinaryTree.vue";
 import UnilevelTree from "./UnilevelTree.vue";
 import Refer from "../../partials/Refer.vue";
+import toMoney from "../../partials/toMoney.vue";
 import { useMlmStore } from "../../store/mlm";
 import { useUserStore } from "../../store/user";
 import { useWalletsStore } from "../../store/wallets";
@@ -1311,6 +1317,7 @@ export default {
         Progress,
         Modal,
         toDate,
+        toMoney
     },
 
     // component data
@@ -1363,43 +1370,40 @@ export default {
             let percentage;
             if (depth == 1)
                 percentage =
-                    this.walletsStore.platforms.mlm.unilevel_upline1_percentage;
+                    this.walletsStore.platforms[0].commission;
             if (depth == 2)
                 percentage =
-                    this.walletsStore.platforms.mlm.unilevel_upline2_percentage;
+                    this.walletsStore.platforms[1].commission;
             if (depth == 3)
                 percentage =
-                    this.walletsStore.platforms.mlm.unilevel_upline3_percentage;
+                    this.walletsStore.platforms[2].commission;
             if (depth == 4)
                 percentage =
-                    this.walletsStore.platforms.mlm.unilevel_upline4_percentage;
+                    this.walletsStore.platforms[3].commission;
             if (depth == 5)
                 percentage =
-                    this.walletsStore.platforms.mlm.unilevel_upline5_percentage;
+                    this.walletsStore.platforms[4].commission;
             if (depth == 6)
                 percentage =
-                    this.walletsStore.platforms.mlm.unilevel_upline6_percentage;
+                    this.walletsStore.platforms[5].commission;
             if (depth == 7)
                 percentage =
-                    this.walletsStore.platforms.mlm.unilevel_upline7_percentage;
+                    this.walletsStore.platforms[6].commission;
             if (depth == 8)
                 percentage =
-                    this.walletsStore.platforms.mlm.unilevel_upline8_percentage;
+                    this.walletsStore.platforms[7].commission;
             if (depth == 9)
                 percentage =
-                    this.walletsStore.platforms.mlm.unilevel_upline9_percentage;
+                    this.walletsStore.platforms[8].commission;
             if (depth == 10)
                 percentage =
-                    this.walletsStore.platforms.mlm
-                        .unilevel_upline10_percentage;
+                    this.walletsStore.platforms[9].commission;
             if (depth == 11)
                 percentage =
-                    this.walletsStore.platforms.mlm
-                        .unilevel_upline11_percentage;
+                    this.walletsStore.platforms[10].commission;
             if (depth == 12)
                 percentage =
-                    this.walletsStore.platforms.mlm
-                        .unilevel_upline12_percentage;
+                    this.walletsStore.platforms[11].commission;
             percentage /= 100;
             if (depth > 12) return;
             for (let i = 0; i < downlines.length; i++) {
@@ -1456,12 +1460,9 @@ export default {
         async fetchData() {
             await this.walletsStore.fetch();
             await this.walletsStore.fetch_wallet();
-            if (this.investmentStore.investment.length == 0)
-                await this.investmentStore.fetch();
-            if (this.mlmStore.mlm == null) {
-                await this.mlmStore.fetch();
-                this.calculateTotalInvestment(this.mlmStore.mlm.downlines, 1);
-            }
+            await this.investmentStore.fetch();
+            await this.mlmStore.fetch();
+            this.calculateTotalInvestment(this.mlmStore.mlm.downlines, 1);
         },
         async fetchWallet(coin, chain) {
             await this.mlmStore.fetchWallet(coin, chain);

@@ -209,7 +209,6 @@ class User extends Authenticatable implements MustVerifyEmail
     public function unilevel_downlines()
     {
         return Cache::remember($this->cacheKey($this) . ':unilevel_downlines', now()->addHours(4), function () {
-            // echo $this->id;
             $downlines = $this->where('ref_by', $this->id)
                 ->with('mlm')
                 ->select('id', 'firstname', 'lastname', 'username')
@@ -221,14 +220,11 @@ class User extends Authenticatable implements MustVerifyEmail
 
     private function getAllDownlines(&$downlines)
     {
-
         foreach ($downlines as &$downline) {
-            // echo $downline->id;
-            $sub_downlines = $this->where('ref_by', $downline->id)
+            $sub_downlines = $downline->where('ref_by', $downline->id)
                 ->with('mlm')
                 ->select('id', 'firstname', 'lastname', 'username')
                 ->get();
-            // echo $sub_downlines;
             $downline->downlines = $sub_downlines;
             if (!$sub_downlines->isEmpty()) {
                 $this->getAllDownlines($sub_downlines);

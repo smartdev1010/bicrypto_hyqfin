@@ -53,12 +53,13 @@ class LevelReportController extends Controller
         if($level == 12) $percentage = $platform->mlm->unilevel_upline12_percentage;
         
         $arr_users = User::where('ref_by', $id)->get();
+        
         foreach ($arr_users as $each_user) {
             $arr_investments = InvestmentLogs::where('user_id', $each_user->id)->get();
-            
-            // dd(count($arr_investments));
             foreach($arr_investments as $each_investment){
+                echo 'parentUser '.$user->id." userId "."$each_user->id"." investmentId ".$each_investment->id."      ";
                 if(count(LevelReport::where('parentUser', $user->id)->where('userId', $each_user->id)->where('investmentId', $each_investment->id)->get()) == 0){
+                    echo 'entered';
                     $amount = 0;
                     $item = new LevelReport();
                     $item->parentUser = $user->id;
@@ -79,7 +80,6 @@ class LevelReportController extends Controller
                     $item->save();
                     $wallet = Wallet::where('user_id', Auth::user()->id)->where('type', 'funding')->where('symbol', 'USDT')->first();
                     $wallet->balance += $amount;
-                    echo $wallet;
                     if($wallet->save()){
                         if($amount > 0){
                             $wallet_new_trx = new WalletsTransactions();
@@ -117,7 +117,6 @@ class LevelReportController extends Controller
                     $item->save();
                     $wallet = Wallet::where('user_id', Auth::user()->id)->where('type', 'funding')->where('symbol', 'USDT')->first();
                     $wallet->balance += $amount;
-                    echo $wallet;
                     if($wallet->save()){
                         if($amount > 0){
                             $wallet_new_trx = new WalletsTransactions();
@@ -144,7 +143,6 @@ class LevelReportController extends Controller
     }
     public function updateReport(){
       $user = Auth::user();
-      $platform = getPlatforms();
       $this->updateReportTable($user->id, 1);
     }
 }

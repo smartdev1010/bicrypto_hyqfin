@@ -8,20 +8,6 @@
             "permission": "user_management_access"
         },
         {
-            "name": "Membership",
-            "url": "/admin/membership",
-            "icon": "house",
-            "status": 1,
-            "permission": "user_management_access"
-        },
-        {
-            "name": "Commissions",
-            "url": "/admin/commissions",
-            "icon": "house",
-            "status": 1,
-            "permission": "user_management_access"
-        },
-        {
             "name": "Manage Users",
             "icon": "people",
             "status": 1,
@@ -46,6 +32,25 @@
                     "name": "Send Email",
                     "icon": "chevron-right",
                     "permission": "user_mailer",
+                    "status": 1
+                }
+            ]
+        },
+        {
+            "name": "Investments Manager",
+            "icon": "stack-overflow",
+            "status": 1,
+            "submenu": [
+                {
+                    "name": "Investment Plans",
+                    "url": "/admin/investment/plans",
+                    "icon": "chevron-right",
+                    "status": 1
+                },
+                {
+                    "name": "Investment Logs",
+                    "url": "/admin/investment/logs",
+                    "icon": "chevron-right",
                     "status": 1
                 }
             ]
@@ -94,6 +99,20 @@
             ]
         },
         {
+            "name": "Membership",
+            "url": "/admin/membership",
+            "icon": "house",
+            "status": 1,
+            "permission": "user_management_access"
+        },
+        {
+            "name": "Commissions",
+            "url": "/admin/commissions",
+            "icon": "house",
+            "status": 1,
+            "permission": "user_management_access"
+        },
+        {
             "name": "ICO Manager",
             "icon": "cash-coin",
             "permission": "ico_access",
@@ -117,7 +136,7 @@
             ]
         },
         {
-            "name": "Investment Manager",
+            "name": "Investment Manager(developed)",
             "icon": "bar-chart",
             "permission": "forex_access",
             "status": 1,
@@ -621,7 +640,13 @@
             ]
         },
         {
-            "name": "Investment",
+            "name": "Investments",
+            "icon": "stack-overflow",
+            "url": "/investment",
+            "status": 1
+        },
+        {
+            "name": "Grow Your Fund",
             "icon": "bar-chart",
             "url": "/forex",
             "addon": 4,
@@ -663,7 +688,7 @@
                 {
                     "name": "My Income",
                     "icon": "chevron-right",
-                    "url": "/referral/subPage",
+                    "url": "/referral",
                     "status": 1
                 },
                 {
@@ -728,6 +753,12 @@
                     "name": "Orders",
                     "icon": "chevron-right",
                     "url": "/p2p/orders",
+                    "status": 1
+                },
+                {
+                    "name": "Merchent",
+                    "icon": "chevron-right",
+                    "url": "/p2p/merchent",
                     "status": 1
                 }
             ]

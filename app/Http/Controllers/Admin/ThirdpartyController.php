@@ -206,7 +206,13 @@ class ThirdpartyController extends Controller
         $newJsonString = json_encode($datas, JSON_PRETTY_PRINT);
         file_put_contents(public_path('data/markets/markets.json'), stripslashes($newJsonString));
         $notify[] = ['success', ' has been activated'];
-        return back()->withNotify($notify);
+        return response()->json(
+            [
+                'success' => true,
+                'type' => $notify[0][0],
+                'message' => $notify[0][1]
+            ]
+        );
     }
 
     public function market_deactivate(Request $request)
@@ -218,7 +224,13 @@ class ThirdpartyController extends Controller
         $newJsonString = json_encode($datas, JSON_PRETTY_PRINT);
         file_put_contents(public_path('data/markets/markets.json'), stripslashes($newJsonString));
         $notify[] = ['success', ' has been deactivated'];
-        return back()->withNotify($notify);
+        return response()->json(
+            [
+                'success' => true,
+                'type' => $notify[0][0],
+                'message' => $notify[0][1]
+            ]
+        );
     }
 
     public function refresh()

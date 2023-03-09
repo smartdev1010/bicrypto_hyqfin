@@ -111,6 +111,22 @@
    }
 }
 
+@keyframes skeleton {
+    0% {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+    50% {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    100% {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  .skeleton {
+    animation: skeleton 1s infinite;
+  }
+  
 .bi{
   @apply mr-1;
 }

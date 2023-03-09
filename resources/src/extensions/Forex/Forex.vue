@@ -62,27 +62,7 @@
                                             decimals="2"
                                         />
                                         <!-- {{ investment.wallet - 1 }} -->
-                                        {{
-                                            typeof this.walletsStore.wallets
-                                                .funding === "object"
-                                                ? this.walletsStore.wallets
-                                                      .funding[
-                                                      Object.keys(
-                                                          this.walletsStore
-                                                              .wallets.funding
-                                                      )[0]
-                                                  ].symbol
-                                                : null
-                                        }}
-                                        {{
-                                            typeof this.walletsStore.wallets
-                                                .funding === "array"
-                                                ? this.walletsStore.wallets
-                                                      .funding[
-                                                      investment.wallet - 1
-                                                  ].symbol
-                                                : null
-                                        }}
+                                        USDT
                                     </div>
                                 </h2>
                                 <p class="card-text">
@@ -111,27 +91,7 @@
                                             :num="profit.amount"
                                             decimals="2"
                                         />
-                                        {{
-                                            typeof this.walletsStore.wallets
-                                                .funding === "object"
-                                                ? this.walletsStore.wallets
-                                                      .funding[
-                                                      Object.keys(
-                                                          this.walletsStore
-                                                              .wallets.funding
-                                                      )[0]
-                                                  ].symbol
-                                                : null
-                                        }}
-                                        {{
-                                            typeof this.walletsStore.wallets
-                                                .funding === "array"
-                                                ? this.walletsStore.wallets
-                                                      .funding[
-                                                      profit.wallet - 1
-                                                  ].symbol
-                                                : null
-                                        }}
+                                        USDT
                                     </div>
                                 </h2>
                                 <p class="card-text">
@@ -216,27 +176,7 @@
                                             :num="item.amount"
                                             decimals="2"
                                         />
-                                        {{
-                                            typeof this.walletsStore.wallets
-                                                .funding === "object"
-                                                ? this.walletsStore.wallets
-                                                      .funding[
-                                                      Object.keys(
-                                                          this.walletsStore
-                                                              .wallets.funding
-                                                      )[0]
-                                                  ].symbol
-                                                : null
-                                        }}
-                                        {{
-                                            typeof this.walletsStore.wallets
-                                                .funding === "array"
-                                                ? this.walletsStore.wallets
-                                                      .funding[
-                                                      item.wallet_id - 1
-                                                  ].symbol
-                                                : null
-                                        }}
+                                        USDT
                                     </span>
                                 </div>
                             </div>
@@ -459,25 +399,7 @@
                                 </td>
                                 <td class="py-3 px-6" data-label="Amount">
                                     <toMoney :num="row.amount" decimals="2" />
-                                    {{
-                                        typeof this.walletsStore.wallets
-                                            .funding === "object"
-                                            ? this.walletsStore.wallets.funding[
-                                                  Object.keys(
-                                                      this.walletsStore.wallets
-                                                          .funding
-                                                  )[0]
-                                              ].symbol
-                                            : null
-                                    }}
-                                    {{
-                                        typeof this.walletsStore.wallets
-                                            .funding === "array"
-                                            ? this.walletsStore.wallets.funding[
-                                                  row.wallet - 1
-                                              ].symbol
-                                            : null
-                                    }}
+                                    USDT
                                 </td>
                                 <td data-label="Profit" class="py-3 px-6">
                                     <span class="text-success">
@@ -485,26 +407,7 @@
                                             :num="row.profit"
                                             decimals="2"
                                         />
-                                        {{
-                                            typeof this.walletsStore.wallets
-                                                .funding === "object"
-                                                ? this.walletsStore.wallets
-                                                      .funding[
-                                                      Object.keys(
-                                                          this.walletsStore
-                                                              .wallets.funding
-                                                      )[0]
-                                                  ].symbol
-                                                : null
-                                        }}
-                                        {{
-                                            typeof this.walletsStore.wallets
-                                                .funding === "array"
-                                                ? this.walletsStore.wallets
-                                                      .funding[row.wallet - 1]
-                                                      .symbol
-                                                : null
-                                        }}
+                                        USDT
                                     </span>
                                 </td>
                                 <td class="py-3 px-6" data-label="Duration">
@@ -819,7 +722,7 @@
                                 <span>{{
                                     userStore.currency
                                         ? userStore.currency.symbol
-                                        : "USD"
+                                        : "USDT"
                                 }}</span>
                             </div>
                         </div>
@@ -838,7 +741,7 @@
                             <span>{{
                                 userStore.currency
                                     ? userStore.currency.symbol
-                                    : "USD"
+                                    : "USDT"
                             }}</span>
                         </div>
                     </div>
@@ -1028,7 +931,6 @@ export default {
             ) {
                 await this.forexStore.fetch();
             }
-            if (this.investmentStore.investment.length == 0) {
                 await this.investmentStore.fetch();
                 for (
                     let i = 0;
@@ -1151,7 +1053,6 @@ export default {
                         amount: currentProfit,
                     });
                 }
-            }
         },
         async startInvestment() {
             var data = {

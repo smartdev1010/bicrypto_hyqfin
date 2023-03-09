@@ -260,7 +260,7 @@ class PaymentController extends Controller
             $adminNotification = new AdminNotification();
             $adminNotification->user_id = $user->id;
             $adminNotification->title = 'Deposit successful via ' . $data->gateway_currency()->name;
-            $adminNotification->click_url = route('admin.deposit.successful');
+            $adminNotification->click_url = route('admin.deposit.list');
             $adminNotification->save();
             $adminNotification->clearCache();
         }

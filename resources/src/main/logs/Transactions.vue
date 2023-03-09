@@ -10,8 +10,7 @@
                     type="text"
                     class="filter-input"
                     placeholder="Transaction ID"
-                />
-            </Filter>
+            /></Filter>
         </div>
         <div class="card relative overflow-x-auto">
             <VTable
@@ -34,6 +33,9 @@
                             class="py-3 px-6"
                         >
                             <Col text="Date" />
+                        </VTh>
+                        <VTh sort-key="trx" scope="col" class="py-3 px-6">
+                            <Col text="Transaction ID" />
                         </VTh>
                         <VTh sort-key="amount" scope="col" class="py-3 px-6">
                             <Col text="Amount" />
@@ -59,6 +61,9 @@
                         >
                             <td data-label="Date" class="py-4 px-6">
                                 <toDate :time="row.created_at" />
+                            </td>
+                            <td data-label="trx" class="py-4 px-6">
+                                {{ row.trx }}
                             </td>
                             <td
                                 data-label="Amount"

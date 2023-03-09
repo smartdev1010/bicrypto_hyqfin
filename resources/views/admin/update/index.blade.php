@@ -2,7 +2,7 @@
 @section('page-style')
 @endsection
 @section('content')
-    <div class="card text-center mx-auto w-1/3">
+    <div class="card text-center mx-auto w-100">
         <h1 class="card-title py-5">{{ __('System Updator') }}</h1>
         @if ($update_data['status'])
             <div class="card-body">

@@ -137,6 +137,40 @@
         </div>
     </div>
     <br>
+    <br>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="md:col-span-12 my-2">
+                    <p class="cron-p-style">{{ __('Investments Rewards') }}<code
+                            class="bg-yellow-100 text-yellow-800 text-xs font-medium mr-2 px-0.2 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">
+                            {{ __('cron job') }}
+                        </code>{{ __('on your server. Set the Cron time as minimum as what you set the minimum time in general settings. Once per') }}<code
+                            class="bg-yellow-100 text-yellow-800 text-xs font-medium mr-2 px-0.2 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">
+                            12-24 </code>{{ __('hours is ideal') }}.</p>
+                </div>
+                <div class="relative">
+                    <label for="investment"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{{ __('Cron Command') }}</label>
+
+                    <input type="text" id="investment"
+                        class="block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        value="curl -s {{ route('cron.check_investment') }}" readonly="">
+                    <button type="submit"
+                        class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        id="copybtn" class="input-group-text btn-success" title=""
+                        onclick="
+                                              var copyText = document.getElementById('investment');
+                                              copyText.select();
+                                              copyText.setSelectionRange(0, 99999)
+                                              document.execCommand('copy');
+                                              notify('success', 'Url copied successfully ' + copyText.value);">{{ __('Copy') }}</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br>
     @if ($bot->installed == 1)
         <div class="card">
             <div class="card-body">

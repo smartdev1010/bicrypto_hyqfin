@@ -22,7 +22,7 @@
                             </div>
                         </h1>
                         <button class="mybtn">
-                            <toMoney
+                           <toMoney
                                 :num="
                                     this.forexStore.wallets.filter(
                                         (wallet) =>

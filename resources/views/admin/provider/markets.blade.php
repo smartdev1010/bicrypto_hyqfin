@@ -43,15 +43,19 @@
                                             @if ($market->status == 0)
                                                 <button type="button"
                                                     class="btn btn-icon btn-outline-success btn-sm activateBtn"
-                                                    data-modal-toggle="activateModal" data-symbol="{{ $market->symbol }}"
-                                                    title="{{ __('Enable') }}">
+                                                    onclick="
+                                                    $('#activateModal').find('.market-name').text('{{ $market->symbol }}');
+                                                    $('#activateModal').find('input[name=symbol]').val('{{ $market->symbol }}');"
+                                                    data-modal-toggle="activateModal" title="{{ __('Enable') }}">
                                                     <i class="bi bi-eye"></i>
                                                 </button>
                                             @else
                                                 <button type="button"
                                                     class="btn btn-icon btn-outline-danger btn-sm deactivateBtn"
-                                                    data-modal-toggle="deactivateModal" data-symbol="{{ $market->symbol }}"
-                                                    title="{{ __('Disable') }}">
+                                                    onclick="
+                                                    $('#deactivateModal').find('.market-name').text('{{ $market->symbol }}');
+                                                    $('#deactivateModal').find('input[name=symbol]').val('{{ $market->symbol }}');"
+                                                    data-modal-toggle="deactivateModal" title="{{ __('Disable') }}">
                                                     <i class="bi bi-eye-slash"></i>
                                                 </button>
                                             @endif
@@ -70,74 +74,30 @@
             </div>
         </div>
     </div>
-    {{-- ACTIVATE METHOD MODAL --}}
-    <div id="activateModal" class="modal fade text-start" tabindex="-1" aria-hidden="true" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">{{ __('market Activation Confirmation') }}</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <form action="{{ route('admin.provider.market.activate') }}" method="POST">
-                    @csrf
-                    <input type="hidden" name="symbol">
-                    <input type="hidden" name="provider_id" value="{{ $id }}">
-                    <div class="modal-body">
-                        <p>{{ __('Are you sure to activate') }} <span class="fw-bold market-name"></span>
-                            {{ __('market') }}?</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">{{ __('Close') }}</button>
-                        <button type="submit" class="btn btn-success">{{ __('Activate') }}</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    {{-- DEACTIVATE METHOD MODAL --}}
-    <div id="deactivateModal" class="modal fade text-start" tabindex="-1" aria-hidden="true" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">{{ __('market Deactivation Confirmation') }}</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <form action="{{ route('admin.provider.market.deactivate') }}" method="POST">
-                    @csrf
-                    <input type="hidden" name="symbol">
-                    <input type="hidden" name="provider_id" value="{{ $id }}">
-                    <div class="modal-body">
-                        <p>{{ __('Are you sure to deactivate') }} <span class="fw-bold market-name"></span>
-                            {{ __('market') }}?</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">{{ __('Close') }}</button>
-                        <button type="submit" class="btn btn-danger">{{ __('Deactivate') }}</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
 @endsection
 
-@push('script')
-    <script>
-        $(function() {
-            "use strict";
+@push('modals')
+    <x-partials.modals.default-modal title="{{ __('Provider Market Activation Confirmation') }}"
+        action="{{ route('admin.provider.market.activate') }}" submit="{{ __('Activate') }}" id="activateModal"
+        done="reload">
+        <div>
+            <input type="hidden" name="symbol">
+            <input type="hidden" name="provider_id" value="{{ $id }}">
+            <p>{{ __('Are you sure to activate') }} <span class="fw-bold market-name"></span>
+                {{ __('market') }}?</p>
+        </div>
+    </x-partials.modals.default-modal>
 
-            $('.activateBtn').on('click', function() {
-                var modal = $('#activateModal');
-                modal.find('.market-name').text($(this).data('symbol'));
-                modal.find('input[name=symbol]').val($(this).data('symbol'));
-            });
-            $('.deactivateBtn').on('click', function() {
-                var modal = $('#deactivateModal');
-                modal.find('.market-name').text($(this).data('symbol'));
-                modal.find('input[name=symbol]').val($(this).data('symbol'));
-            });
-
-        });
-    </script>
+    <x-partials.modals.default-modal title="{{ __('Provider Market Deactivation Confirmation') }}" btn="danger"
+        action="{{ route('admin.provider.market.deactivate') }}" submit="{{ __('Deactivate') }}" id="deactivateModal"
+        done="reload">
+        <div>
+            <input type="hidden" name="symbol">
+            <input type="hidden" name="provider_id" value="{{ $id }}">
+            <p>{{ __('Are you sure to deactivate') }} <span class="fw-bold market-name"></span>
+                {{ __('market') }}?</p>
+        </div>
+    </x-partials.modals.default-modal>
 @endpush
 
 @push('breadcrumb-plugins')

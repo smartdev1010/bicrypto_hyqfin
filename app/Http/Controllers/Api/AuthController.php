@@ -80,7 +80,7 @@ class AuthController extends Controller
             'firstname' => 'required|string|max:60',
             'lastname' => 'required|string|max:60',
             'username' => 'required|string|unique:users|min:6',
-            'phone' => 'required|string',
+            'phone' => 'numeric',
         ]);
 
         $token = Tokens::where('token', $request->token)->first();
@@ -100,7 +100,7 @@ class AuthController extends Controller
         }
 
         if (isset($request->phone)) {
-            $phone = $request->phone;
+            $phone = $request->country_code . $request->phone;
         } else {
             $phone = null;
         }
@@ -156,7 +156,6 @@ class AuthController extends Controller
             'firstname' => $user->firstname,
             'lastname' => $user->lastname,
             'username' => $user->username,
-            'phone' => $user->phone
         ]);
     }
 

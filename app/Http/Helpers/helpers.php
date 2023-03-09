@@ -280,7 +280,8 @@ function BVstore(
                                     } else {
                                         BVnew($u6->id, $type, $amount * $commission * ($plat->unilevel_upline7_percentage / ($cl == true ? $total_percentage : 100)));
                                     }
-                                    if ($u6->ref_by != null && $plat->unilevel_upline8_status == 1) {
+                                }
+                                if ($u6->ref_by != null && $plat->unilevel_upline8_status == 1) {
                                         $u7 = User::where('id', $u6->ref_by)->first();
                                         $u7mlm = MLM::where('username', $u7->username)->first();
                                         if ($plat->membership_status == 1) {
@@ -336,7 +337,6 @@ function BVstore(
                                             
                                         }
                                     }
-                                }
                             }
                         }
                     }

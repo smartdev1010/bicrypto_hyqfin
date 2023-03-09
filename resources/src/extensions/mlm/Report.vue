@@ -476,53 +476,41 @@ export default {
             for (let i = 1; i <= 12; i++) {
                 let percentage;
                 if (i == 1)
-                    percentage =
-                        this.walletsStore.platforms.mlm
-                            .unilevel_upline1_percentage;
-                if (i == 2)
-                    percentage =
-                        this.walletsStore.platforms.mlm
-                            .unilevel_upline2_percentage;
-                if (i == 3)
-                    percentage =
-                        this.walletsStore.platforms.mlm
-                            .unilevel_upline3_percentage;
-                if (i == 4)
-                    percentage =
-                        this.walletsStore.platforms.mlm
-                            .unilevel_upline4_percentage;
-                if (i == 5)
-                    percentage =
-                        this.walletsStore.platforms.mlm
-                            .unilevel_upline5_percentage;
-                if (i == 6)
-                    percentage =
-                        this.walletsStore.platforms.mlm
-                            .unilevel_upline6_percentage;
-                if (i == 7)
-                    percentage =
-                        this.walletsStore.platforms.mlm
-                            .unilevel_upline7_percentage;
-                if (i == 8)
-                    percentage =
-                        this.walletsStore.platforms.mlm
-                            .unilevel_upline8_percentage;
-                if (i == 9)
-                    percentage =
-                        this.walletsStore.platforms.mlm
-                            .unilevel_upline9_percentage;
-                if (i == 10)
-                    percentage =
-                        this.walletsStore.platforms.mlm
-                            .unilevel_upline10_percentage;
-                if (i == 11)
-                    percentage =
-                        this.walletsStore.platforms.mlm
-                            .unilevel_upline11_percentage;
-                if (i == 12)
-                    percentage =
-                        this.walletsStore.platforms.mlm
-                            .unilevel_upline12_percentage;
+                percentage =
+                    this.walletsStore.platforms[0].commission;
+            if (i == 2)
+                percentage =
+                    this.walletsStore.platforms[1].commission;
+            if (i == 3)
+                percentage =
+                    this.walletsStore.platforms[2].commission;
+            if (i == 4)
+                percentage =
+                    this.walletsStore.platforms[3].commission;
+            if (i == 5)
+                percentage =
+                    this.walletsStore.platforms[4].commission;
+            if (i == 6)
+                percentage =
+                    this.walletsStore.platforms[5].commission;
+            if (i == 7)
+                percentage =
+                    this.walletsStore.platforms[6].commission;
+            if (i == 8)
+                percentage =
+                    this.walletsStore.platforms[7].commission;
+            if (i == 9)
+                percentage =
+                    this.walletsStore.platforms[8].commission;
+            if (i == 10)
+                percentage =
+                    this.walletsStore.platforms[9].commission;
+            if (i == 11)
+                percentage =
+                    this.walletsStore.platforms[10].commission;
+            if (i == 12)
+                percentage =
+                    this.walletsStore.platforms[11].commission;
                 let data = {
                     level: i,
                     count: 0,
@@ -538,43 +526,40 @@ export default {
             let percentage;
             if (depth == 1)
                 percentage =
-                    this.walletsStore.platforms.mlm.unilevel_upline1_percentage;
+                    this.walletsStore.platforms[0].commission;
             if (depth == 2)
                 percentage =
-                    this.walletsStore.platforms.mlm.unilevel_upline2_percentage;
+                    this.walletsStore.platforms[1].commission;
             if (depth == 3)
                 percentage =
-                    this.walletsStore.platforms.mlm.unilevel_upline3_percentage;
+                    this.walletsStore.platforms[2].commission;
             if (depth == 4)
                 percentage =
-                    this.walletsStore.platforms.mlm.unilevel_upline4_percentage;
+                    this.walletsStore.platforms[3].commission;
             if (depth == 5)
                 percentage =
-                    this.walletsStore.platforms.mlm.unilevel_upline5_percentage;
+                    this.walletsStore.platforms[4].commission;
             if (depth == 6)
                 percentage =
-                    this.walletsStore.platforms.mlm.unilevel_upline6_percentage;
+                    this.walletsStore.platforms[5].commission;
             if (depth == 7)
                 percentage =
-                    this.walletsStore.platforms.mlm.unilevel_upline7_percentage;
+                    this.walletsStore.platforms[6].commission;
             if (depth == 8)
                 percentage =
-                    this.walletsStore.platforms.mlm.unilevel_upline8_percentage;
+                    this.walletsStore.platforms[7].commission;
             if (depth == 9)
                 percentage =
-                    this.walletsStore.platforms.mlm.unilevel_upline9_percentage;
+                    this.walletsStore.platforms[8].commission;
             if (depth == 10)
                 percentage =
-                    this.walletsStore.platforms.mlm
-                        .unilevel_upline10_percentage;
+                    this.walletsStore.platforms[9].commission;
             if (depth == 11)
                 percentage =
-                    this.walletsStore.platforms.mlm
-                        .unilevel_upline11_percentage;
+                    this.walletsStore.platforms[10].commission;
             if (depth == 12)
                 percentage =
-                    this.walletsStore.platforms.mlm
-                        .unilevel_upline12_percentage;
+                    this.walletsStore.platforms[11].commission;
             percentage /= 100;
             this.totalData[depth - 1].count += downlines.length;
             if (depth > 12) return;

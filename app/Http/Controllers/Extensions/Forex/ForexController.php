@@ -37,7 +37,7 @@ class ForexController extends Controller
     }
 
     public function fetch_investment_logs(Request $request){
-        $investment_logs = InvestmentLogs::where('user_id', $request->id)->get();
+        $investment_logs = InvestmentLogs::where('user_id', $request->id)->where('profit', 0)->get();
         return response()->json([
             'investment_logs' => $investment_logs
         ]);

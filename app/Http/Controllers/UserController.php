@@ -149,7 +149,7 @@ class UserController extends Controller
             'users' => $users,
             'popups' => $popups ?? null,
             'kyc' => checkKYC($user->id),
-            'currency' => $currency,
+            'currency' > $currency,
             'membership_fee' => Platform::where('id', 12)->first()->settings
         ]);
     }

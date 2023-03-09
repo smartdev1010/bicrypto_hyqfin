@@ -104,21 +104,37 @@ class LocaleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
     public function update(Request $request, $id)
     {
-        $locale = Locale::where('id', $id)->first();
+        $locale = Locale::findOrFail($id);
+        $filePath = resource_path("lang/{$locale->code}.json");
+        $jsonData = File::get($filePath);
+        $data = json_decode($jsonData, true);
 
-        $jsonString = file_get_contents(resource_path() . '/lang/' . $locale->code . '.json');
-        $datas = json_decode($jsonString, true);
-        // Update Key
-        $datas[$request->key] = $request->value;
-        // Write File
-        $newJsonString = json_encode($datas, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
-        file_put_contents(resource_path() . '/lang/' . $locale->code . '.json', stripslashes($newJsonString));
+        if (!is_array($data)) {
+            return response()->json([
+                'type' => 'error',
+                'message' => 'Invalid Key',
+            ], 500);
+        }
 
+        $data[$request->key] = $request->value;
+        $newJsonData = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+        try {
+            File::put($filePath, $newJsonData);
+        } catch (\Throwable $e) {
+            return response()->json([
+                'type' => 'error',
+                'message' => 'String update failed',
+            ], 500);
+        }
+
+        (new Locale)->clearCache();
         return response()->json([
             'type' => 'success',
-            'message' => 'Translation updated successfully',
+            'message' => 'String updated successfully',
         ]);
     }
 

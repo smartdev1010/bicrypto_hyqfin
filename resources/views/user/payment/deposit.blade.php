@@ -31,30 +31,32 @@
     </div>
 @endsection
 @push('modals')
-    <x-partials.modals.default-modal title="{{ __('Enter Deposit Amount') }}" action="{{ route('user.deposit.insert') }}"
-        submit="{{ __('Submit') }}" id="deposit-modal">
-        <ul>
-            <input type="hidden" id="symbol" name="symbol" value="{{ $track->symbol }}">
-            <input type="hidden" name="currency" class="edit-currency" value="">
-            <input type="hidden" name="method_code" class="edit-method-code" value="">
-            <li>
-                <span>{{ __('Deposit Limit') }}</span> <span class="text-success depositLimit"></span>
-            </li>
-            <li>
-                <span>{{ __('Charge') }}</span> <span class="text-danger depositCharge"></span>
-            </li>
-            <li>
-                <span>{{ __('Rate') }}</span> <span class="text-info">1
-                    {{ __($general->cur_text) }} = <span class="rate"></span></span>
-            </li>
-        </ul>
-        <label class="form-control-label h6">{{ __('Enter Amount') }} </label>
-        <div class="input-group">
-            <input type="number" id="amount" onkeyup="this.value = this.value.replace (/^\.|[^\d\.]/g, '')"
-                name="amount" placeholder="0.00" required value="{{ old('amount') }}">
-            <span>{{ __($general->cur_text) }}</span>
-        </div>
-    </x-partials.modals.default-modal>
+    @if ($track != null)
+        <x-partials.modals.default-modal title="{{ __('Enter Deposit Amount') }}"
+            action="{{ route('user.deposit.insert') }}" submit="{{ __('Submit') }}" id="deposit-modal">
+            <ul>
+                <input type="hidden" id="symbol" name="symbol" value="{{ $track->symbol }}">
+                <input type="hidden" name="currency" class="edit-currency" value="">
+                <input type="hidden" name="method_code" class="edit-method-code" value="">
+                <li>
+                    <span>{{ __('Deposit Limit') }}</span> <span class="text-success depositLimit"></span>
+                </li>
+                <li>
+                    <span>{{ __('Charge') }}</span> <span class="text-danger depositCharge"></span>
+                </li>
+                <li>
+                    <span>{{ __('Rate') }}</span> <span class="text-info">1
+                        {{ __($general->cur_text) }} = <span class="rate"></span></span>
+                </li>
+            </ul>
+            <label class="form-control-label h6">{{ __('Enter Amount') }} </label>
+            <div class="input-group">
+                <input type="number" id="amount" onkeyup="this.value = this.value.replace (/^\.|[^\d\.]/g, '')"
+                    name="amount" placeholder="0.00" required value="{{ old('amount') }}">
+                <span>{{ __($general->cur_text) }}</span>
+            </div>
+        </x-partials.modals.default-modal>
+    @endif
 @endpush
 @section('page-scripts')
     <script>

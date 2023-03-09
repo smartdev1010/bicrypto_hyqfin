@@ -34,16 +34,21 @@
                         >
                             <Col text="Date" />
                         </VTh>
-
+                        <VTh sort-key="trx" scope="col" class="py-3 px-6">
+                            <Col text="Transaction ID" />
+                        </VTh>
                         <VTh
                             sort-key="gateway.name"
                             scope="col"
                             class="py-3 px-6"
                         >
-                            <Col text="Method" />
+                            <Col text="Gateway" />
                         </VTh>
                         <VTh sort-key="amount" scope="col" class="py-3 px-6">
                             <Col text="Amount" />
+                        </VTh>
+                        <VTh sort-key="status" scope="col" class="py-3 px-6">
+                            <Col text="Status" />
                         </VTh>
                     </tr>
                 </template>
@@ -56,6 +61,9 @@
                         >
                             <td data-label="Date" class="py-4 px-6">
                                 <toDate :time="row.created_at" />
+                            </td>
+                            <td data-label="trx" class="py-4 px-6">
+                                {{ row.trx }}
                             </td>
                             <td data-label="Gateway">
                                 {{ row.gateway ? row.gateway.name : "" }}
@@ -95,6 +103,24 @@
                                         data-popper-arrow
                                     ></div>
                                 </div>
+                            </td>
+
+                            <td class="py-3 px-6" data-label="Status">
+                                <span
+                                    v-if="row.status == 1"
+                                    class="badge bg-success"
+                                    >{{ $t("Complete") }}</span
+                                >
+                                <span
+                                    v-else-if="row.status == 2"
+                                    class="badge bg-warning"
+                                    >{{ $t("Pending") }}</span
+                                >
+                                <span
+                                    v-else-if="row.status == 3"
+                                    class="badge bg-danger"
+                                    >{{ $t("Canceled") }}</span
+                                >
                             </td>
                         </tr>
                     </template>

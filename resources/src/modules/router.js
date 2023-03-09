@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 const Dashboard = () => import("../main/Dashboard.vue");
 const Trading = () => import("../main/Trading.vue");
 const Swap = () => import("../extensions/Swap.vue");
-const Market = () => import("../main/Dashboard.vue");
+const Investments = () => import("../main/Investments.vue");
 const Wallets = () => import("../main/Wallets.vue");
 const WalletDetail = () => import("../main/wallets/WalletDetail.vue");
 const MainWalletDetail = () => import("../main/wallets/MainWalletDetail.vue");
@@ -25,9 +25,9 @@ const routes = [
     },
     { path: "/swap", component: Swap, meta: { title: "Swap Dashboard" } },
     {
-        path: "/market",
-        component: Market,
-        meta: { title: "Market Analysis" },
+        path: "/investment",
+        component: Investments,
+        meta: { title: "Investments" },
     },
     {
         path: "/wallets",
@@ -149,12 +149,12 @@ if (ext.ico == 1) {
 }
 if (ext.mlm == 1) {
     const Referral = () => import("../extensions/mlm/Referral.vue");
-    const Report = () => import("../extensions/mlm/Report.vue");
     routes.push({
-        path: "/referral/subPage",
+        path: "/referral",
         component: Referral,
-        meta: { title: "Sub Page" },
+        meta: { title: "My Referrals" },
     });
+    const Report = () => import("../extensions/mlm/Report.vue");
     routes.push({
         path: "/referral/levelReport",
         component: Report,
@@ -223,6 +223,12 @@ if (ext.p2p == 1) {
         component: P2POrders,
         meta: { title: "P2P Orders" },
     });
+    const P2PMerchent = () => import("../extensions/p2p/p2pmerchent.vue");
+    routes.push({
+        path: "/p2p/merchent",
+        component: P2PMerchent,
+        meta: { title: "P2P Merchent" },
+    });
 }
 if (ext.knowledge == 1) {
     const KnowledgeBase = () => import("../extensions/knowledge/Index.vue");
@@ -260,6 +266,28 @@ if (ext.knowledge == 1) {
         path: "/knowledge/faq/:search",
         component: FaqSearch,
         meta: { title: "Search Faq" },
+    });
+}
+if (ext.ecommerce == 1) {
+    const Marketplace = () => import("../extensions/ecommerce/Layout.vue");
+    const MarketplaceIndex = () => import("../extensions/ecommerce/Index.vue");
+    const Wishlist = () => import("../extensions/ecommerce/Wishlist.vue");
+    routes.push({
+        path: "/marketplace",
+        component: Marketplace,
+        meta: { title: "Marketplace" },
+        children: [
+            {
+                path: "index",
+                component: MarketplaceIndex,
+                meta: { title: "Marketplace" },
+            },
+            {
+                path: "wishlist",
+                component: Wishlist,
+                meta: { title: "Wishlist" },
+            },
+        ],
     });
 }
 

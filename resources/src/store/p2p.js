@@ -6,7 +6,8 @@ export const useP2pStore = defineStore("p2p", {
         ads: null,
         orders: null,
         type: "buy",
-        currency: null,
+        currency: [],
+        methods: [],
     }),
 
     actions: {
@@ -24,6 +25,11 @@ export const useP2pStore = defineStore("p2p", {
         async fetch_orders() {
             await axios.get("/user/p2p/fetch/orders").then((response) => {
                 this.orders = response.orders;
+            });
+        },
+        async fetch_methods() {
+            await axios.get("/user/p2p/fetch/methods").then((response) => {
+                this.methods = response.methods;
             });
         },
     },

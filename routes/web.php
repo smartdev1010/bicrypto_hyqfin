@@ -10,13 +10,16 @@ use App\Http\Controllers\Admin\ReportController;
 use App\Http\Controllers\Admin\UpdateController;
 use App\Http\Controllers\CronController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\MembershipController;
 use App\Http\Controllers\LanguageController;
+use App\Http\Controllers\MembershipController;
 use App\Http\Controllers\MarketController;
 use App\Http\Controllers\QrCodeController;
 use App\Http\Controllers\RssfeedController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\WatchlistController;
+use App\Http\Controllers\InvestmentController;
+use App\Http\Controllers\Admin\InvestmentPlanController;
+use App\Http\Controllers\Admin\InvestmentLogController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/clear', function () {
@@ -45,6 +48,7 @@ Route::get('cron/provider/check/deposit', 'CronController@fetch_deposits')->name
 Route::get('cron/provider/fetch/order', 'CronController@fetch_order')->name('provider.fetchorder');
 Route::get('cron/provider/marketsClean', 'CronController@marketsClean')->name('provider.marketsClean');
 Route::get('cron/check_update', 'CronController@check_update')->name('cron.check_update');
+Route::get('cron/investment/check', 'InvestmentController@cron')->name('cron.check_investment');
 
 Route::get('/generate-qrcode', [QrCodeController::class, 'index']);
 
@@ -167,7 +171,6 @@ Route::group(['middleware' => 'auth'], function () {
         Route::group(['prefix' => 'fetch', 'as' => 'fetch.'], function () {
             Route::get('/api/tokens', [UserController::class, 'api_tokens']);
             Route::post('/data', 'UserController@data');
-            Route::post('/alldata', 'UserController@alldata');
             Route::post('/support', 'TicketController@fetch_tickets');
             Route::post('/support/ticket/{id}', 'TicketController@fetch_ticket_messages');
             Route::post('/trade/orders', 'ExchangeController@trading_orders');
@@ -285,9 +288,22 @@ Route::group(['middleware' => 'auth'], function () {
         Route::name('popups.')->prefix('popups')->group(function () {
             Route::post('/disable', [PopupsController::class, 'disable_popup'])->name('disable');
         });
-    });
 
-    Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'as' => 'admin.'], function () {
+        Route::prefix('investment')->group(function () {
+            // Investments
+            Route::get('/', [InvestmentController::class, 'index']);
+            Route::post('/store', [InvestmentController::class, 'store']);
+            Route::put('/{id}', [InvestmentController::class, 'update']);
+            Route::delete('/{id}', [InvestmentController::class, 'destroy']);
+
+            // Investment Logs
+            Route::prefix('log')->name('log.')->group(function () {
+                Route::get('/', [InvestmentLogController::class, 'index']);
+                Route::post('/cancel', [InvestmentController::class, 'cancel']);
+            });
+        });
+    });
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'as' => 'admin.'], function () {
         Route::get('membership', [MembershipController::class, 'dashboard'])->name('dashboard');
         Route::get('commissions', [MembershipController::class, 'commission'])->name('dashboard');
         Route::post('membership', [MembershipController::class, 'update'])->name('dashboard');
@@ -597,6 +613,27 @@ Route::group(['middleware' => 'auth'], function () {
             //Push Notification Setting
             Route::get('push-notification/settings', 'pushNotificationSetting')->middleware('demo')->name('push');
             Route::post('push-notification/settings', 'pushNotificationSettingUpdate')->middleware('demo')->name('push.update');
+        });
+
+        Route::prefix('investment')->name('investment.')->group(function () {
+
+            // Investment Plans
+            Route::prefix('plans')->name('plans.')->group(function () {
+                Route::get('/', [InvestmentPlanController::class, 'index'])->name('index');
+                Route::get('/create', [InvestmentPlanController::class, 'create'])->name('create');
+                Route::post('/', [InvestmentPlanController::class, 'store'])->name('store');
+                Route::put('/{id}/toggle-status', [InvestmentPlanController::class, 'toggleStatus'])->name('toggleStatus');
+                Route::put('/{id}/toggle-recommanded', [InvestmentPlanController::class, 'toggleRecommanded'])->name('toggleRecommanded');
+                Route::get('/{id}', [InvestmentPlanController::class, 'edit'])->name('edit');
+                Route::put('/{id}', [InvestmentPlanController::class, 'update'])->name('update');
+                Route::delete('/{id}', [InvestmentPlanController::class, 'destroy'])->name('destroy');
+            });
+
+            // Investment Logs
+            Route::prefix('logs')->name('logs.')->group(function () {
+                Route::get('/', [InvestmentLogController::class, 'index'])->name('index');
+                Route::post('/{id}/cancel', [InvestmentLogController::class, 'cancel'])->name('cancel');
+            });
         });
     });
 });

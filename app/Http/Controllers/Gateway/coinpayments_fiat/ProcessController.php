@@ -23,13 +23,13 @@ class ProcessController extends Controller
         $val['item_name'] = 'Payment to ' . $basic->sitename;
         $val['currency'] = $deposit->method_currency;
         $val['currency_code'] = "$deposit->method_currency";
-        $val['amountf'] = round($deposit->final_amo,2);
-        $val['ipn_url'] =  route('ipn.'.$deposit->gateway->alias);
+        $val['amountf'] = round($deposit->final_amo, 2);
+        $val['ipn_url'] =  route('ipn.' . $deposit->gateway->alias);
         $val['custom'] = "$deposit->trx";
-        $val['amount'] = round($deposit->final_amo,2);
+        $val['amount'] = round($deposit->final_amo, 2);
         $val['return'] = route(gatewayRedirectUrl());
         $val['cancel_return'] = route(gatewayRedirectUrl());
-        $val['notify_url'] = route('ipn.'.$deposit->gateway->alias);
+        $val['notify_url'] = route('ipn.' . $deposit->gateway->alias);
         $val['success_url'] = route(gatewayRedirectUrl());
         $val['cancel_url'] = route(gatewayRedirectUrl());
         $val['custom'] = $deposit->trx;
@@ -54,7 +54,7 @@ class ProcessController extends Controller
         if ($status >= 100 || $status == 2) {
             $coinPayAcc = json_decode($data->gateway_currency()->gateway_parameter);
 
-            if ($data->method_currency == $request->currency1 && round($data->final_amo,2) <= $amount1  && $coinPayAcc->merchant_id == $request->merchant && $data->status == '0') {
+            if ($data->method_currency == $request->currency1 && round($data->final_amo, 2) <= $amount1  && $coinPayAcc->merchant_id == $request->merchant && $data->status == '0') {
                 PaymentController::userDataUpdate($data->trx);
             }
         }

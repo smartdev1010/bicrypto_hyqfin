@@ -9,10 +9,9 @@
 
     <form action="" method="POST">
         @csrf
-        <div class="grid grid-cols-4 gap-5">
+        <div class="grid xxs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
             <div class="card">
                 <div class="card-body space-y-3">
-
                     <div class="form-group">
                         <label class="text-lg font-medium text-gray-900 dark:text-white">@lang('Sms Send Method')</label>
                         <select name="sms_method" class="form-control">
