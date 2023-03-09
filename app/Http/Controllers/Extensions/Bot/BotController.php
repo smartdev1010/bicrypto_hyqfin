@@ -125,7 +125,7 @@ class BotController extends Controller
         $wallet_new_trx->type = '0';
         $wallet_new_trx->status = '1';
         $wallet_new_trx->trx = getTrx();
-        $wallet_new_trx->details = 'You started Bot.';
+        $wallet_new_trx->details = 'You started '.$bot->title.'Bot.';
         $wallet_new_trx->wallet_type = 'funding';
         $wallet_new_trx->save();
         $wallet_new_trx->clearCache();

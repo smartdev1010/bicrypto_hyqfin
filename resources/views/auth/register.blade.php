@@ -5,12 +5,16 @@
 <x-guest-layout>
   <section class="bg-gray-50 dark:bg-gray-900">
     <div class="grid h-screen place-items-center max-w-screen-xl px-4 py-8 mx-auto lg:gap-20 lg:py-16 lg:grid-cols-12">
+
       <div class="w-full p-6 mx-auto bg-white rounded-lg shadow dark:bg-gray-800 sm:max-w-xl lg:col-span-6 sm:p-8">
         <x-slot class="inline-flex items-center mb-4 text-xl font-semibold text-gray-900 dark:text-white" name="logo">
           <x-jet-authentication-card-logo />
         </x-slot>
 
         <x-jet-validation-errors class="mb-4" />
+        <div style="display: flex; justify-content:center; margin-bottom: 20px">
+          <img src="/assets/images/logoIcon/logo.png" />
+        </div>
         <h1 class="mb-2 text-2xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white">
           Create your Account
         </h1>

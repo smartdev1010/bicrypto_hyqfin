@@ -7,6 +7,7 @@ use App\Models\Extension;
 use App\Models\Staking\StakingCurrency;
 use App\Models\Staking\StakingLog;
 use App\Models\Wallet;
+use App\Models\WalletsTransactions;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
@@ -121,6 +122,21 @@ class StakingController extends Controller
 
         $wallet->balance -= $request->amount * $price;
         $wallet->save();
+
+        $wallet_new_trx = new WalletsTransactions();
+        $wallet_new_trx->user_id = $user->id;
+        $wallet_new_trx->symbol = $wallet->symbol;
+        $wallet_new_trx->amount = $request->amount * $price;
+        $wallet_new_trx->amount_recieved = $request->amount * $price;
+        $wallet_new_trx->charge = $request->amount * $price;
+        $wallet_new_trx->to = $wallet->symbol;
+        $wallet_new_trx->type = '0';
+        $wallet_new_trx->status = '1';
+        $wallet_new_trx->trx = getTrx();
+        $wallet_new_trx->details = 'You started Staking.';
+        $wallet_new_trx->wallet_type = 'funding';
+        $wallet_new_trx->save();
+        $wallet_new_trx->clearCache();
 
         $stakeCoin->staked += $request->amount;
         $stakeCoin->save();

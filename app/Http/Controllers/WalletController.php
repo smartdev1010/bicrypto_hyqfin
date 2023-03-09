@@ -881,7 +881,9 @@ class WalletController extends Controller
                 $transfer->save();
                 $transfer->clearCache();
                 $from->balance -= $request->amount;
+                $to->balance += $request->amount;
                 $from->save();
+                $to->save();
 
                 $wallet_new_trx = new WalletsTransactions();
                 $wallet_new_trx->user_id = $transfer->user_id;
